@@ -2,6 +2,14 @@
 
 https://docs.google.com/document/d/1X_5RRIM_AOfGsOot5gj2QCpt8Jxk6RyYNOC5CJ4gR_U/edit?usp=sharing
 
+# Group Members
+
+* Andrei
+* Gabriele
+* Han
+* Hemanth
+* Lukasz (Moderator)
+
 # Links
 
 * [chicken-truck-detroit-chef-phil-jones](https://eu.freep.com/story/entertainment/dining/mark-kurlyandchik/2020/06/11/chicken-truck-detroit-chef-phil-jones/5342730002/)
