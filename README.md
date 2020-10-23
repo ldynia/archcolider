@@ -15,14 +15,19 @@ Group members:
 
 # Links
 
+* [Docs](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit)
 * [chicken-truck-detroit-chef-phil-jones](https://eu.freep.com/story/entertainment/dining/mark-kurlyandchik/2020/06/11/chicken-truck-detroit-chef-phil-jones/5342730002/)
 * [bytetechnology](https://bytetechnology.co/#how-it-works) 
 * [toasttab](https://pos.toasttab.com/)
 
 # Resources
+
 * [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
 * [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 * [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
+
+# Actors
+TODO
 
 # Functional Requirements
 TODO
