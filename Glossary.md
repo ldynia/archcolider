@@ -11,5 +11,5 @@
 
 - **Ordering system** - traget system to be designed and developed. Responsible for an interaction with all kind of users.
 - **Kiosk Mgmt system** - system responsible for communicatation and managing stock items in smart-fridges. 
-- **Central Kitchen** - system responsible for orders execution and food refilment. 
+- **Ghost Kitchen** - system responsible for orders execution and food refilment. 
 - **User App** - web or mobile application for users. Front-end for the _Ordering system_. 
