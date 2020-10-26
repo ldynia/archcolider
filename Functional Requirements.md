@@ -65,4 +65,4 @@ Based on business goal provided by the owner we can exctact following functional
 
 1. Integration between internal systems
 1. User applications
-1. 
+1. Notification system 
