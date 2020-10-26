@@ -51,14 +51,14 @@ Based on business goal provided by the owner we can exctact following functional
 
 **Core context** 
 
-1. Reservation of food - 
-1. Picking up food
-1. Point Of Sales integration with Ordering system
-1. Food catalog (visibility of items)
+1. Meal reservation (Req #8, #5, #6)
+1. Picking up meal (Req #3, #4)
+1. Point Of Sales integration with Ordering system (#3, #4)
+1. Meal catalog (visibility of items) (#7, #6)
+1. Ordering system - internal subsystem
 
 **Support context** 
 
-1. Ordering system
 1. Purchasing system
 
 **Generic context**
@@ -66,3 +66,75 @@ Based on business goal provided by the owner we can exctact following functional
 1. Integration between internal systems
 1. User applications
 1. Notification system 
+
+### Meal reservation 
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Picking up meal 
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Point Of Sales integration
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Meal catalog
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Ordering system
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Purchasing system 
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### User applications
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Integration between internal systems
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
+
+### Notification system
+
+Sunny day scenarios: 
+
+Extended use cases: 
+
+Risks: 
