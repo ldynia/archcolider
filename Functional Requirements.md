@@ -56,6 +56,7 @@ Based on business goal provided by the owner we can exctact following functional
 1. Point Of Sales integration with Ordering system (#3, #4)
 1. Meal catalog (visibility of items) (#7, #6)
 1. Ordering system - internal subsystem
+1. Scheduling meals
 
 **Support context** 
 
@@ -70,42 +71,71 @@ Based on business goal provided by the owner we can exctact following functional
 ### Meal reservation 
 
 Sunny day scenarios: 
+1. User (Subscriber, Known user) browse the meal catalog, select avalable meals in fridges, book it and pay at pickup time of a meal.   
+2. Subscriber forming a manu schedule and get notification when a meal is available each day. Menu is prepaid.  
 
 Extended use cases: 
+1. 
+
+Questions: 
+1. Is there option for prepaiment to book a meal
+2. For how long upfront user can reserve a meal? 
+3. Is Subscriber didn't pick up a meal during a time frame can it be listed in common catalog? 
 
 Risks: 
+1. User booked a meal, but not picked up. Option: prepay to acomplish operation. 
+
 
 ### Picking up meal 
 
 Sunny day scenarios: 
+1. Subscriber use stored in the app banking card to authorize and pick up a meal. Kiosk knows the order associated with the user upfront. 
+2. Known user selecting a meal from catalog, use card for payement and picking up a meal. 
+3. Ocassional user with help of PoS Seller order a meal. 
+4. Meal arrived to a fridge and user get notification of availability. 
 
 Extended use cases: 
 
 Risks: 
+1. Loss of connection. Options: 1) Generating one time recovery codes. 2) Swiping the card and getting a meal. 
+2. Meal is stuck in the fridge. Options: 1) User take a photo and file a complaint.
 
 ### Point Of Sales integration
 
 Sunny day scenarios: 
+1. Occassional user make an order, PoS admin perform order in the PoS app. Type of payment doesn't matter. 
+2. Subscriber coming to grab a meal, provide a code/message that appears in PoS app, based on this info PoS Admin provide a meal. 
 
 Extended use cases: 
 
 Risks: 
+1. Loss of connection. Options: 1) Eventual consistency of operations. Send data when network will be available. 2) Recovery codes from Subscriber
+
 
 ### Meal catalog
 
 Sunny day scenarios: 
+1. Actual meals for each fridge is available for browsing. Each item contains description, price, exact place.  
 
 Extended use cases: 
+1. User can set desired area of fridges and get items based and this area 
+2. User can set filters based on alergens and content 
 
-Risks: 
+Risks:
+1. Can the catalog contain meals out of order, but with general availability for ordering withing some time frame? 
+2. How often data should be updated? 
 
 ### Ordering system
 
 Sunny day scenarios: 
+1. 
 
 Extended use cases: 
 
 Risks: 
+1. What is the minimum time frame for ordering a meal that is not available in fridges, but can be prepared by Ghost Kitchen? 
+2. Is it possible to make a mass order and set specific address? 
+3. User ordered a meal but there is no possiblity to deliver it? Short of stock, kitchen closed. 
 
 ### Purchasing system 
 
@@ -134,7 +164,12 @@ Risks:
 ### Notification system
 
 Sunny day scenarios: 
+1. Default notification channel is in-app messages.
 
 Extended use cases: 
+1. User can setup preffered way of notification: in-app, push, email, sms
+2. Notifications deffers by type an have different delivery channels. Types are: order related, news, feedback request, other. 
 
 Risks: 
+1. Should be there backup channel? 
+2. Several ways of delivery for the same type? 
