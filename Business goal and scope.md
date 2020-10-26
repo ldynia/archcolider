@@ -1,6 +1,18 @@
-# The goal: 
+# The business goal: 
 
-- Design ordering system for the end clients that will communicate with the rest of infrastructure and smart-fridges in particular. 
+- A “ghost kitchen” (food preparation and cooking facility set up for the preparation of delivery-only meals.) needs an ordering system to allow users to have visibility of what items are available, purchase, and pick up items at any one of their points of sale / smart-fridge.
+
+From the business goal definition we can briefly identify following areas of interests (subdomains):
+
+Generic parts: 
+1. Ordering system 
+1. Purchasing system 
+
+Context aware:
+1. Reservation of food
+1. Picking up food 
+1. Point Of Sales integration with Ordering system 
+1. Food catalog (visibility of items)
 
 # Background: 
 
@@ -14,9 +26,9 @@ Smart-fridges is like a food/drink kiosks that you can meet everywhere, but they
 
 ### Random 
 
-In some point in time all that staff might be integrated with smart devices. But it requires a serious work with user's personal data. 
-
-Fridges linkage - not thought about that, but it might be the case. Modularized system 
+1. In some point in time all that staff might be integrated with smart devices. But it requires a serious work with user's personal data. 
+1. Fridges linkage - not thought about that, but it might be the case. Modularized system support. 
+1. Send new meal request to a 3rd party kitchen -Send inventory updates to central kitchen
 
 ### Purchasing 
 
@@ -28,31 +40,31 @@ Currently by credit\debt card. User just swaping card and kiosk understand who i
 
 ### Ordering 
 
-Users should be able to make a personalized order upfront and get it later. In future plans, users should be able to browse entire catalog of available meals in fridges around them and order it. 
+1. Users should be able to make a personalized order upfront and get it later. In future plans, users should be able to browse entire catalog of available meals in fridges around them and order it. 
+2. User should able "book" something if it is an open selling position. 
+3. There might be option of setting pick-up time and notification that your meal arrived to a specific fridge. 
+1. Collecting by proxy
+4. Non-subscribers can use smart-fridges as well
 
-User should able "book" something if it is an open selling position. 
+## Numbers/Metrics (93m)
 
-There might be option of setting pick-up time and notification that your meal arrived to a specific fridge. 
+1. Currently 300 meals/week, plans to be 1500-2000 meals/week by december 
+1. 68 locations by end of year 
+1. 1000 subscribers by EoY  
+1. 10 meals/week from subscriber 
 
-Non-subscribers can use smart-fridges as well
+## User communication / interacton 
 
-# Numbers/Metrics (93m)
+1. Web application, site 
+1. Push notifications 
+1. Pickin' up on behalf of someone 
+1. Feedback rewards model 
+1. Discounts for users 
 
-- Currently 300 meals/week, plans to be 1500-2000 meals/week by december 
-- 68 locations by end of year 
-- 1000 subscribers by EoY  
-- 10 meals/week from subscriber 
+# Out of scope
 
-# User communication / interacton 
-
-- Web application, site 
-- Push notifications 
-- Pickin' up on behalf of someone 
-- Feedback rewards model 
-- Discounts for users 
-
-
-
+1. Developing communication between smart-fridges internally and with the rest of the system 
+1. Any logistics task related to delivery of the food. We accept that it is somehow delivered and unused food somehow removed from fridges. Also we don't care about any possible relocations of food. All food movements not caused by customer is out of scope.
 
 
 
