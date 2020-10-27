@@ -11,7 +11,7 @@
 
 1. How often shoud the kitchen get updates about on-demand orders and consumed meals? We are assuming that the kitchen do not work 24/7 and delivery also take time and scheduled in some way or another. Also it's related to supply refil for the kitchen, that's why this is important question. 
 
-## Meal reservation and on-demand ordering 
+## Meal reservation and "on-demand" ordering 
 
 1. Can registered users create a batch order that won't fit in a fridge? What then? Direct delivery? 
 2. What is the system behaviour if the catalog of meals become stale and a user ordered out of stock for a particular fridge meal?  
