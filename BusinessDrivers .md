@@ -22,6 +22,25 @@ _List of architecture driving requirements (major functional, quality attribute,
 | 6 | Notification system to inform user about their orders | 1, 4, 5 | 
 | 7 | Notifications about new loyality programs and coupons | 2, 5 | 
 | 8 | Detailed break down of a meal by components in catalog | 1, 5, 6 | 
+| 9 | Secure payments | 1, 5 | 
+| 10 | Maximizing guarantee of a meal picking up by user | 1, 5 | 
 
 # Detalization of SARs 
 
+## 1. System support cash and electronical payments
+
+1. Cash payments supported by _PoS Admin_ and dedicated application for _Ocassional users_ 
+2. Users can add diffent payments methods to the App. 
+3. New payment method is easy to add with a month for a new areas. 
+
+# 2. Plagable system of feedback, survey, review abilities 
+
+1. System remind user to add a review for a meal if it wasn't done before. 
+2. User can read reviews for any meal in the catalog.
+3. User can easily provide feedback about any aspect of the service.
+4. Reviews groupped and categorized for the Owner.
+5. Support for in app and external surveys. 
+
+# 3. On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying
+
+1. Ghost kitchen can browse and query menu schedule of subscribers 
