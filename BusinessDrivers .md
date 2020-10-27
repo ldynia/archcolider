@@ -30,6 +30,7 @@ _List of architecture driving requirements (major functional, quality attribute,
 ## 1. System support cash and electronical payments
 
 1. Cash payments supported by _PoS Admin_ and dedicated application for _Ocassional users_ 
+AG: 
 2. Users can add diffent payments methods to the App.
 3. New payment method is easy to add with a month for a new areas. 
 4. User can spend virtual funds (coupons and discounts) for payments.
