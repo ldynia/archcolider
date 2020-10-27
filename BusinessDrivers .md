@@ -35,7 +35,7 @@ AG:
 3. New payment method is easy to add with a month for a new areas. 
 4. User can spend virtual funds (coupons and discounts) for payments.
 
-# 2. Plagable system of feedback, survey, review abilities 
+# 2. Plugable system of feedback, survey, review abilities 
 
 1. System remind user to add a review for a meal if it wasn't done before. 
 2. User can read reviews for any meal in the catalog.
