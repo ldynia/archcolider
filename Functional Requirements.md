@@ -70,6 +70,8 @@ Based on business goal provided by the owner we can exctact following functional
 
 ### Meal reservation 
 
+Make available upfront reservation of meals based on time. In general it might be instatly available meals in the fridge and on-demand from catalog. 
+
 Sunny day scenarios: 
 1. User (Subscriber, Known user) browse the meal catalog, select avalable meals in fridges, book it and pay at pickup time of a meal.   
 2. Subscriber forming a manu schedule and get notification when a meal is available each day. Menu is prepaid.  
@@ -88,6 +90,8 @@ Risks:
 
 ### Picking up meal 
 
+Responsible for "direct" communication with a fridge and the ways who picking up process might be executed. 
+
 Sunny day scenarios: 
 1. Subscriber use stored in the app banking card to authorize and pick up a meal. Kiosk knows the order associated with the user upfront. 
 2. Known user selecting a meal from catalog, use card for payement and picking up a meal. 
@@ -102,6 +106,8 @@ Risks:
 
 ### Point Of Sales integration
 
+Specail app (or part of frontend) with user impersonation by PoS admin. Allows reuse the same logic as for other users.  
+
 Sunny day scenarios: 
 1. Occassional user make an order, PoS admin perform order in the PoS app. Type of payment doesn't matter. 
 2. Subscriber coming to grab a meal, provide a code/message that appears in PoS app, based on this info PoS Admin provide a meal. 
@@ -113,6 +119,8 @@ Risks:
 
 
 ### Meal catalog
+
+Responsible for providing information about available meals in fridges and on-demand meals. 
 
 Sunny day scenarios: 
 1. Actual meals for each fridge is available for browsing. Each item contains description, price, exact place.  
@@ -127,6 +135,8 @@ Risks:
 
 ### Ordering system
 
+Keep tracking of ordering process and generation info for the Ghost Kitchen. 
+
 Sunny day scenarios: 
 1. 
 
@@ -139,6 +149,8 @@ Risks:
 
 ### Purchasing system 
 
+Facade for payment systems
+
 Sunny day scenarios: 
 
 Extended use cases: 
@@ -146,6 +158,8 @@ Extended use cases:
 Risks: 
 
 ### User applications
+
+UI for the Ordering system
 
 Sunny day scenarios: 
 
@@ -155,6 +169,8 @@ Risks:
 
 ### Integration between internal systems
 
+Communication with upstream and downstream systems. 
+
 Sunny day scenarios: 
 
 Extended use cases: 
@@ -162,6 +178,8 @@ Extended use cases:
 Risks: 
 
 ### Notification system
+
+Make user informed on postponed in time actions. 
 
 Sunny day scenarios: 
 1. Default notification channel is in-app messages.
@@ -173,3 +191,4 @@ Extended use cases:
 Risks: 
 1. Should be there backup channel? 
 2. Several ways of delivery for the same type? 
+
