@@ -11,3 +11,11 @@
 
 1. Suscribers and Known users makes overprovisioning situation for a fridge. Not all food can be placed to a fridge. 
 2. Order was placed during off hours of Ghost Kitchen. 
+
+# Trade-offs 
+
+Risk #5. 
+ADR: 
+  Solution: Secruity codes generated and delivered upfront for a next day. 
+  Conslusions: 
+   - Code should long enought to avoid brute force. 
