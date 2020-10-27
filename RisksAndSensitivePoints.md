@@ -5,7 +5,7 @@
 3. Notification about delivery or meal can't be deliverd by prefered channel. 
 4. PoS app disconected from network. 
 5. Smart fridge disconected from network. 
-
+6. Revew bombing for a 3rd party kitchens.
 
 # Sensitive points 
 
