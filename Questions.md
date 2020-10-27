@@ -16,3 +16,9 @@
 1. Can registered users create a batch order that won't fit in a fridge? What then? Direct delivery? 
 2. What is the system behaviour if the catalog of meals become stale and a user ordered out of stock for a particular fridge meal?  
 
+## General clarification 
+
+1. We had a feeling that following requirements out of scope of the Ordering system (it even sound like an environment description): 
+- Must integrate with 3rd party smart fridges to obtain inventory and purchase activity
+- Smart Fridges Produce item inventory levels and purchases. The smart fridges have a cloud based management system that handles communication with the Smart Fridge so obtaining this data would be through an API.
+Because during the introductionary session, it was mentioned that smart-fridge system totaly independent of the required one and already established. So the smart-fridges system provide API for all of them. Could you please clarify it? Do we right or there some other intentions behind those sentences? 
