@@ -14,4 +14,5 @@
 ## Meal reservation and on-demand ordering 
 
 1. Can registered users create a batch order that won't fit in a fridge? What then? Direct delivery? 
+2. What is the system behaviour if the catalog of meals become stale and a user ordered out of stock for a particular fridge meal?  
 
