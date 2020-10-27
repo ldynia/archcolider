@@ -26,12 +26,28 @@ Group members:
 * [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 * [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 
-# Notes
+# [Stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakeholders.md)
 
-27-10-2020: Bellow is the list of task that we should work on before attending next meeting.
+By the link on can find all major stakeholders for the _Ordering system_ and their concerns: 
 
-* Review Business Drivers.
-* Add detalizations.
-* Pleas try/question flows in subdomains.
-* Add quality attribiutes to subdomains.
-* Send questions to O'Raily (Lukasz)
+The short list: 
+- _Ghost Kitchen_ 
+- _Subscribers_ 
+- _Known users_ 
+- _Ocassional users_ 
+- Owner of the business  
+- Nutritioninst 
+- Developers 
+- Admins 
+- Food suppliers 
+- 3rd party kitchens 
+- _PoS admins_ 
+
+Also please check the [Glossary](https://github.com/ldynia/archcolider/blob/master/Glossary.md) for selected terms 
+
+# Functional Requirements
+
+The [list](https://github.com/ldynia/archcolider/blob/master/Functional%20Requirements.md) of Functional Requirements and derrived [Significant Architectural Requirements] derrived from {Business Drivers](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#business-drivers-bd). 
+
+# NonFunctional Requirements
+TODO
