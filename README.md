@@ -26,11 +26,12 @@ Group members:
 * [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 * [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 
-# Actors
-TODO
+# Notes
 
-# Functional Requirements
-TODO
+27-10-2020: Bellow is the list of task that we should work on before attending next meeting.
 
-# NonFunctional Requirements
-TODO
+* Review Business Drivers.
+* Add detalizations.
+* Pleas try/question flows in subdomains.
+* Add quality attribiutes to subdomains.
+* Send questions to O'Raily (Lukasz)
