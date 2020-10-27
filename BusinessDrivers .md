@@ -15,7 +15,7 @@ _List of architecture driving requirements (major functional, quality attribute,
 | # | Significant Architectural Requitements | From BD | 
 |----|----|----| 
 | 1 | System support cash and electronical payments | 1 | 
-| 2 | Plagable system of feedback, survey, review abilities | 1, 2 | 
+| 2 | Plugable system of feedback, survey, review abilities | 1, 2 | 
 | 3 | On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying | 3 | 
 | 4 | Scheduling system for subscribers, to avoid repetetive operations of ordering | 1, 3, 4, 5 | 
 | 5 | Ability to purchase without registering first | 1, 4, 5 | 
@@ -33,7 +33,7 @@ _List of architecture driving requirements (major functional, quality attribute,
 2. Users can add diffent payments methods to the App. 
 3. New payment method is easy to add with a month for a new areas. 
 
-# 2. Plagable system of feedback, survey, review abilities 
+# 2. Plugable system of feedback, survey, review abilities 
 
 1. System remind user to add a review for a meal if it wasn't done before. 
 2. User can read reviews for any meal in the catalog.
