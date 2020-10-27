@@ -24,3 +24,4 @@ There are list of all stackeholders for the _Ordering system_
 | | Ease of configuration and scaling | 
 | Food suppliers | Predicted plan of purchases and delivery | 
 | 3rd party kitchens | Same as for Ghost Kitchen | 
+| PoS Admins | Same as Ocassional Users | 

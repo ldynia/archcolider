@@ -30,8 +30,10 @@ _List of architecture driving requirements (major functional, quality attribute,
 ## 1. System support cash and electronical payments
 
 1. Cash payments supported by _PoS Admin_ and dedicated application for _Ocassional users_ 
-2. Users can add diffent payments methods to the App. 
+AG: 
+2. Users can add diffent payments methods to the App.
 3. New payment method is easy to add with a month for a new areas. 
+4. User can spend virtual funds (coupons and discounts) for payments.
 
 # 2. Plugable system of feedback, survey, review abilities 
 
@@ -44,3 +46,35 @@ _List of architecture driving requirements (major functional, quality attribute,
 # 3. On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying
 
 1. Ghost kitchen can browse and query menu schedule of subscribers 
+2. Ghost kitchen recieve report about consumed meals with possible breakdown by PoS
+
+# 4. Scheduling system for subscribers, to avoid repetetive operations of ordering 
+
+1. Subscriber can form menu for a week, prepaid and set pickup time. 
+2. Subscriber can browse created menu. 
+3. Subscriber can cancel menu and get notification about it. 
+4. Subscriber can reorde the same menu for a previous time period in one click. (Possibly subscriber can select from any previous pre-formed menus)
+
+# 5. Ability to purchase without registering first 
+
+1. _PoS admin_ impersonate a user for a system and make an order from the smart fridge in the local PoS 
+2. Any user can make a purchase and use any payment method supported by PoS 
+ 
+# 6. Notification system to inform user about their orders 
+
+1. User get notification about any significant action that related to actual ordering: payment process (initializing and result), availability of food for pickup, canceling, out of stock situation. 
+2. User can set prefered way of notification: in-app, push, sms, email. 
+
+# 7. Notifications about new loyality programs and coupon 
+
+1. Notification about non-ordering event should be managed separately. 
+2. User can set prefered way of notification: in-app, push, sms, email. 
+3. User have dedicated account with accomulated coupons and bonuses. 
+
+# 8. Secure payments 
+
+
+# 9. Maximizing guarantee of a meal picking up by user
+
+1. User can use registered card to authorize pickup process. 
+2. Pregenerated codes for pickup allows impersonated meal collecting. 
