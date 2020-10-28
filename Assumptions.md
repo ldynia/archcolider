@@ -8,3 +8,4 @@
 ## Ghost Kitchen 
 
 1. Ghost kitchen can provide feedback about order executing, like: accepted, dispatched, can't do, delayed
+2. Ghost kithcen do not work 24/7 and prepare orders recieved at the begining of the working day. 
