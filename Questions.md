@@ -6,6 +6,7 @@
 2. Can subscriber cancel scheduled menu? When it should be accepted? What is the notice period? 
 3. What if subscriber didn't grab daily meal, can it be sold to others? After what time? How does subscriber will be notified about it? 
 4. What if subscriber get sick and can't grab meals for a one\several days?
+5 **NEW** What if subscriber cancel a menu for a week. How this situation should be handled? Refund on card or virtual account?  
 
 ## Ghost Kitchen 
 
