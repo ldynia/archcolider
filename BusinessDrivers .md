@@ -2,15 +2,15 @@
 
 _List of business goals for system’s creation or modification. Presented not in importance order_
 
-1. System support and engage ocassional users to make a purchase to increase users base. Converting Ocassional users to Known users and Subscribers 
-2. System provide rich options for engaging known users and subscribers by different kinds of loyality programs. New options is easy to add. It is increase user satisfaction and a chance of recomendation. 
-3. System provide actial consuming of meals and on-demand requests to support Ghost Kitchen management. 
+1. System support and engage ocassional users to make a purchase to increase users base. Converting Ocassional users to Known users, and Known users to Subscribers .
+2. System provide rich options for engaging known users and subscribers by different kinds of loyality programs. New options are easily added in order to increase user satisfaction and a chance of recomendation. 
+3. System provides information about consumed meals and on-demand requests to support Ghost Kitchen management. 
 4. System should be easy to use for inexperiencied users to increase user base. 
 5. Sustainable usage of service. 
-6. Involve other specialist in health area to increase userbase 
+6. Involve other specialist in health area to increase userbase.
 
 # Significant Architectural Requirements (SAR)
-_List of architecture driving requirements (major functional, quality attribute, and life-cycle requirements)_
+List of architecture driving requirements (major functional, quality attribute, and life-cycle requirements)
 
 | # | Significant Architectural Requitements | From BD | 
 |----|----|----| 
@@ -47,6 +47,7 @@ AG:
 
 1. Ghost kitchen can browse and query menu schedule of subscribers 
 2. Ghost kitchen recieve report about consumed meals with possible breakdown by PoS
+3. Ghost kitchen can filter between subscribed meals and ocassional buying (L.D)
 
 # 4. Scheduling system for subscribers, to avoid repetetive operations of ordering 
 
@@ -54,10 +55,11 @@ AG:
 2. Subscriber can browse created menu. 
 3. Subscriber can cancel menu and get notification about it. 
 4. Subscriber can reorde the same menu for a previous time period in one click. (Possibly subscriber can select from any previous pre-formed menus)
+5. Subscriber can accept or reject recomended meals (L.D)
 
 # 5. Ability to purchase without registering first 
 
-1. _PoS admin_ impersonate a user for a system and make an order from the smart fridge in the local PoS 
+1. _PoS admin_ impersonate system user and make an order from the smart-fridge in the local PoS 
 2. Any user can make a purchase and use any payment method supported by PoS 
  
 # 6. Notification system to inform user about their orders 
@@ -76,5 +78,5 @@ AG:
 
 # 9. Maximizing guarantee of a meal picking up by user
 
-1. User can use registered card to authorize pickup process. 
+1. User can use registered card(s) to authorize pickup process. 
 2. Pregenerated codes for pickup allows impersonated meal collecting. 
