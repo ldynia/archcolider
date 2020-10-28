@@ -25,6 +25,7 @@ Group members:
 * [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
 * [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 * [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
+* [miro](https://miro.com/welcomeonboard/JzeNMo8BXm5oWYOtCLGZFglsv2lyOU8ja11uG8jXcMF6CpJ38sWLggDsPx697Mg4)
 
 # [Context, background and scope](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md) 
 
