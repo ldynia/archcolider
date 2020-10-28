@@ -30,7 +30,6 @@ List of architecture driving requirements (major functional, quality attribute, 
 ## 1. System support cash and electronical payments
 
 1. Cash payments supported by _PoS Admin_ and dedicated application for _Ocassional users_ 
-AG: 
 2. Users can add diffent payments methods to the App.
 3. New payment method is easy to add with a month for a new areas. 
 4. User can spend virtual funds (coupons and discounts) for payments.
@@ -79,4 +78,4 @@ AG:
 ## 9. Maximizing guarantee of a meal picking up by user
 
 1. User can use registered card(s) to authorize pickup process. 
-2. Pregenerated codes for pickup allows impersonated meal collecting. 
+2. Pregenerated codes for pickup allows impersonated meal collecting. (ARD 002)
