@@ -60,7 +60,11 @@ List of architecture driving requirements (major functional, quality attribute, 
 ## 5. Ability to purchase without registering first 
 
 1. _PoS admin_ impersonate system user and make an order from the smart-fridge in the local PoS 
+- _PoS admin_ have personal account and login. It's not generic account for a PoS. (AG)
 2. Any user can make a purchase and use any payment method supported by PoS 
+- In fact, it can be dismissed, as _PoS admin_ enter price value for "loging" purposes. So we don't care at all. (AG)
+3. (crazy idea) Smart-fridges can have a QR code that will navigate for a web-page of a specific fridge, where user can make an order or get info about meals. (not our case, because still pay throught smart-fridge terminal and it out of scope and responsibility) 
+
  
 ## 6. Notification system to inform user about their orders 
 
