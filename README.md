@@ -59,3 +59,10 @@ TODO
 # [Risks and Sensitive Points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md)
 
 Business and technical risks and sensitive points that impacts business processes and supporting technical implementations.
+
+# Notes
+
+28-Oct-2020
+Refer the Business Drivers document, and start write some ADR from SARs(significant Architectural requirements) 
+
+
