@@ -36,6 +36,7 @@ List of architecture driving requirements (major functional, quality attribute, 
 
 ## 2. Plugable system of feedback, survey, review abilities 
 
+0. User can provide a review only for actually used services. I.e. review only for bought meals.
 1. System remind user to add a review for a meal if it wasn't done before. 
 2. User can read reviews for any meal in the catalog.
 3. User can easily provide feedback about any aspect of the service.
