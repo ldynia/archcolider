@@ -54,7 +54,19 @@ Please check the [glossary](https://github.com/ldynia/archcolider/blob/master/Gl
 The list of [Functional Requirements](https://github.com/ldynia/archcolider/blob/master/Functional%20Requirements.md) and [Significant Architectural Requirements](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#significant-architectural-requirements-sar) derrived from [Business Drivers](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#business-drivers-bd). 
 
 # Non-Functional Requirements
-TODO
+
+- Resilient
+- Performance
+- Salability
+- Data Retention
+- Data Integrity
+- Disaster Recovery
+- Extensibility
+- Integrability
+- Fault Tolerance
+- Maintainablity
+- Stability
+- Security
 
 # [Risks and Sensitive Points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md)
 
