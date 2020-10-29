@@ -61,6 +61,10 @@ The list of [Functional Requirements](https://github.com/ldynia/archcolider/blob
 
 List of [ADRs](https://github.com/ldynia/archcolider/tree/master/ADRs) for the porjecs. Alternatives that was reviewed and accepted or rejected. 
 
+# System approach 
+
+Overview of [system apprach]() for first steps of development and strategy for further growing
+
 # Non-Functional Requirements
 
 - Resilient
