@@ -12,15 +12,10 @@ Commong methodology for improving business is to ask for feedback. Surveys are t
 
 ## Decision
 
-Providing support for in app and external surveys, Allowing image upload. 
+We'll provide support for in app and external surveys, allowing image upload. 
 
 ## Consequences
 
-Reviews will encurage users to compose own menus, base on recomendations.
+**Positive:** Invaluable inteligence for improving business. Reviews will encurage users to compose own menus, base on recomendations.
 
-
-**Positive:** Invaluable inteligence for improving business.
-
-**Negative:** Storing of images will increas costs of runing business
-
-**Risk**: 
+**Negative:** Storing of images will increas costs of runing business. Content can be inappropiate.
