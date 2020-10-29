@@ -12,10 +12,11 @@ In order to facilitated decicion making process on which meal to order, a user c
 
 ## Decision
 
-Providing review system for a meals purchased my users.
+We'll provide review system for a meals purchased by users.
 
 ## Consequences
 
-Reviews will encurage users to compose own menus, base on recomendations.
+**Positive:** Reviews will encurage users to compose own menus, base on recomendations.
 
-**Risk**: Content has to be moderated
+**Negative**: Content can be unrpopiated.
+
