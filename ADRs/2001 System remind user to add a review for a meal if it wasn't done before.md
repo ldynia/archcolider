@@ -22,4 +22,4 @@ Various form of feedback will allow user to rate, or write recomendation of a me
 
 **Risk**: Content has to be moderated
 
-**Bonus feature:** Feedbak system can be user not only for a meal review, but as well as a reporting mechanism for other aspects of the app/experience.
+**Bonus feature:** Feedbak system can be user not only for a meal review, but as well as a reporting mechanism for other aspects of the system
