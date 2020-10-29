@@ -2,8 +2,6 @@
 
 Date: 2018-10-05
 
-Business Driver nr: 
-
 ## Status
 
 Accepted
