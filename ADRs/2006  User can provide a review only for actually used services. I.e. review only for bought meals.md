@@ -12,12 +12,8 @@ Ability of reviewing should be provided only after an order has been picked up p
 
 ## Decision
 
-Provided feedback/review fucntionality after order has been picked up.
+We'll provided feedback/review fucntionality after order has been picked up.
 
 ## Consequences
 
 **Positive:** Stoping anonymoous users from [review bombing](https://en.wikipedia.org/wiki/Review_bomb)
-
-**Negative:** 
-
-**Risk**: 
