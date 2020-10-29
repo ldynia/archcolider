@@ -12,7 +12,7 @@ There might be a cases where proximity of "ghost kitchen" and PoS is relecant fo
 
 ## Decision
 
-We will provide ability for "ghost kitchen" to filter meals bease on PoS
+We'll provide ability for "ghost kitchen" to filter meals bease on PoS.
 
 ## Consequences
 
