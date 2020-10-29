@@ -31,9 +31,9 @@ Group members:
 
 A brief description of business background, the scope of the system in the existing environment and out of scope elements. 
 
-# [Constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md)
+# Constraints
 
-Major constraints for the entire system. 
+Major [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) for the entire system. 
 
 # [Stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakeholders.md)
 
@@ -56,6 +56,10 @@ Please check the [glossary](https://github.com/ldynia/archcolider/blob/master/Gl
 # Functional Requirements
 
 The list of [Functional Requirements](https://github.com/ldynia/archcolider/blob/master/Functional%20Requirements.md) and [Significant Architectural Requirements](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#significant-architectural-requirements-sar) derrived from [Business Drivers](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#business-drivers-bd). 
+
+# ARDs 
+
+List of [ADRs](https://github.com/ldynia/archcolider/tree/master/ADRs) for the porjecs. Alternatives that was reviewed and accepted or rejected. 
 
 # Non-Functional Requirements
 
