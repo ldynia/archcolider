@@ -18,8 +18,9 @@ Providing support for in app and external surveys, Allowing image upload.
 
 Reviews will encurage users to compose own menus, base on recomendations.
 
-**Risk**: 
+
+**Positive:** Invaluable inteligence for improving business.
 
 **Negative:** Storing of images will increas costs of runing business
 
-**Positive:** Invaluable inteligence for improving business.
+**Risk**: 
