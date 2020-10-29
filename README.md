@@ -57,7 +57,7 @@ Please check the [glossary](https://github.com/ldynia/archcolider/blob/master/Gl
 
 The list of [Functional Requirements](https://github.com/ldynia/archcolider/blob/master/Functional%20Requirements.md) and [Significant Architectural Requirements](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#significant-architectural-requirements-sar) derrived from [Business Drivers](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#business-drivers-bd). 
 
-# ARDs 
+# ADRs 
 
 List of [ADRs](https://github.com/ldynia/archcolider/tree/master/ADRs) for the porjecs. Alternatives that was reviewed and accepted or rejected. 
 
