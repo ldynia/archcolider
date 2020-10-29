@@ -24,3 +24,5 @@ Pin codes for meals should be formed upfront and delivered early to devices (sma
 **Bonus feature:** it's easier to delegate meal grabbing to other person. 
 
 **Risks:** Someone can be so lucky that can guess a pin code from a first attempt. 
+
+**Arguments:** 8th long digint codes are too long to type! (Lukasz)
