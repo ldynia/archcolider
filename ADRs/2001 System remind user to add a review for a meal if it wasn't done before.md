@@ -1,5 +1,7 @@
 Date: 2020-10-29 
-Busines Driver nr: 2.001 
+
+Busines Driver nr: 2.001
+
 Busines Driver: System remind user to add a review for a meal if it wasn't done before.
 
 ## Status
@@ -20,7 +22,7 @@ System should send reminder to a user to add a review for a meal if it wasn't do
 System will provide reviews written by existign users. This will encurage new users to compose own menus and create user engagement.
 Various form of feedback will allow user to rate, or write recomendation of a meal. 
 
-**Bonus feature:** Feedbak system can be user not only for a meal review, but as well as a reporting mechanism for other aspects of the app/experience.
 **Risk**: Content has to be moderated
+**Bonus feature:** Feedbak system can be user not only for a meal review, but as well as a reporting mechanism for other aspects of the app/experience.
 
 
