@@ -18,12 +18,8 @@ Review is optional!
 
 ## Consequences
 
-Various form of feedback will allow user to rate, or write recomendation of a meal which will crate rich user engagement.
-
 **Positive:** Feedback will encurage users to compose own menus base on reviews. 
 
-**Negative:** 
-
-**Risk**: Content has to be moderated
+**Negative:** Not all feedback can be positive.
 
 **Notes** Feedbak system can be user not only for a meal review, but as well as a reporting mechanism for other aspects of the system
