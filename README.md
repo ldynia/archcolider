@@ -31,6 +31,10 @@ Group members:
 
 A brief description of business background, the scope of the system in the existing environment and out of scope elements. 
 
+# [Constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md)
+
+Major constraints for the entire system. 
+
 # [Stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakeholders.md)
 
 Major stakeholders of _Ordering system_ and their concerns: 
