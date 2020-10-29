@@ -1,6 +1,6 @@
-9.002 Every meal delivery has pick up pin code
-
 Date: 2020-10-28
+
+Business Driver: 9.002 Every meal delivery has pick up pin code
 
 ## Status 
 
@@ -21,6 +21,6 @@ Now the user can grab the meal even if smart-fridge is disconected from the netw
 
 Pin codes for meals should be formed upfront and delivered early to devices (smart-fridge and user-device). Possibly, there might be a mechanism to update those codes with a prepared meal delivery. The pin code should be quite long to lower chance of brute-force attempt.   
 
-Bonus feature: it's easier to delegate meal grabbing to other person. 
+**Bonus feature:** it's easier to delegate meal grabbing to other person. 
 
-Risks: Someone can be so lucky that can guess a pin code from a first attempt. 
+**Risks:** Someone can be so lucky that can guess a pin code from a first attempt. 
