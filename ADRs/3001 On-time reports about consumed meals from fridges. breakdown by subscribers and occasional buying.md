@@ -19,7 +19,3 @@ We will intagrate smart-fridge api with our system.
 ## Consequences
 
 **Positive:** Anticipation of meals for "ghost kitchen"
-
-**Negative:** 
-
-**Risk**: 
