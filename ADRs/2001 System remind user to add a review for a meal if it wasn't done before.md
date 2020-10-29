@@ -1,8 +1,6 @@
 Date: 2020-10-29 
 
-Busines Driver nr: 2.001
-
-Busines Driver: System remind user to add a review for a meal if it wasn't done before.
+Busines Driver nr: 2.001 - System remind user to add a review for a meal if it wasn't done before.
 
 ## Status
 
