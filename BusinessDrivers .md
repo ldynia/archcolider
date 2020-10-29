@@ -47,7 +47,6 @@ List of architecture driving requirements (major functional, quality attribute, 
 
 1. Ghost kitchen can browse and query menu schedule of subscribers 
 2. Ghost kitchen recieve report about consumed meals with possible breakdown by PoS
-3. Ghost kitchen can filter between subscribed meals and ocassional buying (L.D)
 
 ## 4. Scheduling system for subscribers, to avoid repetetive operations of ordering 
 
