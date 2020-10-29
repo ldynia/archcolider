@@ -16,12 +16,12 @@ User can have means to provide feedback about any aspect of the service.
 
 ## Decision
 
-Delivering system that allows user to provide feedback in form of text or images.
+We'll delivering system that allows user to provide feedback in form of text or images.
 
 ## Consequences
 
-Feedback can be user for creating recomendations or improving service itself.
+**Positive:** Feedback can be user for creating recomendations or improving service itself.
 
-**Risk**: Content can be sensitive - censorship 
+**Positive:** Not all feedback can be positive.
 
-**Note**: System must store images.
+**Note**: System must/might store images - (base on implementation)
