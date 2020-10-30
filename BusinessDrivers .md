@@ -56,7 +56,7 @@ List of architecture driving requirements (major functional, quality attribute, 
 4. Subscriber can reorde the same menu for a previous time period in one click. (Possibly subscriber can select from any previous pre-formed menus)
 5. Subscriber can accept or reject recomended meals (L.D)
 
-## 5. Ability to purchase without registering first 
+## 5. Purchase system - Ability to purchase without registering first.
 
 1. _PoS admin_ impersonate system user and make an order from the smart-fridge in the local PoS 
 - _PoS admin_ have personal account and login. It's not generic account for a PoS. (AG)
@@ -65,12 +65,12 @@ List of architecture driving requirements (major functional, quality attribute, 
 3. (crazy idea) Smart-fridges can have a QR code that will navigate for a web-page of a specific fridge, where user can make an order or get info about meals. (not our case, because still pay throught smart-fridge terminal and it out of scope and responsibility) 
 
  
-## 6. Notification system to inform user about their orders 
+## 6. Orders system - Notification system to inform user about their orders. 
 
 1. User get notification about any significant action that related to actual ordering: payment process (initializing and result), availability of food for pickup, canceling, out of stock situation. 
 2. User can set prefered way of notification: in-app, push, sms, email. 
 
-## 7. Notifications about new loyality programs and coupon 
+## 7. Loyality system - Notifications about new loyality programs and coupon.
 
 1. Notification about non-ordering event should be managed separately. 
 2. User can set prefered way of notification: in-app, push, sms, email. 
