@@ -14,7 +14,7 @@ Business would like to obtaing feedbacks on its service in order to imporove it.
 ## Decision
 
 We'll create a feedback system that will allow users to provide feedback about orders and service.
-We'll incorporate feedback system with 3rd parties who specilize in feedback aquisitions such surveys, google surveys, etc..
+We'll incorporate feedback system with 3rd parties who specilize in feedback aquisitions such survey monkey, google surveys, etc..
 We'll allo user to make pictures of picked meal and allow them to write a review.
 
 ## Consequences
