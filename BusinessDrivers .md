@@ -27,14 +27,14 @@ List of architecture driving requirements (major functional, quality attribute, 
 
 # Detalization of SARs 
 
-## 1. System support cash and electronical payments
+## 1. System support cash and electronical payments.
 
 1. Cash payments supported by _PoS Admin_ and dedicated application for _Ocassional users_ 
 2. Users can add diffent payments methods to the App.
 3. New payment method is easy to add with a month for a new areas. 
 4. User can spend virtual funds (coupons and discounts) for payments.
 
-## 2. Plugable system of feedback, survey, review abilities 
+## 2. Feedback System - Plugable system of feedback, survey, review abilities 
 
 1. System remind user to add a review for a meal if it wasn't done before. 
 2. User can read reviews for any meal in the catalog.
@@ -43,12 +43,12 @@ List of architecture driving requirements (major functional, quality attribute, 
 5. Support for in app and external surveys. 
 6. User can provide a review only for actually used services. I.e. review only for bought meals.
 
-## 3. On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying
+## 3. Reportin System - On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying
 
 1. Ghost kitchen can browse and query menu schedule of subscribers 
 2. Ghost kitchen recieve report about consumed meals with possible breakdown by PoS
 
-## 4. Scheduling system for subscribers, to avoid repetetive operations of ordering 
+## 4. Scheduling system - for subscribers, to avoid repetetive operations of ordering 
 
 1. Subscriber can form menu for a week, prepaid and set pickup time. 
 2. Subscriber can browse created menu. 
