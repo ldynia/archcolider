@@ -43,7 +43,7 @@ List of architecture driving requirements (major functional, quality attribute, 
 5. Support for in app and external surveys. 
 6. User can provide a review only for actually used services. I.e. review only for bought meals.
 
-## 3. Reportin System - On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying
+## 3. Reporting System - On-time reports about consumed meals from fridges. Brakedown by subscribers and ocassional buying
 
 1. Ghost kitchen can browse and query menu schedule of subscribers 
 2. Ghost kitchen recieve report about consumed meals with possible breakdown by PoS
