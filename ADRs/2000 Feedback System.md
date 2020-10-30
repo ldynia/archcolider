@@ -20,6 +20,7 @@ We'll allo user to make pictures of picked meal and allow them to write a review
 ## Consequences
 
 **Positive:** Reviews will encurage users to compose own menus, base on recomendations. Ghost kitchen can make even better food.
+Incorporating 3rd parties for feedback aquisitoin would offload neccessery work to be made.
 
 **Negative**: Content can be voulgar.
 
