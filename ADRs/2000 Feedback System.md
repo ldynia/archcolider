@@ -8,19 +8,19 @@ Proposed (Lukasz)
 
 ## Context
 
-A user would kike to read or write a review for a meal that he has order. Ghost kitchen would like to get feedback on meal that it prepears. 
-Business would like to obtaing various feedbacks in order to imporove its service.
+A user would kike to read or write a review for a meal that he has order. Ghost kitchen would like to get feedback on meal that it prepared. 
+Business would like to obtaing feedbacks on its service in order to imporove it.
 
 ## Decision
 
-We'll create a feedback system that will allow users to provide feedback.
-We'll incorporate feedback system with 3rd party services who specilize in feedback aquisitions, surveys
+We'll create a feedback system that will allow users to provide feedback about orders and service.
+We'll incorporate feedback system with 3rd parties who specilize in feedback aquisitions such surveys, google surveys, etc..
 We'll allo user to make pictures of picked meal and allow them to write a review.
 
 ## Consequences
 
-**Positive:** Reviews will encurage users to compose own menus, base on recomendations.
+**Positive:** Reviews will encurage users to compose own menus, base on recomendations. Ghost kitchen can make even better food.
 
-**Negative**: Content can be unrpopiated.
+**Negative**: Content can be voulgar.
 
-**Neutral:** System will have to store images, therfore increasen the costs of businesss operations.
+**Neutral:** System will have to store images, therfore increasen costs of businesss operations.
