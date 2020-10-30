@@ -86,7 +86,9 @@ Business and technical risks and sensitive points that impacts business processe
 
 # Notes
 
-**28-Oct-2020** Refer the Business Drivers document, and start write some ADR from SARs(significant Architectural requirements) - Next Meeting Delivery.
+**28-Oct-2020** 
+
+Refer the Business Drivers document, and start write some ADR from SARs(significant Architectural requirements) - Next Meeting Delivery.
 
 **29-Oct-2020** 
 
