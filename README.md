@@ -27,17 +27,17 @@ Group members:
 * [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 * [miro](https://miro.com/welcomeonboard/JzeNMo8BXm5oWYOtCLGZFglsv2lyOU8ja11uG8jXcMF6CpJ38sWLggDsPx697Mg4)
 
-# [Context, background and scope](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md) 
+# Context, background and scope 
 
-A brief description of business background, the scope of the system in the existing environment and out of scope elements. 
+A brief description of [business background, the scope](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md#the-business-goal) of the system in the existing environment and [out of scope elements](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md#out-of-scope). 
 
 # Constraints
 
 Major [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) for the entire system. 
 
-# [Stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakeholders.md)
+# Stakeholders
 
-Major stakeholders of _Ordering system_ and their concerns: 
+Major [stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakeholders.md) of _Ordering system_ and their concerns: 
 
 - _Ghost Kitchen_ 
 - _Subscribers_ 
@@ -67,18 +67,7 @@ Overview of [system apprach]() for first steps of development and strategy for f
 
 # Non-Functional Requirements
 
-- Resilient
-- Performance
-- Salability
-- Data Retention
-- Data Integrity
-- Disaster Recovery
-- Extensibility
-- Integrability
-- Fault Tolerance
-- Maintainablity
-- Stability
-- Security
+
 
 # [Risks and Sensitive Points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md)
 
