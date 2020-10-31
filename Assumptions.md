@@ -9,3 +9,8 @@
 
 1. Ghost kitchen can provide feedback about order executing, like: accepted, dispatched, can't do, delayed
 2. Ghost kithcen do not work 24/7 and prepare orders recieved at the begining of the working day. 
+
+## Development team
+
+1. Development team is quite small and proposed solution should enable fast time-to-market and ease of changes 
+2. Development team is cross functional and have experience with major technologies available on the market
