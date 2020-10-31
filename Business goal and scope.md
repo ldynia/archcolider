@@ -2,17 +2,23 @@
 
 *A “ghost kitchen” (food preparation and cooking facility set up for the preparation of delivery-only meals.) needs an ordering system to allow users to have visibility of what items are available, purchase, and pick up items at any one of their points of sale / smart-fridge.*
 
-From the business goal definition we can briefly identify following areas of interests (subdomains):
+From the business goal definition we can briefly identify following areas of interests:
 
-**Generic parts:**
-1. Ordering system
-1. Purchasing system
-
-**Context aware:**
-1. Reservation of food
+**Core parts:**
+1. Ordering system - tracking the process of ordering 
+1. Food catalog - availability of items
+1. Reservation of food 
 1. Picking up food
 1. Point Of Sales - integration with ordering system
-1. Food catalog - visibility of items
+1. Promotions and discounts
+
+**Support** 
+1. Feedbacks
+1. User management
+
+**Generic**
+1. Payments 
+1. Notifications
 
 ## Background: 
 
