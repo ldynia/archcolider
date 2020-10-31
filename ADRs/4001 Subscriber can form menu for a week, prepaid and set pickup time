@@ -1,0 +1,21 @@
+Date: 2020-10-31
+
+Status
+
+Proposed	
+
+Context
+
+The Subscriber subsystem is separated from User subsystem and specifically for users who have subscribed for meals for a longer period of time with a designated login/password. 
+Decision
+
+We will build a separate subsystem for subscribers, this subsystem should integrate with entity service providers like facebook login,gmail for sign-in. the susbsystem can have a schedule pick-up time, order menu for a week, or for a month. He will have a unique pin to pick the meal
+
+Consequences
+
+Positive: The user can simply walk-in, press his pin, and pick the meal from fridge, he saves lot of time.
+
+Negative:  The logistics team should or smart fridge should have keep number of required meals in the fridge. (?) , User cannot pick the food at location 1 when he opted for location 2.
+
+Risks: The user may forgot his pin.
+
