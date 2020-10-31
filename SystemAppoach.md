@@ -21,5 +21,5 @@ All part subdomaing should provide rich telemetry of usage to make informative d
 
 ## Strategic domain design 
 
-
+![Strategic Domain Design](https://github.com/ldynia/archcolider/blob/master/img/FF%20System%20-%20Strategic%20Domain%20Design.jpg)
 
