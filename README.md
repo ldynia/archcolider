@@ -67,7 +67,7 @@ Overview of [system apprach]() for first steps of development and strategy for f
 
 # Non-Functional Requirements
 
-
+[Quality attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes)
 
 # [Risks and Sensitive Points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md)
 
