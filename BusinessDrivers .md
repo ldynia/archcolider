@@ -77,7 +77,7 @@ List of architecture driving requirements (major functional, quality attribute, 
 3. User have dedicated account with accomulated coupons and bonuses. 
 
 ## 8. Secure payments 
-
+May not required as this is same as ## 1
 
 ## 9. Maximizing guarantee of a meal picking up by user
 
