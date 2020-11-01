@@ -22,6 +22,10 @@ Important decision here is to isolate communication between internal modules and
 
 ### Log-based communication for information propagation between services 
 
+Communication between services might be implemented in many ways. For service oriented approach there is an anti-pattern that we'd like to avoid: spaghetti with a meat-balls. We'd like to limit direct communication between services in case of updating supporting services like reporting or messaging. In fact, we was inspired by [M.Kleppmann talk](https://martin.kleppmann.com/2015/05/27/logs-for-data-infrastructure.html) about solving complexity with log-based streams. 
+
+The main benefit that every service can consume data on it's own pace independently. It may reflexing requirements for availability and performance for some services, that will also allows to buy cheaper deployment instances for services. 
+
 ![](https://github.com/ldynia/archcolider/blob/master/img/FF_LogBasedStream.PNG)
 
 ### Health checks based on business critical path scenarious 
@@ -30,7 +34,7 @@ Important decision here is to isolate communication between internal modules and
 
 ## Alternatives 
 
-Number of alternatives that was rejected for now. 
+Number of alternatives that were rejected for now. 
 
 ### Microservices from the start 
 
