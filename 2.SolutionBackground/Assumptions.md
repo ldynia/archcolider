@@ -10,7 +10,7 @@
 1. Ghost kitchen can provide feedback about order executing, like: accepted, dispatched, can't do, delayed
 2. Ghost kitchen do not work 24/7 and prepare orders received at the beginning of the working day. 
 3. Ghost kitchen already uses some tracking system that has some form of API that accepts writes.
-4. Inventory updates are not limited by changes in the stock of smart-fridges for a refill.
+4. [Inventory](../Glossary.md) updates are not limited by changes in the stock of smart-fridges for a refill.
 5. Inventory updates can be formed by the user's request for the desired meal. A User can be a Subscriber or a Known user.
 6. Inventory updates created by scheduling system from subscribers menu for a week/month.
 
