@@ -5,4 +5,4 @@
 - [Approach Summary](SystemAppoach.md)
 - [Tradeoffs](Tradeoffs.md)
 - [Risks and Sensitive points](RisksAndSensitivePoints.md)
-- [ADRs](4.ADRs/)
+- [ADRs](../4.ADRs/)
