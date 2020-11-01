@@ -70,7 +70,25 @@ Relation connection between _promotion type_ and _order type_ (and _order state_
 
 ## Component composition and communication 
 
-![Solution overview](../img/FF_Overview.PNG)
+![Solution overview](../img/FF_Overview_v1.PNG)
+
+**Aim for Simplicity**
+
+We'd like to provide initial simplicity for the overall system but that do not close the window for further extraction of services and independent development and deployment.
+
+Grouping functional areas to benefit from ease of development and deployment
+
+**Aim for Modifiability**
+
+The second important part is to provide points of extensions and ease of modifiability for proposed solution. It means subparts can be extracted and extended without heavy refactoring.
+
+### Composition 
+
+- Point of Sale and Front End apps might be a single or two different applications that reuses the same UI elements and logic as it have much in common and opertator of PoS version impesonate other users in the system and follows the same workflow. 
+- Feedback, Loyalty (Promotion/Discount), Menu catalog, Meal pickup - works with order composition and apply different "effects" on it, so for simplicity of development and deployment might be developed as modules of monolith to speed up development. But communictation between modules described in a such way that every module can be extracted as service in short time. Menu Catalog highlighted to show focal point of this composition. 
+- Ordering and Scheduling - serves proper handling of orders and it make sense to implement it as separate subsystem from the very beginning. Ordering here is the focal point as it responsible for the lion share of operations and data consistency. 
+- Purchase subsystem responsible for communication with payment providers or payment systems. 
+
 
 
 
