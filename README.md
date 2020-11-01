@@ -30,6 +30,8 @@ Group members:
 # Solution Structure
 
 Table of content: 
+- [Glossary](Glossary.md)
+- [Questions to System Owner](Questions.md)
 - [Problem Background](1.ProblemBackground/Readme.md)
 	- [System overview](1.ProblemBackground/BusinessGoalAndScope.md)
 	- [Goals and Context](1.ProblemBackground/FunctionalRequirements.md)
