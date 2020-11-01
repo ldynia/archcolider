@@ -8,18 +8,18 @@ Proposed (Lukasz)
 
 ## Context
 
-User should have means to create a menu from a meals that are offered by "ghost kitchen(s)".
+User should have means to create feedback on meal that user picked up.
 
 ## Decision
 
-We wil create a feedback/recomendation system that allows user to rate and review meals. 
+We wil create simple review system that allows user to rate and meals. 
 System will send reminder to a user to create a review for a meal if it wasn't done before. 
 Review is optional!
 
 ## Consequences
 
-**Positive:** Feedback will encurage users to compose own menus base on reviews. 
+**Positive:** Feedback will encurage users to compose own menus base on reviews.
 
 **Negative:** Not all feedback can be positive.
 
-**Notes** Feedbak system can be user not only for a meal review, but as well as a reporting mechanism for other aspects of the system
+**Notes** Feedbak system can be use not only for a meal review, but as well as a reporting mechanism for other aspects of the system
