@@ -5,4 +5,8 @@
     - The second aspect of this trade-off that we can also cache response from the _smart-fridges system_ on the back-end. There is a pretty high level of confidence in cache correctness as all the lion share of orders (in future perspective) will be processed by the _ordering system_ and keep cache in actual state won't be so hard. 
     - By this decision we decrease preassure on the _smart-fridges system_ API, as we can request updates at lower frequence, unless fridges management doesn't provide subscription for updates.   
     
+2. Event sourcing for order management with full history for data integrity and ease of incident investigation over relative/document storages. In this case we trade simplicity and storage space for history and operations visibility. [ADR 009](https://github.com/ldynia/archcolider/blob/master/4.ADRs/009%20Event%20sourcing%20usage.md)
+    - Event sourcing requires deeper understanding about system behaviour and accurate modeling of events that happening in the system. But in our case we can treat it as benefit for developers and BAs to model domain consciously.  
+    - Event sourcing requires additional toolng support that might be developed in-house but better to use available commercial solutions to save time and increase time-to-market rate. 
+    
 
