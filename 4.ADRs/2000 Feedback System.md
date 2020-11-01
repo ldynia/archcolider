@@ -10,6 +10,10 @@ Proposed (Lukasz)
 
 A user would kike to read or write a review for a meal that he has order. Business would like to obtaing feedbacks on its service in order to imporove it.
 
+Three diffrent feedback methods:
+- surveys (ocasional questionaries about general aspects of the app/service)
+- feedback (is an opinion about an order or app/service)
+
 ## Decision
 
 We'll create a feedback system that will allow users to provide feedback about orders and service.
