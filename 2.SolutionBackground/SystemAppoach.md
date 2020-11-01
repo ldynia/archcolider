@@ -105,7 +105,11 @@ The second important part is to provide points of extensions and ease of modifia
 
 ### DataDog 
 
-### Tableau
+### Tableau Vs Power BI tools Vs koolreport
+
+Tableau is preferred , because its easily integratable tool.
+Power BI tools can be used if Business owner has a Microsoft Subscription.
+KoolReport is an intuitive and flexible Open-Source PHP Reporting Framework for faster and easier report delivery.
 
 ## Missed topics 
 
