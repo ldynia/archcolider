@@ -1,10 +1,10 @@
-## Every meal delivery has pick up pin code
+# Every meal delivery has pick up pin code
 
 Date: 2020-10-28
 
 ## Status 
 
-Proposed
+Accepted
 
 ## Context
 
