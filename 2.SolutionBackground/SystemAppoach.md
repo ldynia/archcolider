@@ -10,13 +10,17 @@ The main proposal is to go with a quite big services that will help to develop, 
 
 ### Modularized services 
 
-Important decision here is to isolate communication between internal modules and make it as transparent as possible, pretending that there is the network connection.  
+Important decision here is to isolate communication between internal modules and make it as transparent as possible, pretending that there is the network connection. It also might looks as highly modularized monoliths.   
 
 ![](../img/FF_Modularization.PNG)
 
 ![](../img/FF_ModularizationExtraction.PNG)
 
 ### Event sourcing 
+
+Event sourcing for order state management service (including payment tracker) provide confidence in history of changes for order and how it was paid. Orders by itself sensitive area that requires special attention with changes. Event sourcing helps reconstruct situations that led to error. Also, there is possibility to rebuild stack of events from the beginning with additional adjusting strategy. 
+
+Rebuilding stack of events for domain entities might be handy in case of possible data migrations during active development phase. Not all requirements are known from the very beginning and we still want to have full history that can be used for analysis. 
 
 ![](https://github.com/ldynia/archcolider/blob/master/img/FF_OrdersAndScheduler.PNG)
 
@@ -30,7 +34,20 @@ The main benefit that every service can consume data on it's own pace independen
 
 ### Health checks based on business critical path scenarious 
 
+Monitoring is essential, but hardware\network metrics do not provide information about actual system availability. 
+
+
+
 ### Independent data storage for reporting 
+
+We'd like to secure performance and pressure to operational databases from the very beginning and plan reporting services accordingly. Too often reporting works on the same data storage as operational database. Information policies can dictate to store information for 3-5 and more years, usually it just left in operational database that decrease perfomance and makes migrations very hard. 
+
+In this solution reporting service build it's own data storage with clear separation on operational and archived data to secure reports execution time. Implementation part touches: 
+- data collection from log stream 
+- map events to read-models for reporting engine
+- execution retention policies for stored data
+
+There is no sense to build in-house reporting service and the good option might be Tableau.
 
 ## Alternatives 
 
@@ -88,6 +105,12 @@ The second important part is to provide points of extensions and ease of modifia
 
 ### DataDog 
 
+### Tableau
+
+## Missed topics 
+
+- Security
+- Local compliance with user privacy 
 
 
 
