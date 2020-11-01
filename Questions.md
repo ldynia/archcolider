@@ -25,3 +25,7 @@
 - Smart Fridges Produce item inventory levels and purchases. The smart fridges have a cloud-based management system that handles communication with the Smart Fridge so obtaining this data would be through an API.
 
 Because during the introductory session, it was mentioned that the smart-fridge system totally independent of the required one and already established. So the smart-fridges system provides API for all of them. Could you please clarify it? Do we right, or there some other intentions behind those sentences? 
+
+
+Can the catalog contain meals out of order but with general availability for ordering within some time frame?
+How often data should be updated?
