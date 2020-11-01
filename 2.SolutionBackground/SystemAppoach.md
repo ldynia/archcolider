@@ -36,7 +36,7 @@ The main benefit that every service can consume data on it's own pace independen
 
 Monitoring is essential, but hardware\network metrics do not provide information about actual system availability. 
 
-
+During Quality Atttibute Workshop those scenarios will be identified and listed in correspondent document. Critical path scenarious can be started by supervisor system and check correctness of a result and a time required for processing. Time measurement will show trends if there is a time to think about scaling in the appropriate from (up or out). 
 
 ### Independent data storage for reporting 
 
