@@ -4,8 +4,15 @@
 2. Subscriber's menu can't be prepared. 
 3. Notification about delivery or meal can't be deliverd by prefered channel. 
 4. PoS app disconected from network. 
+    - Option 1: Eventual consistency of operations. Send data when the network will be available. 
+    - Option 2: Pin codes to grab a meal from Subscriber
 5. Smart fridge disconected from network. 
-
+6. User booked a meal, but not picked up. 
+    - Option: prepay to accomplish the operation.
+7. Meal is stuck in the fridge. 
+    - Options: User take a photo and file a complaint.
+8. Can the catalog contain meals out of order but with general availability for ordering within some time frame?
+How often data should be updated?
 
 # Sensitive points 
 
