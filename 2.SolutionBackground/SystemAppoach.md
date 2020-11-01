@@ -99,7 +99,11 @@ The second important part is to provide points of extensions and ease of modifia
 
 ### Event Store 
 
+Event sourcing is a technique that can be implemented with a variety of tools and approaches. Most of them have significant overhead in supporting sync between write and read models. Luckely there is EventStore project that can do boring stuff for us. 
+
 ### Kafka 
+
+The most known and widely supported tool for log streaming. Not much options to choose from, even if it is exceed current need in terms of performance and other provided features. 
 
 ### RabbitMQ
 
