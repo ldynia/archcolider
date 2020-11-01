@@ -1,18 +1,18 @@
 Date: 2020-10-31
 
-Status
+## Status
 
 Proposed	
 
-Context
+## Context
 
 The reviews provided by the users , both occasional and subscribed will be grouped and sent to business owner.
 
-Decision
+## Decision
 
 We will create a feedback system in such a way that the reviews provided by the users will be grouped , derive business value out of it and generate a weekly report to business owner so that he can improve the service.
 
-Consequences
+## Consequences
 
 Positive: The user may happy to see that his feedback taken seriously and have a feel good factor about the company
 
