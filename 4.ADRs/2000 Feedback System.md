@@ -8,8 +8,7 @@ Proposed (Lukasz)
 
 ## Context
 
-A user would kike to read or write a review for a meal that he has order. Ghost kitchen would like to get feedback on meal that it prepared. 
-Business would like to obtaing feedbacks on its service in order to imporove it.
+A user would kike to read or write a review for a meal that he has order. Business would like to obtaing feedbacks on its service in order to imporove it.
 
 ## Decision
 
@@ -19,8 +18,7 @@ We'll allo user to make pictures of picked meal and allow them to write a review
 
 ## Consequences
 
-**Positive:** Reviews will encurage users to compose own menus, base on recomendations. Ghost kitchen can make even better food.
-Incorporating 3rd parties for feedback aquisitoin would offload neccessery work to specilized companies and focuing on core values of the business.
+**Positive:** Reviews will encurage users to compose own menus, base on recomendations. Incorporating 3rd parties for feedback aquisitoin would offload neccessery work to specilized companies and focus food pharmacy on core values of the business.
 
 **Negative**: Content can be voulgar.
 
