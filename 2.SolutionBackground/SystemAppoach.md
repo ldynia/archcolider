@@ -102,8 +102,12 @@ The second important part is to provide points of extensions and ease of modifia
 ### Kafka 
 
 ### RabbitMQ 
+We dedided to user RabbitmMQ as a messenging broker becaouse it allows for at least once message delivery and provides message acknowladgement option.
+Furthermore, it's widely used messaging solution in the IT comunity, with huge suport for various programmoing langugeas and excellent tutorials. Bease on various [messaging tools comparation](http://kuntalganguly.blogspot.com/2014/08/message-queue-comparision.html) it allows for transactions, and build-in message persistance.
 
-### DataDog 
+### DataDog vs Graphana vs ELK
+Datadog is monitoring service for cloud-scale applications, providing monitoring of servers, databases, tools, and services, through a SaaS-based Cheap subscritpion base paltform. Becaouse it's easily integrateable, and for a low monetary value we have huge technical gain in the subject of monitoring and tracking
+we decieded to go with DataDog. Alterantives, that were trying to concieder was Graphana and ELK stack but both of them required maintainance by developers, where DataDog is SaaS-base maintainance in offloaded form developers.
 
 ### Tableau Vs Power BI tools Vs koolreport
 
@@ -115,9 +119,3 @@ KoolReport is an intuitive and flexible Open-Source PHP Reporting Framework for 
 
 - Security
 - Local compliance with user privacy 
-
-
-
-
-
-
