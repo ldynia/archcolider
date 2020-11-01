@@ -37,47 +37,51 @@ List of architecture driving requirements (primary functional, quality attribute
 3. New payment method is easy to add within a man/month for new areas. 
 4. User can spend virtual funds (coupons and discounts) for payments.
 
-## 2. Feedback System - Plugable system of feedback, survey, review abilities 
+## 2. Feedback functionality - Plugable system of feedback, survey, review abilities 
 
 1. System reminds the user to add a review for a meal if it wasn't done before. 
 2. Users can read reviews for any meal in the catalog.
 3. User can easily provide feedback about any aspect of the service.
 4. Reviews grouped and categorized for the Owner.
-5. Support for in App and external surveys. 
+5. Support for in App surveys. 
 6. Users can provide a review only for actually used services. I.e. review only for bought meals.
+7. Ease of introducing engaging activities for owner.
 
-## 3. Reporting System
+## 3. Reporting functionality
 
 1. Ghost kitchen can browse and query the menu schedule of subscribers 
 2. Ghost kitchen receive a report about consumed meals with a possible breakdown by PoS, subscribers, occasional buying
 
-## 4. Scheduling system 
+## 4. Scheduling functionality 
 
 1. Subscriber can form a menu for a week, prepaid, and set a pickup time. 
 2. Subscriber can browse the created menu. 
 3. Subscriber can cancel the menu and get notification about it. 
 4. Subscriber can reorder the same menu for a previous time period in one click. (Possibly subscriber can select from any previous pre-formed menus)
+5. Known user or subscriber can make an order and reserve time for picking up an order. It's treated as scheduled order. 
 
-## 5. Purchase system - Ability to purchase without registering first.
+## 5. Purchase functionality 
 
 1. _PoS admin_ impersonate system user and make an order from the smart-fridge in the local PoS 
 - _PoS admin_ has a personal account and login. It's not a generic account for a PoS. 
 2. Any user can make a purchase and use any payment method supported by PoS 
 - In fact, it can be dismissed, as _PoS admin_ enter price value for "logging" purposes. So we don't care at all. (AG)
 3. (crazy idea) Smart-fridges can have a QR code that will navigate for a web-page of a specific fridge, where user can make an order or get info about meals. (not our case, because still pay through smart-fridge terminal and it out of scope and responsibility) 
-
+4. Purchase can be covered by coupons, bonus points and money (electronic and cash) in any proportion. 
  
-## 6. Orders system - Notification system to inform the user about orders. 
+## 6. Notification functionality
 
 1. Users get notification about any significant action related to actual ordering: payment process (initializing and result), availability of food for pickup, canceling, out of a stock situation. 
 2. User can set preferred way of notification: in-app, push, SMS, email. 
+3. User get notification about significant changes in account state. 
 
-## 7. Loyalty system 
+## 7. Loyalty functionality 
 
 1. Notification about non-ordering events should be managed separately. 
 2. Users can set preferred way of notification: in-app, push, SMS, email. 
 3. User have dedicated account with accumulated coupons and bonuses. 
 4. User can split a payment and cover part of order with coupons\vouchers\bonus points.  
+5. User earn loyalty points for participating in feedback program, planned purchases, ad compaigns, and other acivities suggested by system owner.  
 
 ## 8. Maximizing guarantee of a meal picking up by a user
 
