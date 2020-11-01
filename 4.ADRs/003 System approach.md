@@ -4,7 +4,7 @@ Date: 2020-10-29
 
 ## Status
 
-Proposed 
+Accepted 
 
 ## Context
 
@@ -37,6 +37,8 @@ Key map:
 ## Decision
 
 Based on alternatives in the context of the business needs and a development team we think that micro-kernel approach is the best option for now. At the same time it opens possibility to migrate to microservices when needed. 
+
+Can be converted to higly modularized monolith with characteristics of micro-kernel approach
 
 ## Consequences
 
