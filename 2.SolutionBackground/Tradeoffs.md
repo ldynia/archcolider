@@ -9,4 +9,8 @@
     - Event sourcing requires deeper understanding about system behaviour and accurate modeling of events that happening in the system. But in our case we can treat it as benefit for developers and BAs to model domain consciously.  
     - Event sourcing requires additional toolng support that might be developed in-house but better to use available commercial solutions to save time and increase time-to-market rate. 
     
+3. In many cases we going to trade-off performance on backend for data integrity. We'd like to secure accuracy in handling orders to keep user's satisfaction on high level from our services. 
+
+4. Before greater expansion of the system to other contries it's better to user payment provider service rather than implement communication with Visa/MasterCard/AmEx/JCB/Paypal and so on. In this case we save time and use a single API from payment provider. Later it can be changed, as there is still internal payment service on our side, that can migrate  handling communication with global payment systems step by step when necessary. 
+
 
