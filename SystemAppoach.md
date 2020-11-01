@@ -21,7 +21,7 @@ All subdomains should provide rich telemetry of usage to make an informative dec
 
 ## Strategic domain design 
 
-![Strategic Domain Design](https://github.com/ldynia/archcolider/blob/master/img/FF%20System%20-%20Strategic%20Domain%20Design.jpg)
+![Strategic Domain Design](/img/FF_StrategicDomainDesign.jpg)
 
 In the image above, we present our vision of responsibilities for primary system contexts. 
 
@@ -44,3 +44,7 @@ No or small customization is required for modules that fall into this basket—a
 - Reporting - No need to implement a custom reporting engine as many specialized products can produce all necessary reports based on provided data. -
 - Payments - We will only build a gateway to payment systems or even pick a payment provider to handle all specific communications with payment systems. 
 - Notifications - It's better to use ready-made services that provide it to save time and money required for custom implementation. 
+
+## Conceptual Model
+
+Based on system description and requirements we build the conceptual model of 
