@@ -69,9 +69,9 @@ Overview of [system apprach]() for first steps of development and strategy for f
 
 [Quality attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes)
 
-# [Risks and Sensitive Points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md)
+# Risks and Sensitive Points
 
-Business and technical risks and sensitive points that impacts business processes and supporting technical implementations.
+Business and technical [risks and sensitive points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md) that impacts business processes and supporting technical implementations.
 
 # Notes
 
