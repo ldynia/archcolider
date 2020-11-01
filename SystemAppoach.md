@@ -47,6 +47,26 @@ No or small customization is required for modules that fall into this basket—a
 
 ## Conceptual Model
 
-Based on system description and requirements we build the conceptual model of 
+Based on system description and requirements, we build the conceptual model of the _ordering system_. 
 
 ![Metamodel](/img/FF_Metamodel.png)
+
+_Knowledge level_ describes rules how actors/entities interact with each other 
+_Operational level_ describe main actors/entities involved in main scenarios 
+
+Metamodel covers all existing business scenarios and should be capable of absorbing future ones. Even more, metamodel should encourage to think about new scenarios that open in a metamodel.  
+
+Referring to the diagram: 
+
+_User_ and _User type_ describes possible users that might interact with the system. On meta-level, Subscriber and PoS admin (or even PoS) has no difference. From an operational perspective, they are performing some _actions_ upon _order_. _Action types_ depends on _User type_ and those rules described on the knowledge level. Certainly, there are set of _action types_ that are common for all _user types_, and it might lead us to an idea of command implementation to share possibilities between _user types_ in convenient way. 
+
+_Action types_ situated by _place_ where they performed, and, for instance, _PoS_ might perform some steps implicitly to move an _order_ to desired _order state_. 
+
+_Order_ formed from a _menu_ that provided by _ghost kitchen_. There might be many _ghost kitchens_ with a variety of _menus_ which in turn consist of _meals_ that might be common for many _menus_. For the ease of navigation, management, filtering, and other actions all _meals_ described by its _meal type_. Any _meal_ might be described by a set of _meal types_. 
+
+Depends on _order type_ and _order state_, there is a _scheduling_ strategy that serves reservation and recurrent orders. 
+
+_Promotions_ applied to _menu_ and pointed out to a specific _meal_ or _meal types_. It was made intentionally because if _promotions_ is connected with _meals_, then it hard to set promotions that depend on _ghost kitchen_ (a possible scenario - that promotions provided by a specific _ghost kitchen_, not a platform in general). _Promotion type_ might be based on _feedback type_ as survey, review, but do not constraint to _feedback_, as _promotion_ can be applied to all users. At the same time, a connection between _promotion type_ and _feedback type_ allows the owner to build user engagement programs. 
+
+Relation connection between _promotion type_ and _order type_ (and _order state_) offers a flexible mechanism of possible constraints for participation in promotion campaigns.  
+
