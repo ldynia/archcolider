@@ -1,14 +1,14 @@
 Date: 2020-10-31
 
-Status
+## Status
 
 Proposed
 
-Context
+## Context
 
 Along with the different payment methods, the user can also spend the vouchers,coupons, Loyalpoints and discounts for purchasing the meal.
 
-Decision
+## Decision
 
 Based on the business model, the user receives coupons time to time, Loyalty points when buying a meal and these coupons/LoyaltyPoints can be used to purchase the meal, The payment gateway described in should also accept them as a payment method 
 Consequences
