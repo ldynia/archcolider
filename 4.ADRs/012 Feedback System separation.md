@@ -27,3 +27,7 @@ We'll incorporate survey into feedback in order to take adventages of 3rd partie
 **Negative**: Because, content can be voulgar, admin would have to moderate reviews.
 
 **Neutral:** System will have to store images, therfore increasing costs of businesss operations.
+
+## Reason 
+
+Incorporating 3rd party system might cause security breaches of personal data. Combersome gathering, aggregating and store of results. Requires coordinated way of storing and processing result. Managing permissions to create, add, and stop surveys might be challenging. 
