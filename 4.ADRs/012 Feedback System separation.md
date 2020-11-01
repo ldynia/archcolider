@@ -1,10 +1,10 @@
-Date: 2020-10-29 
+# Feedback System separation
 
-Busines Driver nr: 2.000 - Feedback System
+Date: 2020-10-29 
 
 ## Status
 
-Proposed (Lukasz)
+Declined
 
 ## Context
 
@@ -17,7 +17,6 @@ Two diffrent feedback methods:
 ## Decision
 
 We'll create a simple in app feedback system that will allow users to provide feedback about orders and service.
-System will allow user to include pictures and text in feedback.
 We'll incorporate survey into feedback in order to take adventages of 3rd parties services which specilize in feedback aquisitions such survey monkey, google surveys, etc..
 
 
