@@ -11,7 +11,8 @@ Along with the different payment methods, the user can also spend the vouchers,c
 ## Decision
 
 Based on the business model, the user receives coupons time to time, Loyalty points when buying a meal and these coupons/LoyaltyPoints can be used to purchase the meal, The payment gateway described in should also accept them as a payment method 
-Consequences
+
+## Consequences
 
 Positive: The user may be able to successfully use coupons for discounts and loyaltypoints for purchasing th meal
 
