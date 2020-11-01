@@ -8,9 +8,9 @@
 
 ### Modularized services 
 
-![](img/FF_Modularization.PNG)
+![](../img/FF_Modularization.PNG)
 
-![](img/FF_ModularizationExtraction.PNG)
+![](../img/FF_ModularizationExtraction.PNG)
 
 ### Event sourcing 
 
