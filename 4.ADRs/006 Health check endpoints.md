@@ -1,4 +1,4 @@
-# Health checks for services
+# Dedicated health-check endpoint for services
 
 Date: 2020-10-29
 
