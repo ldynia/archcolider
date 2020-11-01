@@ -1,6 +1,6 @@
-Date: 2020-10-28
+## Every meal delivery has pick up pin code
 
-Business Driver nr: 9.002 - Every meal delivery has pick up pin code
+Date: 2020-10-28
 
 ## Status 
 
@@ -25,4 +25,4 @@ Pin codes for meals should be formed upfront and delivered early to devices (sma
 
 **Risks:** Someone can be so lucky that can guess a pin code from a first attempt. 
 
-**Arguments:** 8th long digint codes are too long to type! (Lukasz)
+**Arguments:** 8th long digint codes are too long to type! 
