@@ -49,7 +49,7 @@ No or small customization is required for modules that fall into this basket—a
 
 Based on system description and requirements, we build the conceptual model of the _ordering system_. 
 
-![Metamodel](/img/FF_Metamodel.png)
+![Metamodel](/img/FF_Metamodel_v1.png)
 
 _Knowledge level_ describes rules how actors/entities interact with each other 
 _Operational level_ describe main actors/entities involved in main scenarios 
