@@ -13,3 +13,8 @@
 - **Kiosk Mgmt system** - system responsible for communicatation and managing stock items in smart-fridges. 
 - **Ghost Kitchen** - system responsible for orders execution and food refilment. https://en.wikipedia.org/wiki/Ghost_kitchen 
 - **User App** - web or mobile application for users. Front-end for the _Ordering system_. 
+
+## Terms 
+
+- **Inventory update** - information for a Ghost Kitchen about required meals. 
+
