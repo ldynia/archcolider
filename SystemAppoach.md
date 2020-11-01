@@ -48,3 +48,5 @@ No or small customization is required for modules that fall into this basket—a
 ## Conceptual Model
 
 Based on system description and requirements we build the conceptual model of 
+
+![Metamodel](/img/FF_Metamodel.jpg)
