@@ -33,7 +33,7 @@ A brief description of [business background, the scope](https://github.com/ldyni
 
 # Constraints
 
-Major [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) for the entire system. 
+Major [assumptions](Assumptions.md) [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) for the entire system. 
 
 # Stakeholders
 
