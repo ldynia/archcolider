@@ -29,7 +29,7 @@ Group members:
 
 # Context, background and scope 
 
-A brief description of [business background, the scope](Business%20goal%20and%20scope.md#the-business-goal) of the system in the existing environment and [out of scope elements](Business%20goal%20and%20scope.md#out-of-scope). 
+A brief description of [business background, the scope](Business%20goal%20and%20scope.md#the-business-goal) of the system in the existing environment and [out of scope elements](Business%20goal%20and%20scope.md#out-of-scope). In this section we tried to group functional requirement into initial groups, document metrics provided and define out of scope items early. 
 
 # Constraints
 
