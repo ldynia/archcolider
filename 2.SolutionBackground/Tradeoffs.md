@@ -11,6 +11,6 @@
     
 3. In many cases we going to trade-off performance on backend for data integrity. We'd like to secure accuracy in handling orders to keep user's satisfaction on high level from our services. 
 
-4. Before greater expansion of the system to other contries it's better to user payment provider service rather than implement communication with Visa/MasterCard/AmEx/JCB/Paypal and so on. In this case we save time and use a single API from payment provider. Later it can be changed, as there is still internal payment service on our side, that can migrate  handling communication with global payment systems step by step when necessary. 
+4. Before greater expansion of the system to other contries it's better to use a payment provider service rather than implement communication with Visa/MasterCard/AmEx/JCB/Paypal and so on. In this case we save time and use a single API from payment provider. Later it can be changed, as there is still internal payment service on our side, that can migrate  handling communication with global payment systems step by step when necessary. 
 
 
