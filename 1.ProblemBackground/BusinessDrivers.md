@@ -46,12 +46,12 @@ List of architecture driving requirements (primary functional, quality attribute
 5. Support for in App and external surveys. 
 6. Users can provide a review only for actually used services. I.e. review only for bought meals.
 
-## 3. Reporting System - On-time reports about consumed meals from fridges. Breakdown by subscribers and occasional buying
+## 3. Reporting System
 
 1. Ghost kitchen can browse and query the menu schedule of subscribers 
-2. Ghost kitchen receive a report about consumed meals with a possible breakdown by PoS
+2. Ghost kitchen receive a report about consumed meals with a possible breakdown by PoS, subscribers, occasional buying
 
-## 4. Scheduling system - for subscribers, to avoid repetitive operations of ordering 
+## 4. Scheduling system 
 
 1. Subscriber can form a menu for a week, prepaid, and set a pickup time. 
 2. Subscriber can browse the created menu. 
@@ -72,16 +72,14 @@ List of architecture driving requirements (primary functional, quality attribute
 1. Users get notification about any significant action related to actual ordering: payment process (initializing and result), availability of food for pickup, canceling, out of a stock situation. 
 2. User can set preferred way of notification: in-app, push, SMS, email. 
 
-## 7. Loyalty system - Notifications about new loyalty programs and coupons.
+## 7. Loyalty system 
 
 1. Notification about non-ordering events should be managed separately. 
 2. Users can set preferred way of notification: in-app, push, SMS, email. 
 3. User have dedicated account with accumulated coupons and bonuses. 
+4. User can split a payment and cover part of order with coupons\vouchers\bonus points.  
 
-## 8. Secure payments 
-May not required as this is the same as ## 1
-
-## 9. Maximizing guarantee of a meal picking up by a user
+## 8. Maximizing guarantee of a meal picking up by a user
 
 1. Users can use a registered card(s) to authorize the pickup process. 
 2. Pregenerated codes for pickup allows impersonated meal collecting. (ARD 002)
