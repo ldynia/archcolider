@@ -99,7 +99,7 @@ The second important part is to provide points of extensions and ease of modifia
 
 ### Event Store 
 
-Event sourcing is a technique that can be implemented with a variety of tools and approaches. Most of them have significant overhead in supporting sync between write and read models. Luckely there is EventStore project that can do boring stuff for us. 
+Event sourcing is a technique that can be implemented with a variety of tools and approaches. Most of them have significant overhead in supporting sync between write and read models. Luckely there is EventStore project that can do boring stuff for us. We can start with OSS version and migrate then to SaaS. [ADR 009](https://github.com/ldynia/archcolider/blob/master/4.ADRs/009%20Event%20sourcing%20usage.md)
 
 ### Kafka 
 
