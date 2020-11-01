@@ -27,51 +27,25 @@ Group members:
 * [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 * [miro](https://miro.com/welcomeonboard/JzeNMo8BXm5oWYOtCLGZFglsv2lyOU8ja11uG8jXcMF6CpJ38sWLggDsPx697Mg4)
 
-# Context, background and scope 
+# Solution Structure
 
-A brief description of [business background, the scope](Business%20goal%20and%20scope.md#the-business-goal) of the system in the existing environment and [out of scope elements](Business%20goal%20and%20scope.md#out-of-scope). In this section we tried to group functional requirement into initial groups, document metrics provided and define out of scope items early. 
+Table of content: 
+- [Problem Background](1.ProblemBackground/Readme.md)
+	- [System overview](1.ProblemBackground/BusinessGoalAndScope.md)
+	- [Goals and Context](1.ProblemBackground/FunctionalRequirements.md)
+	- [Constraints](1.ProblemBackground/Constraints.md)
+	- [Stakeholder](1.ProblemBackground/Stakeholders.md)
+	- [Significant Driving Requirements](1.ProblemBackground/BusinessDrivers.md)
+- [Solution Background](2.SolutionBackground/Readme.md)
+	- [Solution Overview]()
+	- [Assumptions](2.SolutionBackground/Assumptions.md)
+	- [Approach Summary](2.SolutionBackground/SystemApproach.md)
+	- [Analysis Results]()
+	- [Tradeoffs]()
+	- [Risks and Sensitive points](2.SolutionBackground/RisksAndSensitivePoints.md)
+	- [ADRs](4.ADRs/)
+- [Views and Perspectives](3.ViewsAndPerspectives/Readme.md)
 
-# Constraints
-
-Major [assumptions](Assumptions.md) and [constraints](Constraints.md) for the entire system. 
-
-# Stakeholders
-
-Major [stakeholders](Stakeholders.md) of _Ordering system_ and their concerns: 
-
-- _Ghost Kitchen_ 
-- _Subscribers_ 
-- _Known users_ 
-- _Ocassional users_ 
-- Owner of the business  
-- Nutritioninst 
-- Developers 
-- Admins 
-- Food suppliers 
-- 3rd party kitchens 
-- _PoS admins_ 
-
-Please check the [glossary](Glossary.md) for selected terms.
-
-# Functional Requirements
-
-The list of [Functional Requirements](Functional%20Requirements.md) and [Significant Architectural Requirements](BusinessDrivers%20.md#significant-architectural-requirements-sar) derrived from [Business Drivers](BusinessDrivers%20.md#business-drivers-bd). 
-
-# ADRs 
-
-List of [ADRs](https://github.com/ldynia/archcolider/tree/master/ADRs) for the porjecs. Alternatives that was reviewed and accepted or rejected. 
-
-# System approach 
-
-Overview of [system apprach](SystemAppoach.md) for first steps of development and strategy for further growing.
-
-# Non-Functional Requirements
-
-[Quality attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes)
-
-# Risks and Sensitive Points
-
-Business and technical [risks and sensitive points](RisksAndSensitivePoints.md) that impacts business processes and supporting technical implementations.
 
 # Notes
 
