@@ -2,11 +2,15 @@
 
 ## Design Desicions 
 
-### Service-based approach 
+### Service-oriented approach 
+
+The main proposal is to go with a quite big services that will help to develop, test, and deploy main logical parts independently. Identified services share common Quality Attributes, so the same set of Tactics can be applied. All those activities pointed to reduce time-to-market. 
 
 ![](https://github.com/ldynia/archcolider/blob/master/img/FF_Overview_v1.PNG)
 
 ### Modularized services 
+
+Important decision here is to isolate communication between internal modules and make it as transparent as possible, pretending that there is the network connection.  
 
 ![](../img/FF_Modularization.PNG)
 
