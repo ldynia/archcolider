@@ -2,37 +2,47 @@
 
 ## Design Desicions 
 
-Service-based approach 
+### Service-based approach 
 
-Modularized services 
+![](https://github.com/ldynia/archcolider/blob/master/img/FF_Overview_v1.PNG)
 
-Event sourcing 
+### Modularized services 
 
-Log-based communication for information propagation between services 
+![](img/FF_Modularization.PNG)
 
-Health checks based on business critical path scenarious 
+![](img/FF_ModularizationExtraction.PNG)
 
-Independent data storage for reporting 
+### Event sourcing 
+
+![](https://github.com/ldynia/archcolider/blob/master/img/FF_OrdersAndScheduler.PNG)
+
+### Log-based communication for information propagation between services 
+
+![](https://github.com/ldynia/archcolider/blob/master/img/FF_LogBasedStream.PNG)
+
+### Health checks based on business critical path scenarious 
+
+### Independent data storage for reporting 
 
 ## Alternatives 
 
-Microservices from the start 
+### Microservices from the start 
 
-Monolith 
-
-
+### Monolith 
 
 ## Composition of components 
 
+
+
 ## COTS 
 
-Event Store 
+### Event Store 
 
-Kafka 
+### Kafka 
 
-RabbitMQ 
+### RabbitMQ 
 
-DataDog 
+### DataDog 
 
 
 
