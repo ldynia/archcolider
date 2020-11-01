@@ -8,7 +8,6 @@ Group name: **ArchColider**
 Group members:
 
 * Andrei
-* Gabriele
 * Han
 * Hemanth
 * Lukasz (Moderator)
