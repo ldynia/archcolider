@@ -56,7 +56,7 @@ Metamodel covers all existing business scenarios and should be capable of absorb
 
 Referring to the diagram: 
 
-_User_ and _User type_ describes possible users that might interact with the system. On meta-level, Subscriber and PoS admin (or even PoS) has no difference. From an operational perspective, they are performing some _actions_ upon _order_. _Action types_ depends on _User type_ and those rules described on the knowledge level. Certainly, there are set of _action types_ that are common for all _user types_, and it might lead us to an idea of command implementation to share possibilities between _user types_ in convenient way. 
+_User_ and _User type_ describes possible users that might interact with the system. On meta-level, Subscriber and PoS admin (or even PoS) has no difference. From an operational perspective, they are performing some _actions_ upon _order_. _Action types_ depends on _User type_ and those rules described on the knowledge level. Certainly, there are set of _action types_ that are common for all _user types_, and it might lead us to an idea of command implementation to share possibilities between _user types_ in a convenient way. 
 
 _Action types_ situated by _place_ where they performed, and, for instance, _PoS_ might perform some steps implicitly to move an _order_ to desired _order state_. 
 
@@ -78,27 +78,27 @@ Relation connection between _promotion type_ and _order type_ (and _order state_
 
 We'd like to provide initial simplicity for the overall system but that do not close the window for further extraction of services and independent development and deployment.
 
-Grouping functional areas to benefit from ease of development and deployment
+Grouping functional areas to benefit from the ease of development and deployment.
 
 **Aim for Modifiability**
 
-The second important part is to provide points of extensions and ease of modifiability for proposed solution. It means subparts can be extracted and extended without heavy refactoring.
+The second important part is to provide points of extensions and ease of modifiability for the proposed solution. It means subparts can be extracted and extended without massive refactoring.
 
 ### Composition 
 
-- Point of Sale and Front End apps might be a single or two different applications that reuses the same UI elements and logic as it have much in common and opertator of PoS version impesonate other users in the system and follows the same workflow. 
-- Feedback, Loyalty (Promotion/Discount), Menu catalog, Meal pickup - works with order composition and apply different "effects" on it, so for simplicity of development and deployment might be developed as modules of monolith to speed up development. But communictation between modules described in a such way that every module can be extracted as service in short time. Menu Catalog highlighted to show focal point of this composition. 
-- Ordering and Scheduling - serves proper handling of orders and it make sense to implement it as separate subsystem from the very beginning. Ordering here is the focal point as it responsible for the lion share of operations and data consistency. 
-- Purchase subsystem responsible for communication with payment providers or payment systems. It act as facade to payments system and handle all nuances of payment system usage. 
-- Reporting - reporing engine and historical data for reports. Reports runs on dedicated historical storage to avoid influence on operational data storages. Also, it allows apply effective strategies for data archiving. 
-- Notifications - facade for notification systems that will be used. For instance, sending notificatons by SMS, emails or in-app push notifications. 
+- Point of Sale and Front End apps might be a single or two different applications that reuse the same UI elements and logic as it has much in common, and operator of PoS version impersonate other users in the system and follows the same workflow. 
+- Feedback, Loyalty (Promotion/Discount), Menu catalog, Meal pickup - works with order composition and apply different "effects" on it, so for simplicity of development and deployment might be developed as modules of a monolith to speed up development. But communication between modules described in such a way that every module can be extracted as a service in short time. Menu Catalog highlighted to show the focal point of this composition. 
+- Ordering and Scheduling - serves proper handling of orders, and it makes sense to implement it as a separate subsystem from the very beginning. Ordering here is the focal point, as it is responsible for the lion share of operations and data consistency. 
+- Purchase subsystem is responsible for communication with payment providers or payment systems. It acts as a facade to the payments system and handles all nuances of payment system usage. 
+- Reporting - reporting engine and historical data for reports. Reports run on dedicated historical storage to avoid influence on operational data storage. Also, it allows for applying effective strategies for data archiving. 
+- Notifications - facade for notification systems that will be used. For instance, sending notifications by SMS, emails or in-app push notifications. 
 - Payment systems, Ghost Kitchen, Smart-Fridge Management - external systems with which the _ordering system_ communicates but have no control. 
 
 ### Communication and security 
 
 - Secured communication channels between all subsystems and modules. 
-- Attribute based access control introduced from the beginning for all modules. 
-- Integration with 3rd party identity providers is optional, but might be handy in terms of user engagement to avoid creating another one account. But an option to create independent account should remain for users who concerned about using accounts from tech giants. 
+- Attribute-based access control introduced from the beginning for all modules. 
+- Integration with 3rd party identity providers is optional but might be handy in terms of user engagement to avoid creating another one account. But an option to create independent account should remain for users who concerned about using accounts from tech giants. 
 
 
 
