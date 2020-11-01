@@ -29,15 +29,15 @@ Group members:
 
 # Context, background and scope 
 
-A brief description of [business background, the scope](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md#the-business-goal) of the system in the existing environment and [out of scope elements](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md#out-of-scope). 
+A brief description of [business background, the scope](Business%20goal%20and%20scope.md#the-business-goal) of the system in the existing environment and [out of scope elements](Business%20goal%20and%20scope.md#out-of-scope). 
 
 # Constraints
 
-Major [assumptions](Assumptions.md) [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) for the entire system. 
+Major [assumptions](Assumptions.md) and [constraints](Constraints.md) for the entire system. 
 
 # Stakeholders
 
-Major [stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakeholders.md) of _Ordering system_ and their concerns: 
+Major [stakeholders](Stakeholders.md) of _Ordering system_ and their concerns: 
 
 - _Ghost Kitchen_ 
 - _Subscribers_ 
@@ -51,11 +51,11 @@ Major [stakeholders](https://github.com/ldynia/archcolider/blob/master/Stakehold
 - 3rd party kitchens 
 - _PoS admins_ 
 
-Please check the [glossary](https://github.com/ldynia/archcolider/blob/master/Glossary.md) for selected terms.
+Please check the [glossary](Glossary.md) for selected terms.
 
 # Functional Requirements
 
-The list of [Functional Requirements](https://github.com/ldynia/archcolider/blob/master/Functional%20Requirements.md) and [Significant Architectural Requirements](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#significant-architectural-requirements-sar) derrived from [Business Drivers](https://github.com/ldynia/archcolider/blob/master/BusinessDrivers%20.md#business-drivers-bd). 
+The list of [Functional Requirements](Functional%20Requirements.md) and [Significant Architectural Requirements](BusinessDrivers%20.md#significant-architectural-requirements-sar) derrived from [Business Drivers](BusinessDrivers%20.md#business-drivers-bd). 
 
 # ADRs 
 
@@ -63,7 +63,7 @@ List of [ADRs](https://github.com/ldynia/archcolider/tree/master/ADRs) for the p
 
 # System approach 
 
-Overview of [system apprach]() for first steps of development and strategy for further growing
+Overview of [system apprach](SystemAppoach.md) for first steps of development and strategy for further growing.
 
 # Non-Functional Requirements
 
@@ -71,7 +71,7 @@ Overview of [system apprach]() for first steps of development and strategy for f
 
 # Risks and Sensitive Points
 
-Business and technical [risks and sensitive points](https://github.com/ldynia/archcolider/blob/master/RisksAndSensitivePoints.md) that impacts business processes and supporting technical implementations.
+Business and technical [risks and sensitive points](RisksAndSensitivePoints.md) that impacts business processes and supporting technical implementations.
 
 # Notes
 
