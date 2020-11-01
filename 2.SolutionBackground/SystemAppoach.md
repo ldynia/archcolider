@@ -26,9 +26,17 @@
 
 ## Alternatives 
 
+Number of alternatives that was rejected for now. 
+
 ### Microservices from the start 
 
+Microservice approach requires a lot of attention to infrastructure, separation of responsibility, preferably stable and known domain model. For the _ordering system_ it's not applicable and developers effort will be wasted for invisible for end users things. 
+
+Microservices should grows naturally as need arise.
+
 ### Monolith 
+
+This approach good for Prove of Concept approach and early stages of startup. Here we can see certain level of maturity, so pure monolith would be oversimplification.
 
 ## Composition of components 
 
