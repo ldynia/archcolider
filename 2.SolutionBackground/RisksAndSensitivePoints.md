@@ -37,6 +37,8 @@
     - Option 1: Back and forward compatibility serialization formats of messages. 
     - Option 2: Keep at least 1 backward compatibility conversion mechanism. API versioning.
     - Option 3: Early negotiation with "sunset" header attribute and alerts for such header.
+7. Mismatch of production and development environment
+    - Option 1: Negotiation of 1:1 problem. I.e. run in dev the same set of infrastructure elements: at least 1 item for purely infrastructure related services (proxies, firewalls, load balancers) and at least 2 instances for business related services (even if in prod there is only one). It help to identify many issues early.  
 
 # Sensitive points 
 
@@ -51,5 +53,12 @@
 ## Technical 
 
 1. Modern cloud scaling technologies allows scaling up for a long time that might postpond decisions about scaling out. 
+    - Business critical path scenario evaluation on production 
+2. Service overloading
+    - Proactive monitoring
+    - Curcit breaker 
+    - Dog Pile protection 
+ 
+    
 
 
