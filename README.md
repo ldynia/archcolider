@@ -62,3 +62,8 @@ Refer the Business Drivers document, and start write some ADR from SARs(signific
 - In-Lieu of the Business, Microkernel Architecture  would be the best suitable model Example of Microkernel architecture would be IDE, Browsers
 - Discussed about the implementation of the system in Cloud
 - With our limited knowledge briefly compared the advantages of disadvantages of AWS and Azure Personal choice Vs Popular choice 
+
+**1-Nov-2020** 
+- Refactoring ADRS
+- Think about tradeoffs
+- Introducing new diagrams in miro

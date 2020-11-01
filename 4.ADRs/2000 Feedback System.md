@@ -23,7 +23,7 @@ We'll incorporate survey into feedback in order to take adventages of 3rd partie
 
 ## Consequences
 
-**Positive:** Reviews will encurage users to compose own menus. Delegating surveys to 3rd parties services would allow food pharmacy to focus on improvment of core business. 
+**Positive:** Reviews will encurage users to compose own menus. Delegating surveys to 3rd parties services would allow food pharmacy to focus on improvment of core business. This decision will create lose coupling of the entities in the system.
 
 **Negative**: Because, content can be voulgar, admin would have to moderate reviews.
 

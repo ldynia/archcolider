@@ -12,7 +12,7 @@ Proposed (Lukasz)
 
 ## Context
 
-Order tracking will be supported by notification methods.
+User shoul be able to track the propagation of events for orders that he created.
 
 ## Decision
 
@@ -20,10 +20,12 @@ We'll provide notifications service that will provide, sms, email, push, in-app 
 We'll provide notifications about payment process (initializing and result)
 We'll provide notifications about availability of food for pickup
 We'll provide notifications about canceling, out of stock situation
+We'll provide allow admin to crate custom notification messages.
+We'll provide user options for disabling notifications.
 
 
 ## Consequences
 
-**Positive:** Transparency and status of the order.
+**Positive:** Createing HA solution for Order availability, Introudcing *messaging* as major protocol for information propagation.  
 
-**Negative:** Being spamed witn notifications.
+**Negative:**
