@@ -72,6 +72,8 @@ Relation connection between _promotion type_ and _order type_ (and _order state_
 
 ![Solution overview](../img/FF_Overview_v1.PNG)
 
+*Gravity centers highlighted*
+
 **Aim for Simplicity**
 
 We'd like to provide initial simplicity for the overall system but that do not close the window for further extraction of services and independent development and deployment.
