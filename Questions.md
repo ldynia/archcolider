@@ -29,3 +29,6 @@ Because during the introductory session, it was mentioned that the smart-fridge 
 
 Can the catalog contain meals out of order but with general availability for ordering within some time frame?
 How often data should be updated?
+
+2. Can the catalog contain meals out of order but with general availability for ordering within some time frame?
+How often data should be updated?
