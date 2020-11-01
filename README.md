@@ -42,7 +42,6 @@ Table of content:
 	- [Solution Overview](2.SolutionBackground/SolutionOverview.md)
 	- [Assumptions](2.SolutionBackground/Assumptions.md)
 	- [Approach Summary](2.SolutionBackground/SystemAppoach.md)
-	- [Analysis Results](2.SolutionBackground/AnalysisResults.md)
 	- [Tradeoffs](2.SolutionBackground/Tradeoffs.md)
 	- [Risks and Sensitive points](2.SolutionBackground/RisksAndSensitivePoints.md)
 	- [ADRs](4.ADRs/)
