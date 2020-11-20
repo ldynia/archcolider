@@ -82,9 +82,9 @@ To check again:
 
 Add: 
 - Map providers integration https://developers.google.com/maps/solutions/store-locator 
-- ADR: Stale data from fridges or kitchen 
-- ADR: Client caching 
-- Risk: SLA with 3rd party kitchens 
+- [ ] ADR: Stale data from fridges or kitchen 
+- [ ] ADR: Client caching 
+- [ ] Risk: SLA with 3rd party kitchens 
 
 
 Presentation plan: 
