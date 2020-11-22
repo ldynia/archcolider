@@ -81,10 +81,14 @@ To check again:
 - Auth models and capabilities 
 
 Add: 
-- Map providers integration https://developers.google.com/maps/solutions/store-locator 
-- [ ] ADR: Stale data from fridges or kitchen 
-- [ ] ADR: Client caching 
+- [ ] Map providers integration https://developers.google.com/maps/solutions/store-locator 
+- ✅ ADR: Stale data from fridges or kitchen 
+- ✅ ADR: Client caching 
 - [ ] Risk: SLA with 3rd party kitchens 
+- [ ] Fitness functions\metrics for architecture 
+- [ ] Failure and retry policies, identify recoverable and unrecoverable situations. How to handle them
+- [ ] Donation concerns: senior sitizens, low-income folks
+
 
 
 Presentation plan: 
