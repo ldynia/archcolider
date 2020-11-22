@@ -87,7 +87,7 @@ Add:
 - [ ] Risk: SLA with 3rd party kitchens 
 - [ ] Fitness functions\metrics for architecture 
 - [ ] Failure and retry policies, identify recoverable and unrecoverable situations. How to handle them
-- [ ] onation concerns: senior sitizens, low-income folks
+- [ ] Donation concerns: senior sitizens, low-income folks
 
 
 
