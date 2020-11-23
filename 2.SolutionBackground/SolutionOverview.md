@@ -9,7 +9,7 @@
 
 ## Style
 
-Based on provided principles, the system should be n-tier with layered approach within modules that secure functionality's extensibility. We can imagine it as a set of micro-kernels for each subdomain that communicates by messages (commands and events). Based on current [business goals](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md) (number of users, functionality current and desired) and [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) the primary implementation style of architecture is **modularized monolith**, with an accent to hight modularity to lower cost of further extractions to independent services. 
+Based on provided principles, the system should be n-tier with layered approach within modules that secure functionality's extensibility. Based on current [business goals](https://github.com/ldynia/archcolider/blob/master/Business%20goal%20and%20scope.md) (number of users, functionality current and desired) and [constraints](https://github.com/ldynia/archcolider/blob/master/Constraints.md) the primary implementation style of architecture is **modularized monolith**, with an accent to hight modularity to lower cost of further extractions to independent services. 
 
 According to declared principles, we propose building systems based on event sourcing and domain-driven design for core components. 
 - Event sourcing helps to trace and to reason about changes in domain models. It's necessary because many externals users are involved, and the system should provide a detailed investigation of every possible complaint from users about decision making, payment process, and overall awareness. 
