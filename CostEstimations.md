@@ -24,6 +24,10 @@ This part only shows infrastructure elements that have costs attached.
 | Application Load Balancer | AWS  | Load balancer for services running inside AWS. |
 | Amazon Cognito | AWS  | Authentication and Authorization provider. |
 | DataDog | DataDog | Metric and Event aggregator |
+| Amazon Streaming | | | 
+
+NOTE: push notifications 
+
 
 ## Cost
 
