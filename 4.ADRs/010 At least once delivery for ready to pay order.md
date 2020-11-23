@@ -1,4 +1,4 @@
-# At least once delivery for ready to pay order
+# At least once delivery for "ready to pay" order
 
 Date: 2020-11-01
 
@@ -8,11 +8,13 @@ Proposed
 
 ## Context
 
-Ready to pay orders should be handled with the special care. We'd like to guarantee "at least once delivery" for each order. This requires support of idempotent changes, or aware of the most recent state for order processing service.    
+"Ready to pay" orders should be handled with the special care. We'd like to guarantee "at least once delivery" for each order. Order payment processing is a business critical scenario, because selling meals is the whole point. In this case there should be a guarantee, that order stored and payment processor can pick the order for execution. 
+
+At the same time it's very important to avoid double payments, because of concurrency issues. When an order with a "Ready to pay" state arrived, in theory in can be processed one or more times, but it should not lead to doubled, tripled and so on charges from a user's account.   
 
 ## Decision
 
-Delivery of "ready to pay" orders performed by RabbitMQ with message acknowledgment option. 
+Delivery of "ready to pay" orders performed by a MessageQueue software with a message acknowledgment option. Additionally, we expect that order comes with the unique id from client devices and at time of processing. During order processing, existense of the order with the same id can be checked and version number should be used for staleness validation. In this case, the event with the same version will be discarded by processing service.    
 
 ## Consequences
 
