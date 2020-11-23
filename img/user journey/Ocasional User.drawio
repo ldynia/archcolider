@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2020-11-23T19:44:07.361Z" agent="5.0 (X11)" etag="rjHfQHWLvV9Lll5lUHCq" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-23T19:54:15.202Z" agent="5.0 (X11)" etag="QZeB986jAcEl9DYJDS3t" version="13.10.0" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1572" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1078" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="77e6c97f196da883-1" value="F" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
+        <mxCell id="77e6c97f196da883-1" value="JOURNEY: Occasional User Buys the Meal" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
           <mxGeometry x="70" y="40" width="1030" height="450" as="geometry">
             <mxRectangle x="70" y="40" width="70" height="20" as="alternateBounds" />
           </mxGeometry>
@@ -122,7 +122,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fcnhsFOALU5Ui2evHua8-1" value="update meals" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="77e6c97f196da883-1" source="QJ3G4-R3qcjC6Z-IzL42-49" target="QJ3G4-R3qcjC6Z-IzL42-29">
+        <mxCell id="fcnhsFOALU5Ui2evHua8-1" value="update meals" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="77e6c97f196da883-1" source="QJ3G4-R3qcjC6Z-IzL42-49" target="QJ3G4-R3qcjC6Z-IzL42-29" edge="1">
           <mxGeometry x="0.2432" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="860" y="440" as="sourcePoint" />
             <mxPoint x="890" y="280" as="targetPoint" />
