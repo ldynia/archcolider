@@ -10,6 +10,12 @@ The following cases represents the most important parts for a early stage of app
 
 Here under client application we understand mobile application and point of sale app, as they behave on conceptual level identically and require the same events and data. 
 
+Why it is important? 
+
+The application is the main communication channel and the process of catalog browsing and purchasing should be fast and reliable from user's perspective. Access to past data related to a user should be smooth as well. 
+
+Slow working application disenurage users from using it and do any purchases as there fear that payment information might be lost, order double charged and so on. 
+
 #### Stakeholders concerns 
 
 | Stakeholder | Conserns | 
@@ -35,13 +41,20 @@ Here under client application we understand mobile application and point of sale
 
 ### Order processing on backend 
 
+Why it is important? 
+
+Order processing (single purchases or scheduler orders) is a money maker part of the system. We'd like to review related parts and identify main moving parts, quaranties, sensitive points and other possible concerns. 
+
+A clear model how it works helps to ease implementation process and address risks (business and techincal) earlier during system design.  
+
+#### Stakeholders concerns 
+
 | Stakeholder | Conserns | 
 |---------|------| 
 | All type of users | Accurate processing with a time fashioned feedback about purchase result | 
 | Ghost kitchen | Information about upcoming orders | 
 | Owner | Analytics about usage patterns | 
 
-#### Stakeholders concerns 
 
 #### Diagrams 
 
@@ -49,21 +62,33 @@ Here under client application we understand mobile application and point of sale
 
 ### Promotional compaigns 
 
+Why it is important? 
+
+The one of business goals is to expand to other areas and convert ocassional users to subscribers. Promotional compaigns used wisely is a great leverage for user base growth and engage users to use application again and again. 
+
+#### Stakeholders concerns 
+
 | Stakeholder | Conserns | 
 |---------|------| 
 | All type of users | Ability to use compaign promotional materials | 
 | Subscribers, Known Users | Information about bonus points and ability to use them | 
 | Owner | Source for analytics about involvment, usage, bonus point spendings | 
 | | Popularity of provided meals | 
-| Admins of promo | Ease of creating and tracking | 
-
-#### Stakeholders concerns 
+| Admins of promo | Ease of creating and tracking compaigns | 
 
 #### Diagrams 
 
 #### Lifetime concerns 
 
-### Amount of meals  
+### Amount of meals sold
+
+Why it is important? 
+
+Blazingly fast application and brilliant promotional compaigns won't help if there is no information about in-stock meals so users could actually benefit from the app and promo. We should strive for providing as actual info about available meals in-stock as possible.  
+
+Ghost kitchen (3rd party as well) could gain information about actually sold and picked up items (the first do not always implies the second). It might help them better plan production plan for the next day or two.  
+
+#### Stakeholders concerns 
 
 | Stakeholder | Conserns | 
 |---------|------| 
@@ -71,8 +96,6 @@ Here under client application we understand mobile application and point of sale
 | Owner | Increase the level of satisfaction for users | 
 | Ghost kitchen | Information about actually sold and dispatched items  | 
 | Developers | Avoid race conditions and unnecessary complexity in data updating |  
-
-#### Stakeholders concerns 
 
 #### Diagrams 
 
