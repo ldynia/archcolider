@@ -11,9 +11,15 @@ Accepted
 Network connection might be lost, when meal delivered to a fridge and a user come to grab it. Then the fridge can't check data of the user online by card swapping, or in-app distance opening. 
 But the fridge have a pin pad keyboard and still have quite sofisticated software and internal memory to process orders. 
 
+Update 2020-11-24: 
+
+We except that every meal has it's own unique id provided by the kitchen, because some meals might be customized from the general catalog. Let's say lactose free lasania should be addressed to a specific user. 
+
+Then, at the purchase or production process we can update user's device with the meal unique id and generate access code based on meal ID. 
+
 ## Decision
 
-Dispatched from a Ghost Kitchen meals, will have a special 8 digit code. 
+Dispatched from a Ghost Kitchen meals, will have a special 6-8 digit code. 
 
 ## Consequences
 
