@@ -38,9 +38,9 @@ We can recommend **Cloudformation** because it has built-in AWS specific feature
 - Manual tweaks to the infrastructure at run-time cause drift.
 
 **Risks:**
-Incorrect policies set on the provisioning role (the role that executes the IaC) can result in escalated privileges on the run-time infrastructure environment. Even though this is not a problem specific to IaC it is, however, more prevalent.
+- Incorrect policies set on the provisioning role (the role that executes the IaC) can result in escalated privileges on the run-time infrastructure environment. Even though this is not a problem specific to IaC it is, however, more prevalent.
 
 **Bonus Features:** 
-Drift detection when manual changes are forced to the infrastructure. You could set up alerts for such a scenario so action can be taken. Furthermore, if you decide to use Cloudformation you could use RemediationConfiguration(s) to take a certain action that can go beyond a simple message. For instance, in the case of the example above (the public IP address being attached to an ENI )
+- Drift detection when manual changes are forced to the infrastructure. You could set up alerts for such a scenario so action can be taken. Furthermore, if you decide to use Cloudformation you could use RemediationConfiguration(s) to take a certain action that can go beyond a simple message. For instance, in the case of the example above (the public IP address being attached to an ENI )
 
-It is reasonably easy to use standard transformations to create derived environments (ie. Development, Test, Production, etc.). This may vary from rather crude XSTL file based solutions to more sophisticated options.
+- It is reasonably easy to use standard transformations to create derived environments (ie. Development, Test, Production, etc.). This may vary from rather crude XSTL file based solutions to more sophisticated options.
