@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-11-23T19:57:04.725Z" agent="5.0 (X11)" etag="ceFwfbdPNtq-pm_oI1Ix" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-24T19:30:18.150Z" agent="5.0 (X11)" etag="H4t0JEK_qnPwlNSM3Bbf" version="13.10.1" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1886" dy="886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1572" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="77e6c97f196da883-1" value="JOURNEY: Subscribed User Cannot Pick Up The Meal" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
-          <mxGeometry x="70" y="40" width="1010" height="480" as="geometry">
+          <mxGeometry x="70" y="40" width="1220" height="480" as="geometry">
             <mxRectangle x="70" y="40" width="70" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -54,7 +54,7 @@
         <mxCell id="SQiz0oExWdAmI7R9zmeA-14" value="Order" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="QJ3G4-R3qcjC6Z-IzL42-34" vertex="1">
           <mxGeometry x="70" y="170" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1iM9lFli84Yw18FCnRLr-1" value="Update number of Orders within the system. " style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="QJ3G4-R3qcjC6Z-IzL42-34" vertex="1">
+        <mxCell id="1iM9lFli84Yw18FCnRLr-1" value="Tracks number of orders within the system. " style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="QJ3G4-R3qcjC6Z-IzL42-34" vertex="1">
           <mxGeometry x="60" y="270" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SQiz0oExWdAmI7R9zmeA-4" value="provide access code" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="77e6c97f196da883-1" source="QJ3G4-R3qcjC6Z-IzL42-1" target="SQiz0oExWdAmI7R9zmeA-3" edge="1">
@@ -91,7 +91,7 @@
             <mxPoint x="800" y="233" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SQiz0oExWdAmI7R9zmeA-17" value="request&amp;nbsp; retype code" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="77e6c97f196da883-1" source="SQiz0oExWdAmI7R9zmeA-3" target="QJ3G4-R3qcjC6Z-IzL42-1" edge="1">
+        <mxCell id="SQiz0oExWdAmI7R9zmeA-17" value="retype code" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="77e6c97f196da883-1" source="SQiz0oExWdAmI7R9zmeA-3" target="QJ3G4-R3qcjC6Z-IzL42-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="260" y="210" as="sourcePoint" />
             <mxPoint x="70" y="177" as="targetPoint" />
@@ -103,6 +103,30 @@
         <mxCell id="SQiz0oExWdAmI7R9zmeA-18" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SQiz0oExWdAmI7R9zmeA-17" vertex="1" connectable="0">
           <mxGeometry x="-0.0393" y="-1" relative="1" as="geometry">
             <mxPoint x="79.2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XHw8EXOY3c_2tKx1OlY4-1" value="Notification System" style="swimlane;html=1;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="60" width="210" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="XHw8EXOY3c_2tKx1OlY4-2" value="Notification" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="XHw8EXOY3c_2tKx1OlY4-1">
+          <mxGeometry x="70" y="170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XHw8EXOY3c_2tKx1OlY4-4" value="Complain approved" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SQiz0oExWdAmI7R9zmeA-14" target="XHw8EXOY3c_2tKx1OlY4-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1120" y="305" as="sourcePoint" />
+            <mxPoint x="1170" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XHw8EXOY3c_2tKx1OlY4-6" value="Notify" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="XHw8EXOY3c_2tKx1OlY4-2" target="QJ3G4-R3qcjC6Z-IzL42-1">
+          <mxGeometry x="-0.9676" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="390" as="sourcePoint" />
+            <mxPoint x="690" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1190" y="380" />
+              <mxPoint x="750" y="380" />
+              <mxPoint x="150" y="380" />
+            </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
