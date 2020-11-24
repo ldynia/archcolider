@@ -1,8 +1,36 @@
 # Information models 
 
+Our proposal for the architecture based on event sourcing, messaging and further decoupling of modules from monoliths. Thus, we don't see a value to provide relational based diagram with entities and links between them. Instead we can provide size estimation for main entities and frequency of events. Based on this information we can calculate required storage space and network bandwith estimation with forecasts for system growth.  
+
 ## Cases 
 
-### Case X 
+### Client application 
+
+Here under client application we understand mobile application and point of sale app, as they behave on conceptual level identically and require the same events and data. 
+
+#### Stakeholders concerns 
+
+| stakeholder | Conserns | 
+|---------|------| 
+| Subscriber | Get information about upcoming order according to a schedule | 
+| | Ability to modify (change\cancel) scheduled menu |
+| Known users | Browse catalog with no delay and see meals availability in fridges for selected area | 
+| | Purchase and reserve meal | 
+|  | Executing purchase with minimum clicks in interface |
+| Ocassional users | Get information about nutrition facts for selected meal | 
+| | Buy selected meal without significant delay waiting data about meal availability\reservation | 
+| Pos Admins | Executing purchase with minimum clicks in interface | 
+
+#### Diagrams 
+
+#### Lifetime concerns 
+
+- **The meal Catalog** lives around 24 hours or less on user's device and then should be forced to update 
+- **Histoy of orders** on local device might live around month to provide ability of fast reordering. Scheduled orders should have the same life span. 
+- **Notifications** about meal ordering lives around 24 hours 
+- **Promo notifications** available during whole compaign or manual deleting.  
+
+### Order information on backend 
 
 #### Stakeholders concerns 
 
@@ -10,7 +38,15 @@
 
 #### Lifetime concerns 
 
-### Case Y
+### Promotional compaigns 
+
+#### Stakeholders concerns 
+
+#### Diagrams 
+
+#### Lifetime concerns 
+
+### Amount of meals  
 
 #### Stakeholders concerns 
 
