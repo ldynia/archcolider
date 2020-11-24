@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-11-23T19:52:23.206Z" agent="5.0 (X11)" etag="jrBp4um06-vUiwtawGxz" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-24T20:32:52.761Z" agent="5.0 (X11)" etag="GQo_tDoji4YYdWPX6ib7" version="13.10.1" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="2219" dy="1042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="77e6c97f196da883-1" value="JOURNEY: Subscribed user makes an order &amp;amp; picks the meal" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
-          <mxGeometry x="70" y="40" width="1650" height="640" as="geometry">
+          <mxGeometry x="70" y="40" width="1900" height="640" as="geometry">
             <mxRectangle x="70" y="40" width="70" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -61,7 +61,7 @@
         <mxCell id="77e6c97f196da883-6" value="Loyalty / Promotion System" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
           <mxGeometry x="650" y="20" width="200" height="620" as="geometry" />
         </mxCell>
-        <mxCell id="QJ3G4-R3qcjC6Z-IzL42-40" value="&lt;div&gt;Apply Discount&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="77e6c97f196da883-6" vertex="1">
+        <mxCell id="QJ3G4-R3qcjC6Z-IzL42-40" value="&lt;div&gt;Discount&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="77e6c97f196da883-6" vertex="1">
           <mxGeometry x="45" y="60" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-7" value="Ghost Kitchen" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
@@ -85,7 +85,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QJ3G4-R3qcjC6Z-IzL42-44" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="77e6c97f196da883-1" source="QJ3G4-R3qcjC6Z-IzL42-40" target="QJ3G4-R3qcjC6Z-IzL42-29" edge="1">
+        <mxCell id="QJ3G4-R3qcjC6Z-IzL42-44" value="apply discount" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="77e6c97f196da883-1" source="QJ3G4-R3qcjC6Z-IzL42-40" target="QJ3G4-R3qcjC6Z-IzL42-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="730" y="190" as="sourcePoint" />
             <mxPoint x="780" y="140" as="targetPoint" />
@@ -169,7 +169,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3VbTc0IpQ69qfJEpZfjk-1" value="&amp;nbsp;" style="endArrow=classic;html=1;entryX=0.005;entryY=0.721;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="77e6c97f196da883-1" source="UEHIZDbfHYOTMN5uZTxE-20" target="QJ3G4-R3qcjC6Z-IzL42-29">
+        <mxCell id="3VbTc0IpQ69qfJEpZfjk-1" value="&amp;nbsp;" style="endArrow=classic;html=1;entryX=0.005;entryY=0.721;entryDx=0;entryDy=0;entryPerimeter=0;" parent="77e6c97f196da883-1" source="UEHIZDbfHYOTMN5uZTxE-20" target="QJ3G4-R3qcjC6Z-IzL42-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1320" y="560" as="sourcePoint" />
             <mxPoint x="1350" y="570" as="targetPoint" />
@@ -202,6 +202,29 @@
             <mxPoint x="1070" y="440" as="sourcePoint" />
             <mxPoint x="1570" y="604" as="targetPoint" />
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LmnIuYkylC_gnHdmOd34-34" value="Notification System" style="swimlane;html=1;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="60" width="250" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="LmnIuYkylC_gnHdmOd34-36" value="Notification" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="LmnIuYkylC_gnHdmOd34-34">
+          <mxGeometry x="85" y="218" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LmnIuYkylC_gnHdmOd34-37" value="" style="endArrow=classic;html=1;exitX=0.985;exitY=0.858;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UEHIZDbfHYOTMN5uZTxE-9" target="LmnIuYkylC_gnHdmOd34-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1600" y="420" as="sourcePoint" />
+            <mxPoint x="1790" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LmnIuYkylC_gnHdmOd34-38" value="send &quot;order accepted&quot; notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LmnIuYkylC_gnHdmOd34-37">
+          <mxGeometry x="0.1153" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LmnIuYkylC_gnHdmOd34-39" value="send &quot;order ready to be picked&quot; notification" style="endArrow=classic;html=1;entryX=0.003;entryY=0.103;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UEHIZDbfHYOTMN5uZTxE-15" target="LmnIuYkylC_gnHdmOd34-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1250" y="300" as="sourcePoint" />
+            <mxPoint x="1300" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
