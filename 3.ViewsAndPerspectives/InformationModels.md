@@ -2,6 +2,8 @@
 
 Our proposal for the architecture based on event sourcing, messaging and further decoupling of modules from monoliths. Thus, we don't see a value to provide relational based diagram with entities and links between them. Instead we can provide size estimation for main entities and frequency of events. Based on this information we can calculate required storage space and network bandwith estimation with forecasts for system growth.  
 
+The following cases represents the most important parts for a early stage of application.  
+
 ## Cases 
 
 ### Client application 
@@ -10,7 +12,7 @@ Here under client application we understand mobile application and point of sale
 
 #### Stakeholders concerns 
 
-| stakeholder | Conserns | 
+| Stakeholder | Conserns | 
 |---------|------| 
 | Subscriber | Get information about upcoming order according to a schedule | 
 | | Ability to modify (change\cancel) scheduled menu |
@@ -20,6 +22,7 @@ Here under client application we understand mobile application and point of sale
 | Ocassional users | Get information about nutrition facts for selected meal | 
 | | Buy selected meal without significant delay waiting data about meal availability\reservation | 
 | Pos Admins | Executing purchase with minimum clicks in interface | 
+| Developers | Data models simplicity | 
 
 #### Diagrams 
 
@@ -30,7 +33,13 @@ Here under client application we understand mobile application and point of sale
 - **Notifications** about meal ordering lives around 24 hours 
 - **Promo notifications** available during whole compaign or manual deleting.  
 
-### Order information on backend 
+### Order processing on backend 
+
+| Stakeholder | Conserns | 
+|---------|------| 
+| All type of users | Accurate processing with a time fashioned feedback about purchase result | 
+| Ghost kitchen | Information about upcoming orders | 
+| Owner | Analytics about usage patterns | 
 
 #### Stakeholders concerns 
 
@@ -40,6 +49,14 @@ Here under client application we understand mobile application and point of sale
 
 ### Promotional compaigns 
 
+| Stakeholder | Conserns | 
+|---------|------| 
+| All type of users | Ability to use compaign promotional materials | 
+| Subscribers, Known Users | Information about bonus points and ability to use them | 
+| Owner | Source for analytics about involvment, usage, bonus point spendings | 
+| | Popularity of provided meals | 
+| Admins of promo | Ease of creating and tracking | 
+
 #### Stakeholders concerns 
 
 #### Diagrams 
@@ -47,6 +64,13 @@ Here under client application we understand mobile application and point of sale
 #### Lifetime concerns 
 
 ### Amount of meals  
+
+| Stakeholder | Conserns | 
+|---------|------| 
+| All type of users | Actual information about available meals to avoid disappointment when after some purchasing steps in the app there is notification about out-of-stock. |
+| Owner | Increase the level of satisfaction for users | 
+| Ghost kitchen | Information about actually sold and dispatched items  | 
+| Developers | Avoid race conditions and unnecessary complexity in data updating |  
 
 #### Stakeholders concerns 
 
