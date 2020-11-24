@@ -10,7 +10,7 @@ The following cases represents the most important parts for a early stage of app
 
 Here under client application we understand mobile application and point of sale app, as they behave on conceptual level identically and require the same events and data. 
 
-Why it is important? 
+_Why is it important?_ 
 
 The application is the main communication channel and the process of catalog browsing and purchasing should be fast and reliable from user's perspective. Access to past data related to a user should be smooth as well. 
 
@@ -41,7 +41,7 @@ Slow working application disenurage users from using it and do any purchases as 
 
 ### Order processing on backend 
 
-Why it is important? 
+_Why is it important?_ 
 
 Order processing (single purchases or scheduler orders) is a money maker part of the system. We'd like to review related parts and identify main moving parts, quaranties, sensitive points and other possible concerns. 
 
@@ -62,7 +62,7 @@ A clear model how it works helps to ease implementation process and address risk
 
 ### Promotional compaigns 
 
-Why it is important? 
+_Why is it important?_
 
 The one of business goals is to expand to other areas and convert ocassional users to subscribers. Promotional compaigns used wisely is a great leverage for user base growth and engage users to use application again and again. 
 
@@ -82,7 +82,7 @@ The one of business goals is to expand to other areas and convert ocassional use
 
 ### Amount of meals sold
 
-Why it is important? 
+_Why is it important?_
 
 Blazingly fast application and brilliant promotional compaigns won't help if there is no information about in-stock meals so users could actually benefit from the app and promo. We should strive for providing as actual info about available meals in-stock as possible.  
 
