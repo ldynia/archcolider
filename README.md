@@ -45,6 +45,11 @@ Table of content:
 	- [Risks and Sensitive points](2.SolutionBackground/RisksAndSensitivePoints.md)
 	- [ADRs](4.ADRs/)
 - [Views and Perspectives](3.ViewsAndPerspectives/Readme.md)
+	- [User Scenarios](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/UserScenariosPerspective.md)
+	- [Informational](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/InformationModels.md) 
+	- [Concurrency](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/Concurrency.md)
+	- [Deployment](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/DeploymentView.md)
+	- [Security](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/Security.md)
 
 
 # Notes
