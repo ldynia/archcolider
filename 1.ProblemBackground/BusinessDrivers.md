@@ -86,4 +86,4 @@ List of architecture driving requirements (primary functional, quality attribute
 ## 8. Maximizing guarantee of a meal picking up by a user
 
 1. Users can use a registered card(s) to authorize the pickup process. 
-2. Pregenerated codes for pickup allows impersonated meal collecting. (ARD 002)
+2. Pregenerated codes for pickup allows impersonated meal collecting. (ADR 002)
