@@ -26,7 +26,7 @@ Here under client application we understand mobile application and point of sale
 #### Lifetime concerns 
 
 - **The meal Catalog** lives around 24 hours or less on user's device and then should be forced to update 
-- **Histoy of orders** on local device might live around month to provide ability of fast reordering. Scheduled orders should have the same life span. 
+- **History of orders** on local device might live around month to provide ability of fast reordering. Scheduled orders should have the same life span. 
 - **Notifications** about meal ordering lives around 24 hours 
 - **Promo notifications** available during whole compaign or manual deleting.  
 
