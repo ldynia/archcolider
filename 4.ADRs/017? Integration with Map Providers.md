@@ -8,7 +8,7 @@ Proposed
 
 ## Context
 
-Application should be integrated with 3rd party geolocation providers to help the user reach the location of the Smart Fridge. Currently, we consider three maps providers Google Maps, OpenStreetMap and Here.com. Google Maps integrates well with mobile and web platforms and provides a rich API as well as well known user interface to operate with. Here.com are the maps created formally by Nokia. Hear.com service is free for up to 250K transactions per month. On the other hand OpenStreetMap are open source and free of charge.
+Application should be integrated with 3rd party geolocation providers to help the user reach the location of the Smart Fridge. Currently, we consider three maps providers Google Maps, OpenStreetMap and Here.com. Google Maps integrates well with mobile and web platforms and provides a rich API as well as well known user interface to operate with. Here.com are the maps created formally by Nokia. Here.com service is free for up to 250K transactions per month. On the other hand OpenStreetMap are open source and free of charge.
 
 ## Decision
 
