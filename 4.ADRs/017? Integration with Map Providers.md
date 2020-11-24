@@ -16,9 +16,9 @@ Based on the business model (as there will be more subscribed users, who knows t
 
 ## Consequences
 
-As OpenStreet map is a open-source there may be chance of limited or no support in future.
+As OpenStreet map is an open-source there may be chance of limited or no support in future.
 Due to the nature of the project, excessive exchange of data through the API is not welcome, and users may get blocked without notice when making too many data requests.
 
 ## Governance
 
-While maintaning the application, there is a need of constant surveillance on the support of maps.
+While maintaining the application, there is a need of constant surveillance on the support of maps.
