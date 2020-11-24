@@ -24,6 +24,11 @@ This part only shows infrastructure elements that have costs attached.
 | Application Load Balancer | AWS  | Load balancer for services running inside AWS. |
 | Amazon Cognito | AWS  | Authentication and Authorization provider. |
 | DataDog | DataDog | Metric and Event aggregator |
+| SNS     | AWS | Notification Service used for push notifications |
+| Cognito | AWS |  |
+| Route 53 | AWS | Certificates (TLS) and DNS routing. |
+| CloudFormation| AWS | Infrastructure as code solution |
+
 
 ## Cost
 
@@ -38,6 +43,6 @@ This part only shows infrastructure elements that have costs attached.
 | Application Load Balancer | | | |
 |DataDog| | | |
 
-
+## Scaling scenarios
 
 
