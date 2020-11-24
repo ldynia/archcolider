@@ -47,7 +47,7 @@ In this solution reporting service build it's own data storage with clear separa
 - map events to read-models for reporting engine
 - execution retention policies for stored data
 
-There is no sense to build in-house reporting service, and the good option might be Tableau.
+There is no sense to build in-house reporting service, and the good option might be Apache Superset.
 
 ## Alternatives 
 
@@ -61,7 +61,7 @@ Microservices should grow naturally as the need arise.
 
 ### Monolith 
 
-This approach is good for Prove of Concept approach and early stages of a startup. Here we can see a certain level of maturity, so pure monolith would be oversimplification.
+This approach is good for Proof of Concept approach and early stages of a startup. Here we can see a certain level of maturity, so pure monolith would be oversimplification.
 
 ## Composition of components 
 
@@ -71,7 +71,7 @@ This approach is good for Prove of Concept approach and early stages of a startu
 
 **Aim for Simplicity**
 
-]We'd like to provide initial simplicity for the overall system but that does not close the window for further extraction of services and independent development and deployment.
+We'd like to provide initial simplicity for the overall system but that does not close the window for further extraction of services and independent development and deployment.
 
 Grouping functional areas to benefit from the ease of development and deployment.
 
