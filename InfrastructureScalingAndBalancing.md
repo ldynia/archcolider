@@ -20,6 +20,7 @@ Metric reporting is crucial to guide your choice of scaling options.
 ![Balancing overview](/img/Balancing-Overview.png)
 Figure 2: Load balancing
 
+> Figure 2 shows instance 1 to instance n. For the purpose of this document we intend this to mean N instances of a particular resource in the _ASG_.
 ### Route 53 DNS
 
 Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. [...] Amazon Route 53 effectively connects user requests to infrastructure running in AWS – such as Amazon EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets – and can also be used to route users to infrastructure outside of AWS. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints.[1](#references)
