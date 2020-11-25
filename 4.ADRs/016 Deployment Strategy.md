@@ -22,5 +22,3 @@ Using micro EC2 instances will keep costs low. Morover, we will use containers (
 **Positive:** Low cost, Low cognitive footprint, Easy maintenance
 
 **Negative:** Vendor lock-in
-
-**Risks:** 
