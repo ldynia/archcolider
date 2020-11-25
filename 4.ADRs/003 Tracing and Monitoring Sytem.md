@@ -35,7 +35,8 @@ Amazon CloudWatch is AWS alerting tool for sending notification base on the seve
 
 ## Decision
 
-Even thought ELK stack or Graphana are the cheapest option for FoodFarmacy to go with, We decided to choose DataDog, because it requires minimal integration and does not required maintainenc -contrarry to ELK Stack or Graphana. The convinience of all-in-one alerting and monitoring tool for $15 USD per month is just to difficult to argue with. 
+Even thought ELK stack or Graphana are the cheapest option for FoodFarmacy to go with, We decided to choose DataDog, because it requires minimal integration and does not require maintenance -contrarry to ELK Stack or Graphana. The convenience of all-in-one alerting and monitoring tool for $15 USD per month is just too difficult to argue with.
 
 ## Consequences
 
+We will have to spend $15 USD and the price might increase in future unlikely it will be significant increase.
