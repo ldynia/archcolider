@@ -1,4 +1,6 @@
-# Cost estimation considerations
+# Cost analysis considerations
+
+https://onedrive.live.com/edit.aspx?resid=91D2A6BED92B69C5!1028185&ithint=file%2cxlsx&authkey=!AOp6NCWeSf64J58
 
 ## Introduction
 Lacking an unlimited amount of money some care should be taken when selecting infrastructure and third party systems that are still to be introduced.
