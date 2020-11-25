@@ -8,17 +8,27 @@ Proposed
 
 ## Context
 
-Application should be integrated with 3rd party geolocation providers to help the user reach the location of the Smart Fridge. Currently, we consider three maps providers Google Maps, OpenStreetMap and Here.com. Google Maps integrates well with mobile and web platforms and provides a rich API as well as well known user interface to operate with. Here.com are the maps created formally by Nokia. Here.com service is free for up to 250K transactions per month. On the other hand OpenStreetMap are open source and free of charge.
+Application should be integrated with 3rd party geolocation providers to help the user reach the location of the Smart Fridge. Currently, we consider below map providers to integrate with our application. 
+
+
+| Provider           | Pricing Criteria                                                          | Pros                 | Links                                         |
+| :------------------|:-------------------------------------------------------------------------:| --------------------:| ---------------------------------------------:|
+| OpenStreet Maps    | Free                                                                      | No-cost, Open-source | [Documentation](https://wiki.openstreetmap.org/wiki/Main_Page)|
+| TomTom             | Free for 2,500 requests daily,$0.42–$0.50 for each subsequent 1000        | Better Navigation    | [Documentation](https://developer.tomtom.com/)               |
+| MapBox             | Free for 50,000 requests daily, $0.50 for each subsequent 1,000           | custom map feautures | [Documentation](https://docs.mapbox.com/)     |
+| Here Maps          | Free for 250,000 requests monthly, $1 for each subsequent 1,000 OR $449 for 1,000,000 requests monthly           | Better visualization  services | [Documentation](https://developer.here.com/pricing)     |
+
+
 
 ## Decision
 
-Based on the business model (as there will be more subscribed users, who knows the location precisely ) we have decided to integrate with OpenStreetMap API as its open-source -there will be no added expenditures for the business.
+Based on the business model and the volume of data now and in near future , as there will be more subscribed users, who knows the location precisely . we have decided to integrate with Here maps as it has good market reach and first 25K requests were free.
 
 ## Consequences
 
-As OpenStreet map is an open-source there may be chance of limited or no support in future.
-Due to the nature of the project, excessive exchange of data through the API is not welcome, and users may get blocked without notice when making too many data requests.
+As of now 250K transactions per month looks decent for the business model , when the business grows, it should be ready to upgrade to premium solution
 
 ## Governance
 
-While maintaining the application, there is a need of constant surveillance on the support of maps.
+While maintaining the application, there is a need of constant surveillance on the number of requests per month to avoid additional expenditure.
+
