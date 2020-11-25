@@ -18,7 +18,7 @@ The ability of the system to reliably control, monitor, and audit who can perfor
 
 
 
-## Checklist for Architecture Definition and furter work 
+## Checklist for Architecture Definition and further work 
 - Have you addressed each threat identified in the threat model to the extent required?
 - Have you used as much third-party security technology as possible?
 - Have you produced an integrated overall design for the security solution?
