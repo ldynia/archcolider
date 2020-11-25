@@ -52,6 +52,16 @@ The Internet Gateway (in the diagram named **igw-1**) is used to allow your rout
 ### Amazon Virtual Private Network
 Any on-premise system that's already in use can be connected to systems within the VPC using a secure virtual private network (VPN) connection. Please note, there is no need to go through the VPN for public actions such as requesting a publicly available REST endpoint on an API. Prefer such public end-point when they are available.
 
+The VPN will connect to a VPC requiring the route table to be set in such a way that communication between the on-premise network and the VPC is possible.
+
+> #### Example
+> Using an on-premise network with CIDR block 192.168.0.0/16 and a VPC with CIDR block 10.0.0.0/16 you would need the following route table entry:
+> | Destination | Target |
+> | --- | --- |
+> | 192.168.0.0/0 | VGW |
+>
+> This example shows only the entry needed to connect to the Virtual Private Gateway. Other entries are not shown.
+
 ## Auto scaling
 ![Auto scaling](/img/infra-auto-scaling.png)
 
