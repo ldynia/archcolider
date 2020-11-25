@@ -23,3 +23,7 @@ Applying such approach will add complexity to communication within one domain be
 Suggested approach will require involving idenitiy service and increase complexity of internal logic withing still monolithic services, but simplify further scaling with dedicated services. 
 
 Some optimization within monolitic modules will be required while modules incorporated. 
+
+## Referance 
+
+[Zero Trust Architecture](https://www.thoughtworks.com/radar/techniques?blipid=202005092)
