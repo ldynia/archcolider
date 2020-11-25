@@ -9,11 +9,11 @@ The ability of the system to reliably control, monitor, and audit who can perfor
 ## Risks 
 
 ## Checklist for Architecture Definition and furter work 
-• Have you addressed each threat identified in the threat model to the extent required?
-• Have you used as much third-party security technology as possible?
-• Have you produced an integrated overall design for the security solution?
-• Have you considered all standard security principles when designing the infrastructure?
-• Is your security infrastructure as simple as possible?
-• Have you defined how to identify and recover from security breaches?
-• Have you applied the results of the Security perspective to all of the affected views?
-• Have external experts reviewed your security design?
+- Have you addressed each threat identified in the threat model to the extent required?
+- Have you used as much third-party security technology as possible?
+- Have you produced an integrated overall design for the security solution?
+- Have you considered all standard security principles when designing the infrastructure?
+- Is your security infrastructure as simple as possible?
+- Have you defined how to identify and recover from security breaches?
+- Have you applied the results of the Security perspective to all of the affected views?
+- Have external experts reviewed your security design?
