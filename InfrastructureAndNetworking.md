@@ -22,7 +22,7 @@ Subnets are simply parts of a network. These subnets are assigned a range of Int
 Public subnets are designed for externally available IP addresses. They tend to be reachable from the broader internet and are allowed egress. (Restriction may apply)
 
 #### Private subnet
-Private subnets are designed for internal IP addresses. They are typically not reachable from the broader internet and are bound to strict egress rules. 
+Private subnets are designed for internal IP addresses. They are typically not reachable from the broader internet and are bound to strict egress rules. The IP addresses in the private subnet are accessible from VPN connected elements. You can restrict this in route tables for the private subnets.
 
 ### Route tables
 Route tables allow you to dictate the flow of network traffic much like you may be used to from a home router.
