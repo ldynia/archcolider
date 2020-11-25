@@ -62,4 +62,25 @@ The VPN will connect to a VPC requiring the route table to be set in such a way 
 >
 > This example shows only the entry needed to connect to the Virtual Private Gateway. Other entries are not shown.
 
+## Evolutionary perspective
+In this paragraph we try to show how a select number of scenarios would be handled if they occur in the future. This document only discusses network related items. For more on scaling see: [Infrastructure scaling and balancing](InfrastructureScalingAndBalancing.md)
 
+### Increase up-time
+**The trade-off:** Increasing theoretical up-time will require an increase in budget.
+To increase up-time we could add an availability zone. For instance, adding _us-east-2c_, will add an additional one. Should you run up against the limit of availability zones for your infrastructure, you could always add a _Region_. VPCs can contain multiple _Availability Zones_ however, you cannot span a VPC over multiple regions. Depending on the way you scale you may need to add VPC peering in order to fluently work with other VPCs. See: [VPC Peering] (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
+
+### General decrease in load
+**The trade-off:** Cost will decrease but theoretical up-time will decrease.
+Should you have multiple VPCs connected by a _VPC Peering Connection_ you should consider removing that first as it weighs more heavily on the budget than _AZs_ do. Removing and _AZ_ completely (and thus all its resources within) you could cut cost and get nearer to the actual load requirements.
+
+### Adding new service areas (locations far outside of Detroit)
+**The trade-off:** Costs increase due to infrastructure replication which in turn allows you to have the infrastructure closer to the customers.
+Using _edge locations_ or new _regions_ you can move your infrastructure and operations closer to the customer. This will likely increase the speed of operations.
+
+A CDN can be introduced if there is a need for quicker delivery of static content.
+
+### Removing new service areas
+**The trade-off:** Costs decrease due to infrastructure removal which in turn may affect operations speed negatively.
+Terminating a serive area that has no other areas that could benefit from having _edge locations_ or _regions_ close to them should lead you to consider terminating them.
+
+> Important: At first glance it may seem very natural to add a new _region_ or _edge location_ when adding a new service area. However, consider that you should only take this course of action when operations slow down in such a way that it has a major negative impact on the customer or other stakeholder. The customer or other stakeholders should represent the monetary value of the cost of the extra infrastructure and other OPEX.
