@@ -45,7 +45,7 @@ _Questions_:
 1. How often central kitchen should get updates? Why it's important - the kitchen by itself does not work 24/7. A kitchen should have refillment of supply
 2. How to provide feedback to the orderer if order can't be fulfilled in the desired time frame? Are there timeframes of delivery in general? 
 
-## Functional areas - preliminary analysis of scenarious
+## Functional areas - preliminary analysis of scenarios
 
 Based on the business goal provided by the owner, we can extract the following functional areas: 
 
@@ -77,12 +77,11 @@ Sunny day scenarios:
 2. Subscriber forming a menu schedule and get a notification when a meal is available each day. The prepared menu is prepaid.  
 
 Extended use cases: 
-1. 
 
 Questions: 
-1. Is there an option for prepayment to book a meal
-2. For how long upfront user can reserve a meal? 
-3. Is Subscriber didn't pick up a meal during a time frame, can it be listed in the shared catalog? 
+1. Is there an option for prepayment to book a meal, say for a week, for a month?
+2. Is there any cutoff time for an user to pick the meal?
+3. If Subscriber didn't pick up a meal during a time frame, can it be listed in the shared catalog? 
 
 Risks: 
 1. User booked a meal, but not picked up. Option: prepay to accomplish the operation. 
@@ -93,16 +92,16 @@ Risks:
 Responsible for "direct" communication with a fridge and how picking up process might be executed. 
 
 Sunny day scenarios: 
-1. Subscriber use stored in the app banking card to authorize and pick up a meal. Kiosk knows the order associated with the user upfront. 
+1. Subscriber use saved card in the app to authorize and pick up a meal. Kiosk knows the order associated with the user upfront. 
 2. Known user selecting a meal from the catalog, use a card for payment, and picking up a meal. 
-3. Occasional user with the help of PoS Seller order a meal. 
-4. Meal arrived in a fridge, and the user gets notification of availability. 
+3. Occasional user will order a meal with the help of PoS Seller.
+4. Meal arrived in a fridge, user gets notification of availability. 
 
 Extended use cases: 
 
 Risks: 
 1. Loss of connection. Options: 1) Generating one-time recovery codes. 2) Swiping the card and getting a meal. 
-2. Meal is stuck in the fridge. Options: 1) User take a photo and file a complaint.
+2. Meal is stuck in the fridge. Options: 1) User take a photo and submit a complaint.
 
 ### Point Of Sales integration
 
@@ -189,6 +188,6 @@ Extended use cases:
 2. Notifications differ by type and have different delivery channels. Types are: order-related, news, feedback request, other. 
 
 Risks: 
-1. Should be there a backup channel? 
+1. Should there be a backup channel? 
 2. Several ways of delivery for the same type? 
 

@@ -1,4 +1,6 @@
-# Cost estimation considerations
+# Cost analysis considerations
+
+https://onedrive.live.com/edit.aspx?resid=91D2A6BED92B69C5!1028185&ithint=file%2cxlsx&authkey=!AOp6NCWeSf64J58
 
 ## Introduction
 Lacking an unlimited amount of money some care should be taken when selecting infrastructure and third party systems that are still to be introduced.
@@ -27,6 +29,7 @@ This part only shows infrastructure elements that have costs attached.
 | SNS     | AWS | Notification Service used for push notifications |
 | Cognito | AWS |  |
 | Route 53 | AWS | Certificates (TLS) and DNS routing. |
+| S3 Bucket| AWS | Storage services |
 | CloudFormation| AWS | Infrastructure as code solution |
 
 
