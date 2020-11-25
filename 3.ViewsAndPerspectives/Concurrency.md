@@ -27,7 +27,7 @@ Users orders subtract from available amount of tracked meals on backend.
 
 Additional concerns raised when we'll have several instances of menu catalog in the system, but we going to address it by splitting menu catalog by geo area. It will help keep catalog small and consistence within area (city).
 
-The main sensitive point comes from concurrent user's updates and we should solve it. One of solutions might be processing orders with actors model. Actor per fridge helps keep integrity of available amount of meals available in certain fridge.
+The main sensitive point comes from concurrent user's updates and we should solve it. One of solutions might be processing orders with actors model. Actor per fridge helps keep integrity of available amount of meals available in certain fridge. 
 
 QUESTIONS:
 
@@ -49,6 +49,8 @@ For instance, substructing meal amount from available stock happens in one actor
 The ordering system in turn checks possibility of payment charging and other things, and do it in the same manner with a help of a message queue system. When purchase confirmed fridge actor can safely ignore the message as deduction happens, or increase value of available meals for a particular fridge. 
 
 Events about purchase published to log-based streaming system and a part that is responsible for providing info about overall availability can listen for events and update internal state accordingly without race conditions and locks. 
+
+Event streaming also implies that every agregate has a version number and it helps us avoid locks (with help of actors) in code or in storage.  
 
 _add image here_
 
