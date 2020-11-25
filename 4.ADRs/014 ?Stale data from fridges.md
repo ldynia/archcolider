@@ -12,6 +12,8 @@ Smart fridges system is an external system that provide vital information for th
 
 There is a risk that at some point in time we can't get actual data (offline, maintenance, throttling, caching, etc) how the *ordering system* should behave?
 
+The occasional user (who pays cash) is a major factor in this issue. Any pre-paid meals that can still be picked up in an offline scenario don't really contribute to the stale data issue as the payment server must already have done its job.
+
 ## Decision
 
 We well cache and maintain data integrity about available stock in fridges on our side. Until we get new data from the *smart fridge system* and adjust our data.
