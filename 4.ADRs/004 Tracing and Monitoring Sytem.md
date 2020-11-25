@@ -10,7 +10,13 @@ Proposed
 
 This is a fast growing system and time fashioned scaling is essential. Also it allows to buy cheaper instances for services without overall degradation. 
 
+Proper and trustwortht monitoring is the basis for making any decision about infrastructure changes (i.e. scaling and extracting services), proper monitoring should support business decisions and should act architecture fitness functions. 
+
+We'd like to use system that helps us get the full picture of correlated business events, connected services and amount of consumed resurces.  
+
 ## Alternatives 
+
+_There should be analysis of the following systems_
 
 ### Datadog
 
@@ -27,11 +33,11 @@ This is a fast growing system and time fashioned scaling is essential. Also it a
 
 ## Decision
 
-We will use Architecture Decision Records, as [described by Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
+
 
 ## Consequences
 
-See Michael Nygard's article, linked above. For a lightweight ADR toolset, see Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools).
+
 
 **Positive:** If any
 
