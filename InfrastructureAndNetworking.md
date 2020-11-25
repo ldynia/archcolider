@@ -18,7 +18,7 @@ Subnets are simply parts of a network. These subnets are assigned a range of Int
 
 > Note: Only IPv4 is considered for both the design and this document.
 
-#### Private subnet
+#### Public subnet
 Public subnets are designed for externally available IP addresses. They tend to be reachable from the broader internet and are allowed egress. (Restriction may apply)
 
 #### Private subnet
