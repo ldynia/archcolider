@@ -29,7 +29,7 @@ This part only shows infrastructure elements that have costs attached.
 | SNS     | AWS | Notification Service used for push notifications |
 | Cognito | AWS |  |
 | Route 53 | AWS | Certificates (TLS) and DNS routing. |
-| S3 Bucket| AWS | Storage services |
+| S3 Buckets| AWS | Storage services |
 | CloudFormation| AWS | Infrastructure as code solution |
 
 
