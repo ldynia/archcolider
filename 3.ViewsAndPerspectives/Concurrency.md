@@ -8,7 +8,7 @@ The Concurrency view is used to describe the system’s concurrency and state-re
 
 ### Meal catalog integrity for available meals
 
-_Add image_
+![](../img/FF_concurency_front.png)
 
 The general sensitive points that we can identify here are:
 - Update local catalog for users
@@ -38,11 +38,13 @@ RISKS:
 - A huge complexity in the system if Smart Fridge system do not sum availability of meals in specific venue. Most probably there is no such feature and fridges just share same location. Then we have to implement it on our own.
 
 
-### Order porecessing on the back end
+### Order porecessing on the back-end
 
 One of concerns that might arise for developers that never worked before with event sourcing system how to handle multiple simultanuously arriving orders? Will be there race conditions, deadlocks and other nasty things? 
 
 Based on proposed architecture approach developers can recognize actor pattern and it means that orders processing one by one passed from one actor to another. Each actor can enrich emited event with additional information and keep internal state in a correct state. 
+
+![](../img/FF_concurency_order_processing.PNG)
 
 For instance, substructing meal amount from available stock happens in one actor and then a new event created and passed to the _Ordering system_. Actor connected with a meal catalog has only one simple responsibility and can processing events very fast. Taking into account nature of the business, we could say that there will be actors per fridge that have logical representation in our system. Users will order meals from a specific fridge, not from some random magic place that has all meals at once. 
 
@@ -52,7 +54,7 @@ Events about purchase published to log-based streaming system and a part that is
 
 Event streaming also implies that every agregate has a version number and it helps us avoid locks (with help of actors) in code or in storage.  
 
-_add image here_
+![](../img/FF_concurency_orders.png)
 
 **Order processing** - sensitive point. We concerned about processing speed as we expect to work with time limitation for order processing. Ordering module process order (could check integrity) and send event to Payment Tracker, that should resend data to external Payment processor. Looks fine for a first iteration as we don't expect thousands of request per minute during first year-two. No need to update any data that used by several services. 
 
