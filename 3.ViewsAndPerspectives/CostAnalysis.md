@@ -38,7 +38,8 @@ This part only shows infrastructure elements that have costs attached.
 | Cognito | AWS |  |
 | Route 53 | AWS | Certificates (TLS) and DNS routing. |
 | S3 Buckets| AWS | Storage services |
-| API Gateway |AWS | Incoming requests |
+| API Gateway | AWS | Incoming requests |
+| Amazon DynamoDB| AWS | NoSQL database |
 | CloudFormation| AWS | Infrastructure as code solution |
 
 
