@@ -6,25 +6,18 @@ https://docs.google.com/document/d/1X_5RRIM_AOfGsOot5gj2QCpt8Jxk6RyYNOC5CJ4gR_U/
 Group name: **ArchColider**
 
 Group members:
-
-* Andrei
-* Han
-* Hemanth
-* Lukasz (Moderator)
-
-### Links
-
-* [Docs](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit)
-* [chicken-truck-detroit-chef-phil-jones](https://eu.freep.com/story/entertainment/dining/mark-kurlyandchik/2020/06/11/chicken-truck-detroit-chef-phil-jones/5342730002/)
-* [bytetechnology](https://bytetechnology.co/#how-it-works) 
-* [toasttab](https://pos.toasttab.com/)
+- Andrei
+- Han
+- Hemanth
+- Lukasz (Moderator)
 
 ### Resources
 
-* [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
-* [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
-* [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
-* [miro](https://miro.com/app/board/o9J_kh8andQ=/) - our diagrams 
+- [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
+- [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
+- [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
+- [miro](https://miro.com/app/board/o9J_kh8andQ=/) - our diagrams
+- [docs](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit)
 
 # Solution Structure
 
@@ -92,9 +85,7 @@ Add:
 - [ ] Risk: SLA with 3rd party kitchens 
 - [ ] Fitness functions\metrics for architecture 
 - [ ] Failure and retry policies, identify recoverable and unrecoverable situations. How to handle them
-- [ ] Donation concerns: senior sitizens, low-income folks
-
-
+- [ ] Donation concerns: senior citizens, low-income folks
 
 Presentation plan: 
 - requirements, what is odd there 
@@ -102,7 +93,8 @@ Presentation plan:
 - conceptual mapping and applicability 
 - quality attributes unique for different parts of the system, no common set 
 
-Links again 
+Links: 
 - Smart Fridge: https://bytetechnology.co/ https://thespoon.tech/byte-foods-opens-up-its-smart-vending-platform-with-byte-technology/
 - Kiosk Point of Sale Software: https://pos.toasttab.com/
 - Cheftec Kitchen Inventory Management Software: https://www.cheftec.com/cheftec-basic
+- [chicken-truck-detroit-chef-phil-jones](https://eu.freep.com/story/entertainment/dining/mark-kurlyandchik/2020/06/11/chicken-truck-detroit-chef-phil-jones/5342730002/)
