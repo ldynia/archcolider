@@ -12,7 +12,7 @@ Assumptions:
 
 ## Projections
 ### Database size
-Below image illustrate few tables/documents that might be used in implementation of the solution -it is of course simplified model. Nevertheless, we can see that generating **100K** record per month will take around **13.2 GiB** of storage space.
+Below image illustrates few tables/documents that might be used in the solution -it's of course simplified model. Nevertheless, we can see that generating **100K** record per month will take around **13.2 GiB** of storage space.
 
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/database_forecast.png)
 
