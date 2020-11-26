@@ -16,6 +16,9 @@ Below image illustrate few tables/documents that might be used in implementation
 
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/database_forecast.png)
 
+### Data transferr size (traffic)
+Traffic forecast was calculated base on the most frequent requests to the application API. Because, Farmacy Food users will have the ability to write feedback and reviews we will provide them the ability to uploading images. We assume that image size will take 4 MiB. Furthermore, we expect that monthly only 10% of the users writes reviews and 5% of users have some problems that leads to sending a feedback. As we can see that for **10K** requests per day (3 millions per month) we'll end up transferring to our application around **165 GiB**, and storing around **163 GiB** of images per month.  
+
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/traffic_forecst.png)
 
 ## Infrastructure
@@ -35,10 +38,13 @@ This part only shows infrastructure elements that have costs attached.
 | Cognito | AWS |  |
 | Route 53 | AWS | Certificates (TLS) and DNS routing. |
 | S3 Buckets| AWS | Storage services |
+| API Gateway |AWS | Incoming requests |
 | CloudFormation| AWS | Infrastructure as code solution |
 
 
 ## Cost
+
+* [DataDog](https://www.datadoghq.com/pricing/) $15 USD
 
 ## Estimated cost bandwith
 
