@@ -61,6 +61,8 @@ On the image above you can see order of events/commands. It represents how a cli
 | Confirm Order by User | User confirms that order if formed and it's sign for a local app, that the order should be sent to the backend for processing | Every time when user finish order composing and going to pay. 1-3 time per day per user (except subscribers) | 0,2 | 
 | Purchase Order | Order system checks that the order can be technicaly delivered (i.e. there are sufficient amount of meals in a fridge) and the payment system should confirm actual purchase |  1-3 time per day per user (except subscribers) | 0,2 | 
 | Order Purchase Confirmed | Self-explained | Once per order normally | 0,1 | 
+| Meal Stock Updated | Catalog informed that the amount of meals changed. | With every confirmed order, and update from SmartFridges | 0,2 | 
+| Order purchased | Confirmation for user and the client app that everything processed sucessfully and fridge, or ghost kitchen informed about user's desire | Once per order normally. | 0,1 | 
 
 TRADE-OFFS:
 - _CatalogUpdated_ might have information about the update, such as a new meal description, ingridients and so on. It seems to be a nice aproach as it "push" model and clients get all necessary information without a need to callback backend for an additional information. From other hand, not all clients might be reachable and process the data. Also there are might be several catalogs and push updates to a client with entire catalog might be not necessary, as client can have preference for a certain meal catalog. The most reasonable way might be just inform about the fact of update, catalog name/id, location. 
