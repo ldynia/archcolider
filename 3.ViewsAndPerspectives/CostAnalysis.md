@@ -3,7 +3,7 @@
 https://onedrive.live.com/edit.aspx?resid=91D2A6BED92B69C5!1028185&ithint=file%2cxlsx&authkey=!AOp6NCWeSf64J58
 
 ## Introduction
-Lacking an unlimited amount of money some care should be taken when selecting infrastructure and third party systems that are still to be introduced.
+While selecting infrastructure and third party systems, we were governed preliminary by costs and limited burget of the client. In rare cases we decided to pick more expensive solutions becaouse convinience of given service exceed its monetary value.
 
 ## Caveat Emptor
 At the time of writing we don't have a good indication of the traffic that should be handled by the infrastructure. However, this could end up causing a significant chunk of the total
