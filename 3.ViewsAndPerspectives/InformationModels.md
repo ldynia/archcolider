@@ -234,6 +234,8 @@ On the diagram represented sunny day scenario in a simplified way to represent h
 
 ## Estimations of usage and costs
 
+_add link here to the page or file_
+
 ## Backup concerns 
 
 - We don't need to backup data for orders in MQ, as the client app should implement a timeout mechanism for sending requests and getting responses. If there is no confirmation about payment acceptance or rejection, a user should be notified and retry should be offered. So for MQ we can rely on the build-in persistence model for the service restart scenario.
