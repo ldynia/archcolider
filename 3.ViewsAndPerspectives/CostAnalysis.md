@@ -8,11 +8,14 @@ While selecting infrastructure and third party systems, we were governed prelimi
 ## Caveat Emptor
 Provided costs are estimated base on the list of assumption mentioned below and projection of user growth and traffic they might generate.
 Assumptions:
-- Making some assumptions about the loads that are to be expected.
-- State a general cost indication that serves as a minimum.
+- We estimate that Farmacy Food will reach 100.000 users
 
 ## Projections
+### Database size
+Below image illustrate few tables/documents that might be used in implementation of the solution -it is of course simplified model. Nevertheless, we can see that generating **100K** record per month will take around **13.2 GiB** of storage space.
+
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/database_forecast.png)
+
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/traffic_forecst.png)
 
 ## Infrastructure
