@@ -139,24 +139,35 @@ The most interesing part here are events from the _System order_. The payment mi
 
 The most important part here is to notify user that purchase failed. Then the backend should not store any operational information about the purchase, only reporting domian will know about failed attempt. User's app can handle _OrderPurchaseRefused_ as signal to retry the last order from the order history that stored locally. User just need to confirm a new attempt. 
 
+SENSITIVE POINTS: 
+- Business should decide about the time when an order can be canceled and what to do with the funds. 
+- If a meal was produced but a user didn't grab it - can it be released to a common catalog as available meal? 
+
 **Preparing scheduled orders for subscribers** 
+
+We want to introduce a scheduled order, that represent user intention about future orders that are already prepaid. Responsibility of _Scheduler_ to find those orders and provide a "report" to Ghost Kitchen about reqired meals to prepare and dispatch. Informing users about meals for prepare and dispatching to fridges support business goal of user engagement and satisfaction. Informed user - happy user. 
 
 ![](../img/IM_preparing_scheduled_orders.PNG)
 
+| Event\Command\Queries | Description | Frequency | Size (kb)  | 
+|-------|-----|--------|---|
+| Get Scheduled Orders | | once per day typically to provide refill info for kitchen or on demand | 2-5 |
+| Prepare Orders | | once per day typically to provide refill info for kitchen or on demand | 20-50 | 
+| OrderDispatched | | 0-2 times per day typically per fridge. Comes form the domain specifics. Delivery won't happen multiple times per day by request. | 10-30 |
+| OrderPlacedInFridge | |  0-2 times per day typically per fridge. Comes form the domain specifics. Delivery won't happen multiple times per day by request. | 10-30 | 
+| OrderAvailableForPicking | | 0-3 times per day typically per user | 0,1 | 
 
+ASSUMPTIONS: 
+- Fridges can report about stock refil. 
+- Meals have unique ids that allows associate a meal to a user. It's necessary for customized meals (for instance, lactose free lasania)
+- Ghost kitchen can report about prepared meals. 
 
 TRADE-OFFS:
 - Scheduled orders might be decomposed and created up front for the whole period of scheduling. Then it will bloat the order base and requires a special mark that can tell us when an order should be executed. It might be simplier in terms of order processing, as all necessary orders are in place. But it brings issues when schedule changes or cancels. Multiple updates requires. On other side, schedule might be a logical structure, according to which every day a new orders will be generated and processed. It will be much easier to handle changes in schedule, but introduce additional rules for payment processing part. Such orders should be marked as pre-paid. Might be solved with a special promo campaign "subscriber". 
 
 #### Lifetime concerns 
 
-We asume that following entities will be presented and stored on user's device. 
-
-- **Order on backend** lives around 10-15 minutes, starting from the moment of reciving _order confirmation_. During timeframe setted business all operations related to purchase should be complited. If not, then reserve meal record dismissed and all concerned parts of the system get notification that order is unsuccessfull.   
-- **History of orders** on local device might live around month to provide ability of fast reordering. Scheduled orders should have the same life span.   
-- **Scheduled orders** presented for "scheduled" timeframe  
-
-
+All events ends up in StoreEvent and will be kept indefinitely, or based on retention policy that might be 1-2 years. But the whole idea of event sourcing is about to keep events forever for further analysis that might be not required at the time of data collection. 
 
 ### Promotional compaigns 
 
@@ -180,7 +191,9 @@ TBD
 
 #### Lifetime concerns 
 
-TBD
+All campaigns kept in the system for at least 1-2 years to review how it worked for sesonal promotions (as example). 
+
+Appliance based on campaign time frames. 
 
 ### Amount of meals sold
 
@@ -203,7 +216,7 @@ Ghost kitchen (3rd party as well) could gain information about actually sold and
 
 **Meal purchase** 
 
-(copy one of previous scenarios)
+(this is the copy one of previous scenarios)
 
 ![](../img/IM_meal_purchase.PNG)
 
@@ -218,8 +231,6 @@ On the diagram represented sunny day scenario in a simplified way to represent h
 | Order Purchase Confirmed | Self-explained | Once per order normally | 0,1 | 
 | Meal Stock Updated | Catalog informed that the amount of meals changed. | With every confirmed order, and update from SmartFridges | 0,2 | 
 | Order purchased | Confirmation for user and the client app that everything processed sucessfully and fridge, or ghost kitchen informed about user's desire | Once per order normally. | 0,1 | 
-
-#### Lifetime concerns 
 
 ## Estimations of usage and costs
 
