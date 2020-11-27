@@ -6,7 +6,7 @@
 
 The main proposal is to go with quite big services that will help to develop, test, and deploy the main logical parts independently. Identified services share common Quality Attributes, so the same set of Tactics can be applied. All those activities pointed to reduce time-to-market. 
 
-![](https://github.com/ldynia/archcolider/blob/master/img/FF_system_approach.PNG)
+![](https://github.com/ldynia/archcolider/blob/master/img/FF_system_approach.png)
 
 As we propose modularised monolith with further modification to services, every part has it's own major quality attributes that have to be address first. But we'd like to point to overall system quality attributes as well, that should be addresed before anything else. 
 
