@@ -12,4 +12,4 @@ There should be set of architectural views and perspectives describing different
 6. [Cost Analysis](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/CostAnalysis.md) - Estimation of expenses for AWS cloud services.
 
 ## References
-[1] Reproduction of Figure 15-1 View Relationships as found in _Software Systems Architecture: Working with Stakeholder Using Viewpoints and Perspectives, Nick Rozanski, Eoin Woods, ISBN: 0321112296
+[1] Reproduction of Figure 15-1 View Relationships as found in _Software Systems Architecture: Working with Stakeholder Using Viewpoints and Perspectives, Nick Rozanski, Eoin Woods, ISBN: 0321112296_
