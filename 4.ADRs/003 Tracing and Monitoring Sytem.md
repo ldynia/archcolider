@@ -16,20 +16,20 @@ We'd like to use a system that helps us get the full picture of correlated busin
 
 ## Alternatives
 
-### DataDog
+#### DataDog
 
 DataDog is a monitoring service for cloud-scale applications it allows for monitoring of servers, databases, tools, and services, through a SaaS-based platform.
 DataDog platform allows to visualize metrics data on a dashboard, and provides alerting. Solution can be integrated with Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, Red Hat OpenShift etc… Cost of DataDog as a monitoring solution is **$15 USD per month**
 
-### Graphana
+#### Graphana
 
 Grafana is an open source solution for running data analytics, pulling up metrics that make sense of the massive amount of data & to monitor your apps with the help of cool customizable dashboards. Grafana connects with every possible databases such as Graphite, Prometheus, Influx DB, ElasticSearch, MySQL, PostgreSQL etc. Solution is free of charges.
 
-### ELK Stack
+#### ELK Stack
 
 "ELK" is the acronym for three open source projects: Elasticsearch, Logstash, and Kibana. Elasticsearch is a search and analytics engine. It allows to aggregate logs, search on it and visualize it. Because it is open source project there are no financial costs associated with buying the stack.
 
-**Amazon CloudWatch**
+#### Amazon CloudWatch
 
 Amazon CloudWatch is AWS alerting tool for sending notification base on the severity levels of inspected matrix. Approximate cost is $0.30 USD for first 10,000 metrics.
 
