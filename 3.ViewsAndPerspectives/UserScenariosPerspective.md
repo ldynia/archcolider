@@ -9,8 +9,8 @@ Bellow diagram illustrates a purchase order within the system. User journey star
 ![Subscriber Journey](https://github.com/ldynia/archcolider/blob/master/img/user%20journey/Subscriber.png)
 
 ### Stakeholders 
-* User
-* Cashier -located at the Point of Sale
+* Subscriber - Intrested in choosing a meal, picking it up and eventualy rating it and writing a review.
+* Cashier - Is a Point of Sale operator, facilitates  meal purchase for unsubscribed users.
 
 ### Risks
 Access code generation can be cumbersome to implement. We might introduce **PIN** instead. 
@@ -41,7 +41,8 @@ Bellow user story, show a use case where some unexpected error (perhaps mechanic
 
 ### Stakeholders 
 
-* Subscriber
-* User with Admin privilage
+* Subscriber - Intrested in choosing a meal, picking it up and eventualy rating it and writing a review.
+* Admin - Backend user who moderates content and reslves subscribes complains.
 
 ### Risks
+There might be a risk that a subscriber will be cached in a loop on submitting a valid code in a system that cannot validate the access code. However, this case should be mitigated by storing access codes locally.
