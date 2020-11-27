@@ -6,7 +6,7 @@ Figure 1: Services overview
 > **Note: ** The second subnet is a copy of subnet 1 when instanced from the Infrastructure as Code specification. Scaling can create more copies on-demand.
 
 ## Core server
-The software architecture is classed as a modular monolith. (See: [ADR 003: System approach](/4.ADRs/003%20System%20approach.md)) In Figure 1 we have used a single core server as an example.
+The software architecture is classed as a modular monolith. (See: [ADR 003: System approach](/4.ADRs/002 System approach.md)) In Figure 1 we have used a single core server as an example.
 Of course, this doesn't accurately represent the actual scaling of the systems but it serves to focus you to on the important bits for the purpose of this discussion.
 
 The core server represents a template of the server and the modules it contains.
