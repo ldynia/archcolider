@@ -70,7 +70,7 @@ Relation connection between _promotion type_ and _order type_ (and _order state_
 
 ## Component composition and communication 
 
-![Solution overview](../img/FF_Overview_v1.PNG)
+![Solution overview](../img/FF_system_approach.png)
 
 *Gravity centers highlighted*
 
