@@ -25,8 +25,8 @@ This journey illustrates a purchase of a meal by ocasionall user - a user who is
 
 ### Stakeholders 
 
-* Ocasional User
-* Cashier -located at the Point of Sale
+* Ocasional User - Intrest of purchasing a meal without being registered in the system. 
+* Cashier - Is a Point of Sale operator, facilitates  meal purchase for unsubscribed users.
 
 ### Risks
 We need to put in place mechanisms that handles submissions of two valid coupons.
