@@ -92,6 +92,8 @@ The important decision here is to isolate communication between internal modules
 
 ![](../img/FF_ModularizationExtraction.PNG)
 
+Decision about module extracting should be done based on metrics and trends that some of modules has higher pressure than others. Scale vertically is a preffered way to get more computational power during first months, years of the system life. 
+
 ### Event sourcing 
 
 Event sourcing for order state management service (including payment tracker) provides confidence in the history of changes for order and how it was paid. Orders by itself is a sensitive area that requires special attention to changes. Event sourcing helps reconstruct situations that led to errors. Also, there is a possibility to rebuild the stack of events from the beginning with an additional adjusting strategy. 
