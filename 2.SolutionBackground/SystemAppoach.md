@@ -12,41 +12,41 @@ As we propose modularised monolith with further modification to services, every 
 
 #### System Quality Attributes
 
-**Simplicity**
+**1 Simplicity**
 
 We'd like to provide initial simplicity for the overall system but that do not close the window for further extraction of services and independent development and deployment.
 
 Grouping functional areas to benefit from ease of development and deployment
 
-**Modifiability**
+**2 Modifiability**
 
 The second important part is to provide points of extensions and ease of modifiability for proposed solution. It means subparts can be extracted and extended without heavy refactoring.
 
 #### Front-end apps 
 
-**Usabitility**
+**1 Usabitility**
 
 Application should be easy to use for a wide range of users in different age groups. Entry level should be low. The meal catalog navigation should be easy and purchasing process is obvious. Application should guide users with major activities.  
 
-**Performance**
+**2 Performance**
 
 Application should provide the main information with as low delays as possible. Network speed should not have impact on browsing the meal catalog and placing items in the basket. 
 
-**Autonomous**
+**3 Autonomous**
 
 Compliment the Performance quality attribute and secure work of PoS in case of disconnection or high network latency.  
 
 #### Meal Catalog subsystem
 
-**Extensibility**
+**1 Extensibility**
 
 The meal catalog subsystem starts as modularized monolith and should support extensibility first to be able add features while overall system matures and the business model proves liveness. Extensibility not only responsible for adding new parts but also for extracting parts that become a big enought to live as independent service. 
 
-**Maintainability**
+**2 Maintainability**
 
 The code base should follow good coding practices and use necesssary patterns to support extensibility first. Maintainability includes also tests, metrics, and healt checks to ease maintainability from coding and operational perspective. 
 
-**Abvailability**
+**3 Abvailability**
 
 Without good availability there won't be cash flow so this is also important quality attribute. But we'd to note, that reader should not confuse it with surviveability as it's still prove of business model and serice restarting, short ouutage and so on in still possible but they should be solved with restarts and vertical scale. On later stages it might become more important and other architectural tactics will be involved. 
 
@@ -54,33 +54,33 @@ In general system should be available even if performance might degradate.
 
 #### Order Processing subsystem
 
-**Reliability**
+**1 Reliability**
 
 Transparency and accurate responses is the main theme for this service. User should be informed about status and result of purchase process. This quality attribute address user satisfaction requirement and keep user user and other system's parts informed about purchase process as it impact many other subsystems. 
 
-**Integrity**
+**2 Integrity**
 
 Data integrity is important when we talk about cash flow and informaton about order purchasing should be accurate to avoid double charges, lost payments and so on. Avoid corrupton of payment state is essential. 
 
 #### Purchase gateway
 
-**Security**
+**1 Security**
 
 Payment data and operations should have the highest level of security as it impact on trustworthy of overall system. Sending sensitive payment information should be secured. Communitcation with payment providers should enforce this quality attribute as well. 
 
-**Abvailability**
+**2 Abvailability**
 
 Inability to make payment cause direct money loses as the whole business based on selling goods. Payment requests should be processed with the highest priority and we should respect the will of customers spend money. No matter what but payment should be sent.
 
 #### Reporting subsystem
 
-**Reliability**
+**1 Reliability**
 
 Reporting system is in support category and we should think about keeping history data. The main topic here is not to lose data as it valuable source of information for future business decisions.  
 
 #### Notification subsystem
 
-**Reliability**
+**1 Reliability**
 
 Notification system also in support category and should make the subsystem relyable enougth to send notification to users. Notification sending provided by a platform, but should secure possibility of getting those notification event from the rest of the system.  
 
