@@ -143,7 +143,7 @@ This approach is good for Proof of Concept approach and early stages of a startu
 
 ## Composition of components 
 
-![Solution overview](../img/FF_Overview_v1.PNG)
+![Solution overview](../img/FF_system_approach.png)
 
 *Gravity centers highlighted*
 
