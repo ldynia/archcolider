@@ -12,12 +12,16 @@ Assumptions:
 
 ## Projections
 ### Database size
-Below image illustrates few tables/documents that might be used in the solution -it's of course simplified model. Nevertheless, we can see that generating **30K** record per month (1000 records per day) will take around **3.96 GiB** of storage space. It's important to mention that this number is on the higher end of estimation because it assumes that the traffic to the application is distributed uniformly. In reality proposed number could be even 60% smaller than estimated **3.96 GiB**.
+Below image illustrates few tables/documents that might be used in the solution -it's of course simplified model. Nevertheless, we can see that generating **30K** record per month (1000 records per day) will take around **3.96 GiB** of storage space. 
+
+It's important to mention that this number is on the higher end of estimation because it assumes that the traffic to the application is distributed uniformly. In reality proposed number could be even 60% smaller than estimated **3.96 GiB**.
 
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/database_forecast.png)
 
 ### Data transferr size (traffic)
-Traffic forecast was calculated base on the most frequent requests to the application API. Because, Farmacy Food users will have the ability to write feedback and reviews we will provide them the ability to uploading images. We assume that image size will take 4 MiB. Furthermore, we expect that monthly only 10% of the users writes reviews and 5% of users have some problems that leads to sending a feedback. As we can see that for **1000** requests per day (30K per month) we'll end up transferring to our application around **16.5 GiB** of data, and storing around **16 GiB** of images per month. This estimates base on the assumption that traffic is uniformly distributes. Moreover, we don't use compression for HTTP requests and messaging request as well for images. While implementing the solution we would use appropriate compression algorithm such GZIP which is very efficient for text compression and good for image compression, therefore we could significantly lower the costs.
+Traffic forecast was calculated base on the most frequent requests to the application API. Because, Farmacy Food users will have the ability to write feedback and reviews we will provide them the ability to uploading images. We assume that image size will take 4 MiB. Furthermore, we expect that monthly only 10% of the users writes reviews and 5% of users have some problems that leads to sending a feedback. As we can see that for **1000** requests per day (30K per month) we'll end up transferring to our application around **16.5 GiB** of data, and storing around **16 GiB** of images per month. 
+
+This estimates base on the assumption that traffic is uniformly distributes. Moreover, we don't use compression for HTTP requests and messaging request as well for images. While implementing the solution we would use appropriate compression algorithm such GZIP which is very efficient for text compression and good for image compression, therefore we could significantly lower the costs.
 
 ![database forecast](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/traffic_forecst.png)
 
