@@ -44,26 +44,6 @@ Table of content:
 	- [Deployment](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/DeploymentView.md)
 	- [Security](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/Security.md)
 
-
-# Notes
-
-**28-Oct-2020** 
-
-Refer the Business Drivers document, and start write some ADR from SARs(significant Architectural requirements) - Next Meeting Delivery.
-
-**29-Oct-2020** 
-
-- Need to complete the ADR’s based on the model provided
-- Discussed on detailed design approach, based on the meta model Refer below https://github.com/ldynia/archcolider/blob/master/img/Initial%20Discussion%20-%20Detailed%20Design-29Oct2020%20(1).pdf
-- In-Lieu of the Business, Microkernel Architecture  would be the best suitable model Example of Microkernel architecture would be IDE, Browsers
-- Discussed about the implementation of the system in Cloud
-- With our limited knowledge briefly compared the advantages of disadvantages of AWS and Azure Personal choice Vs Popular choice 
-
-**1-Nov-2020** 
-- Refactoring ADRS
-- Think about tradeoffs
-- Introducing new diagrams in miro
-
 # ToDo 
 
 Concerns to think about: 
