@@ -1,4 +1,4 @@
-# Cache the meal catalogue on client side.
+# Cache the meal catalogue.
 
 Date: 2020-11-19
 

@@ -6,7 +6,7 @@
 
 The main proposal is to go with quite big services that will help to develop, test, and deploy the main logical parts independently. Identified services share common Quality Attributes, so the same set of Tactics can be applied. All those activities pointed to reduce time-to-market. 
 
-![](https://github.com/ldynia/archcolider/blob/master/img/FF_system_approach.png)
+![](../img/FF_system_approach.png)
 
 As we propose modularised monolith with further modification to services, every part has it's own major quality attributes that have to be address first. But we'd like to point to overall system quality attributes as well, that should be addresed before anything else. 
 
@@ -100,7 +100,7 @@ Event sourcing for order state management service (including payment tracker) pr
 
 Rebuilding a stack of events for domain entities might be handy in case of possible data migrations during the active development phase. Not all requirements are known from the very beginning, and we still want to have a full history that can be used for analysis. 
 
-![](https://github.com/ldynia/archcolider/blob/master/img/FF_OrdersAndScheduler.PNG)
+![](../img/FF_OrdersAndScheduler.PNG)
 
 ### Log-based communication for information propagation between services 
 
@@ -108,7 +108,7 @@ Communication between services might be implemented in many ways. There is an an
 
 The main benefit that every service can consume data at its own pace independently. It may relax requirements for availability and performance for some services that will also allow buying cheaper deployment instances. 
 
-![](https://github.com/ldynia/archcolider/blob/master/img/FF_LogBasedStream.PNG)
+![](../img/FF_LogBasedStream.PNG)
 
 ### Health checks based on business-critical path scenarios 
 
@@ -177,7 +177,7 @@ The second important part is to provide points of extensions and ease of modifia
 
 ### Event Store 
 
-Event sourcing is a technique that can be implemented with a variety of tools and approaches. Most of them have significant overhead in supporting sync between write and read models. Luckily there is EventStore project that can do boring stuff for us. We can start with OSS version and migrate then to SaaS. [ADR 009](https://github.com/ldynia/archcolider/blob/master/4.ADRs/009%20Event%20sourcing%20usage.md)
+Event sourcing is a technique that can be implemented with a variety of tools and approaches. Most of them have significant overhead in supporting sync between write and read models. Luckily there is EventStore project that can do boring stuff for us. We can start with OSS version and migrate then to SaaS. [ADR 007](../4.ADRs/007%20Event%20sourcing%20usage.md)
 
 ### Kafka 
 

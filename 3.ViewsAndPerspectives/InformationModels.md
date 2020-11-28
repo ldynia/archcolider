@@ -133,7 +133,7 @@ Many aspects was touched on previous diagrams and at this stage of development w
 
 **Cancel scheduled order by payment system** 
 
-![](../img/IM_cancel_order_by_payment_system.PNG)
+![](../img/IM_cancel_order_by_payment_system.png)
 
 The most interesing part here are events from the _System order_. The payment might be refused, or take so much time that it should be refused by timeout. In both cases user should be notified about a failure. 
 

@@ -1,8 +1,13 @@
 # Authentication and Authorization
 
 ## Authentication
+<<<<<<< HEAD:3.ViewsAndPerspectives/infrastructure/Authentication.md
 ![Figure 1: High-level overview of the authentication flow](/img/Authentication.png)
 Figure 1: High-level overview of the authentication flow
+=======
+![Figure 1: High level overview of the authentication flow](./img/Authentication.png)
+Figure 1: High level overview of the authentication flow
+>>>>>>> master:Authentication.md
 
 Figure 1 shows the general flow of authentication for customer/client access over the internet. This flow is **not** used for direct communication to AWS resources.
 
@@ -29,7 +34,11 @@ Federation allows for other authentication providers to be hooked up to our syst
 
 ## Loadbalancer
 
+<<<<<<< HEAD:3.ViewsAndPerspectives/infrastructure/Authentication.md
 The design offered here uses the load balancer directly to provide authentication. The HTTPS Listener is used with a set of rules that provide actions for checking the identity of the user requesting the resource. Once this is done we use the load balancers' rule to forward the traffic to the appropriate scaling group. (Also see: [Infrastructure Scaling and Balancing](InfrastructureScalingAndBalancing.md))
+=======
+The design offered here uses the loadbalancer directly to provide authentication. The Https Listener is used with a set of rules that provide an action for checking the identity of the user requesting the resource. Once this is done we use the loadbalancers' rule to forward the traffic to the appropriate scaling group. (Also see: [Infrastructure Scaling and Balancing](./InfrastructureScalingAndBalancing.md))
+>>>>>>> master:Authentication.md
 
 ## Pricing
 
