@@ -232,7 +232,7 @@ The diagram represented a sunny day scenario in a simplified way to represent ho
 
 ## Estimations of usage and costs
 
-_add link here to the page or file_
+[Document](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/Data&PayloadsEstimates.xlsx?raw=true)
 
 ## Backup concerns
 
