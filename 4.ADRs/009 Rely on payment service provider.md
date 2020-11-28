@@ -12,13 +12,12 @@ The _ordering system_ should accept a wide variety of payment methods to satisfy
 
 ## Decision
 
-Use 3rd party payment provider to delegate dealing with different payment systems. 
+Use a 3rd party payment provider to delegate dealing with different payment systems.
 
 ## Consequences
 
-We save time required for implementing large payment systems but have to track trends and pay fee for processing money trasactions. 
+We save time required for implementing large payment systems but have to track trends and pay fees for processing money transactions.
 
-Internal payment system still should left room for implementing additional adapters for emerging payment systems. 
+Internal payment system still should leave room for implementing additional adapters for emerging payment systems.
 
 Risks: Need to be careful while processing the personal/demographic details from user, w.r.t compliance and auditing.
-
