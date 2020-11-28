@@ -43,4 +43,4 @@ We can recommend **Cloudformation** because it has built-in AWS specific feature
 **Bonus Features:** 
 - Drift detection when manual changes are forced to the infrastructure. You could set up alerts for such a scenario so action can be taken. Furthermore, if you decide to use Cloudformation you could use RemediationConfiguration(s) to take a certain action that can go beyond a simple message. For instance, in the case of the example above (the public IP address being attached to an ENI )
 
-- It is reasonably easy to use standard transformations to create derived environments (ie. Development, Test, Production, etc.). This may vary from rather crude XSTL file based solutions to more sophisticated options.
+- It is reasonably easy to use standard transformations to create derived environments (ie. Development, Test, Production, etc.). This may vary from rather crude XSTL file-based solutions to more sophisticated options.
