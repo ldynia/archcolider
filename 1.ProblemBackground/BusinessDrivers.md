@@ -1,8 +1,10 @@
-# Business Drivers (BD)
+# Business Drivers
 
 ## Business goal:
 
 *A “ghost kitchen” (food preparation and cooking facility set up for the preparation of delivery-only meals.) needs an ordering system to allow users to have visibility of what items are available, purchase, and pick up items at any one of their points of sale / smart-fridge.*
+
+## Business Drivers (BD)
 
 1. System support and engage occasional users to purchase to increase the user base, converting Occasional users to Known users and Known users to Subscribers.
 2. System provides rich options for engaging known users and subscribers by different kinds of loyalty programs. New options are easily added to increase user satisfaction and a chance of recommendation.
