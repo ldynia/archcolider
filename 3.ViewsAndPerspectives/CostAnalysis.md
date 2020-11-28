@@ -1,6 +1,7 @@
 # Cost analysis considerations
 
-https://onedrive.live.com/edit.aspx?resid=91D2A6BED92B69C5!1028185&ithint=file%2cxlsx&authkey=!AOp6NCWeSf64J58
+
+[document](https://1drv.ms/x/s!AgHZ2TIcb18xgb0mmdVcv0yCnVXjFA)
 
 ## Introduction
 While selecting infrastructure and third party systems, we were governed preliminary by costs of the solution and limited budget of the client. In rare cases we decided to pick more expensive solutions the reason for that was convenience of chosen service to exceed its monetary value.
