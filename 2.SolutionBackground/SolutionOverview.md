@@ -3,11 +3,8 @@
 ## Principles
 
 1. Strive for cognitive simplicity
-
 2. Extensibility and modifiability preferred in case of trade-offs  
-
 3. Telemetry is mandatory
-
 4. Messages over direct calls
 
 ## Style
@@ -33,27 +30,20 @@ In the image above, we present our vision of responsibilities for primary system
 The main differentiator of the business, unique modules that support business processes. In our case, there are:
 
 - Meal Catalog - A unique way of showing information about the meal, availability in fridges, ingredients. Also, information about promo actions, reviews, and so on accumulated here.
-
 - Ordering - A standard catering system might not help here as we need rich extensibility and control over orders. Subscribed orders, checking through online payment systems, using coupons and promo-actions, and feedback system only for confirmed buyers - it will be much easier to support with bespoke software.
-
 - Loyalty - There are unique ways of engaging new users, and limitations from other vendors should not tie the system owners.
 
 **Supportive**
 
 Significant for business, but 3rd party tools may close the feature gap with proper customization or integration.
-
 - Feedback - The system should be highly extensible and might include survey mechanisms from other vendors.  The module provides a convenient way to manage feedback channels.
-
 - Scheduling helps to work with recurrent events from the Core areas and form the Ghost Kitchen orders.
 
 **Generic**
 
 No or small customization is required for modules that fall into this basket—all needs covered in products available on the market.
-
 - Reporting - No need to implement a custom reporting engine as many specialized products can produce all necessary reports based on provided data. -
-
 - Payments - We will only build a gateway to payment systems or even pick a payment provider to handle all specific communications with payment systems.
-
 - Notifications - It's better to use ready-made services that provide it to save time and money required for custom implementation.
 
 ## Conceptual Model
@@ -101,23 +91,15 @@ The second important part is to provide points of extensions and ease of modifia
 ### Composition
 
 - Point of Sale and Front End apps might be a single or two different applications that reuse the same UI elements and logic as it has much in common, and the operator of PoS version impersonates other users in the system and follows the same workflow.
-
 - Feedback, Loyalty (Promotion/Discount), Menu catalog, Meal pickup - works with order composition and apply different "effects" on it, so for simplicity of development and deployment might be developed as modules of a monolith to speed up development. But communication between modules is described in such a way that every module can be extracted as a service in a short time. Menu Catalog highlighted to show the focal point of this composition.
-
 - Ordering and Scheduling - serves proper handling of orders, and it makes sense to implement it as a separate subsystem from the very beginning. Ordering here is the focal point, as it is responsible for the lion share of operations and data consistency.
-
 - Purchase subsystem is responsible for communication with payment providers or payment systems. It acts as a facade to the payments system and handles all nuances of payment system usage.
-
 - Reporting - reporting engine and historical data for reports. Reports run on dedicated historical storage to avoid influence on operational data storage. Also, it allows for applying effective strategies for data archiving.
-
 - Notifications - facade for notification systems that will be used. For instance, sending notifications by SMS, emails or in-app push notifications.
-
 - Payment systems, Ghost Kitchen, Smart-Fridge Management - external systems with which the _ordering system_ communicates but have no control.
 
 ### Communication and security
 
 - Secured communication channels between all subsystems and modules.
-
 - Attribute-based access control introduced from the beginning for all modules.
-
 - Integration with 3rd party identity providers is optional but might be handy in terms of user engagement to avoid creating another one account. But an option to create an independent account should remain for users who are concerned about using accounts from tech giants.
