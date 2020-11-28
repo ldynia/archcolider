@@ -1,7 +1,7 @@
 # Authentication and Authorization
 
 ## Authentication
-![Figure 1: High-level overview of the authentication flow](/img/Authentication.png)
+![Figure 1: High-level overview of the authentication flow](../../img/Authentication.png)
 Figure 1: High-level overview of the authentication flow
 
 Figure 1 shows the general flow of authentication for customer/client access over the internet. This flow is **not** used for direct communication to AWS resources.
