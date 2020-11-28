@@ -1,8 +1,8 @@
 # Concurrency view
 
-Describes the concurrency structure of the system and maps functional elements to concurrency units to clearly identify the parts of the system that can execute concurrently and how this is coordinated and controlled.
+This document describes the concurrency structure of the system. It maps functional elements to concurrency units and identify the parts of the system that can execute concurrently. Docment demonstrate how system elements are coordinated and controlled.
 
-The Concurrency view is used to describe the system’s concurrency and state-related structure and constraints. This involves defining the parts of the system that can run at the same time and how this is to be controlled, by defining how the system’s functional elements are packaged into operating system processes and how the processes coordinate their execution
+The Concurrency view is used to describe the system’s concurrency and state-related structure and constraints. This involves defining the parts of the system that can run at the same time and how this is to be controlled, by defining how the system’s functional elements are packaged into operating system processes and how the processes coordinate their execution.
 
 ## Cases
 
