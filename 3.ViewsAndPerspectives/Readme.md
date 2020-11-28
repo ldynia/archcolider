@@ -1,4 +1,4 @@
-![Views context](/img/view-context.png)
+![Views context](../img/view-context.png)
 
 Figure 1: View Relationships [1](#references)
 
