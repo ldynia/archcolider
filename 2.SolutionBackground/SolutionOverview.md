@@ -2,73 +2,87 @@
 
 ## Principles
 
-1. Strive for cognitive simplicity 
+1. Strive for cognitive simplicity
+
 2. Extensibility and modifiability preferred in case of trade-offs  
+
 3. Telemetry is mandatory
+
 4. Messages over direct calls
 
 ## Style
 
-Based on provided principles, the system should be n-tier with layered approach within modules that secure functionality's extensibility. Based on current [business goals](../1.ProblemBackground/BusinessGoalAndScope.md) (number of users, functionality current and desired) and [constraints](../1.ProblemBackground/Constraints.md) the primary implementation style of architecture is **modularized monolith**, with an accent to hight modularity to lower cost of further extractions to independent services. 
+Based on provided principles, the system should be n-tier with a layered approach within modules that secure functionality's extensibility. Based on current [business goals](../1.ProblemBackground/BusinessGoalAndScope.md) (number of users, functionality current and desired) and [constraints](../1.ProblemBackground/Constraints.md) the primary implementation style of architecture is **modularized monolith**, with an accent to high modularity to lower cost of further extractions to independent services.
 
-According to declared principles, we propose building systems based on event sourcing and domain-driven design for core components. 
-- Event sourcing helps to trace and to reason about changes in domain models. It's necessary because many externals users are involved, and the system should provide a detailed investigation of every possible complaint from users about decision making, payment process, and overall awareness. 
+According to declared principles, we propose building systems based on event sourcing and domain-driven design for core components.
+
+- Event sourcing helps to trace and to reason about changes in domain models. It's necessary because many external users are involved, and the system should provide a detailed investigation of every possible complaint from users about decision making, payment process, and overall awareness.
+
 - Domain-Driven Design (DDD) helps to control the cognitive complexity of the subject area where necessary. Even if starting implementation requires more effort than a transaction script approach or table-based, it will save a lot of time in the future. DDD also supports declared principles of cognitive simplicity and modifiability of the designed system.  
 
-All subdomains should provide rich telemetry of usage to make an informative decision about extraction and next scaling if a component becomes a bottleneck for the solution. 
+All subdomains should provide rich telemetry of usage to make an informative decision about extraction and next scaling if a component becomes a bottleneck for the solution.
 
-## Strategic domain design 
+## Strategic domain design
 
 ![Strategic Domain Design](../img/FF_StrategicDomainDesign.jpg)
 
-In the image above, we present our vision of responsibilities for primary system contexts. 
+In the image above, we present our vision of responsibilities for primary system contexts.
 
-**Core** 
+**Core**
 
-The main differentiator of the business, unique modules that support business processes. In our case, there are: 
-- Meal Catalog - A unique way of showing information about the meal, availability in fridges, ingredients. Also, information about promo actions, reviews, and so on accumulated here. 
-- Ordering - A standard catering system might not help here as we need rich extensibility and control over orders. Subscribed orders, checking through online payment systems, using coupons and promo-actions, and feedback system only for confirmed buyers - it will be much easier to support with bespoke software. 
-- Loyalty - There are unique ways of engaging new users, and limitations from other vendors should not tie the system owners. 
+The main differentiator of the business, unique modules that support business processes. In our case, there are:
+
+- Meal Catalog - A unique way of showing information about the meal, availability in fridges, ingredients. Also, information about promo actions, reviews, and so on accumulated here.
+
+- Ordering - A standard catering system might not help here as we need rich extensibility and control over orders. Subscribed orders, checking through online payment systems, using coupons and promo-actions, and feedback system only for confirmed buyers - it will be much easier to support with bespoke software.
+
+- Loyalty - There are unique ways of engaging new users, and limitations from other vendors should not tie the system owners.
 
 **Supportive**
 
-Significant for business, but 3rd party tools may close the feature gap with proper customization or integration. 
-- Feedback - The system should be highly extensible and might include survey mechanisms from other vendors.  The module provides a convenient way to manage feedback channels. 
-- Scheduling helps to work with recurrent events from the Core areas and form the Ghost Kitchen orders. 
+Significant for business, but 3rd party tools may close the feature gap with proper customization or integration.
+
+- Feedback - The system should be highly extensible and might include survey mechanisms from other vendors.  The module provides a convenient way to manage feedback channels.
+
+- Scheduling helps to work with recurrent events from the Core areas and form the Ghost Kitchen orders.
 
 **Generic**
 
-No or small customization is required for modules that fall into this basket—all needs covered in products available on the market. 
+No or small customization is required for modules that fall into this basket—all needs covered in products available on the market.
+
 - Reporting - No need to implement a custom reporting engine as many specialized products can produce all necessary reports based on provided data. -
-- Payments - We will only build a gateway to payment systems or even pick a payment provider to handle all specific communications with payment systems. 
-- Notifications - It's better to use ready-made services that provide it to save time and money required for custom implementation. 
+
+- Payments - We will only build a gateway to payment systems or even pick a payment provider to handle all specific communications with payment systems.
+
+- Notifications - It's better to use ready-made services that provide it to save time and money required for custom implementation.
 
 ## Conceptual Model
 
-Based on system description and requirements, we build the conceptual model of the _ordering system_. 
+Based on system description and requirements, we build the conceptual model of the _ordering system_.
 
 ![Metamodel](../img/FF_Metamodel_v1.png)
 
-_Knowledge level_ describes rules how actors/entities interact with each other 
-_Operational level_ describe main actors/entities involved in main scenarios 
+_Knowledge level_ describes rules how actors/entities interact with each other
 
-Metamodel covers all existing business scenarios and should be capable of absorbing future ones. Even more, metamodel should encourage to think about new scenarios that open in a metamodel.  
+_Operational level_ describe main actors/entities involved in main scenarios
 
-Referring to the diagram: 
+Metamodel covers all existing business scenarios and should be capable of absorbing future ones. Even more, metamodel should encourage us to think about new scenarios that open in a metamodel.  
 
-_User_ and _User type_ describes possible users that might interact with the system. On meta-level, Subscriber and PoS admin (or even PoS) has no difference. From an operational perspective, they are performing some _actions_ upon _order_. _Action types_ depends on _User type_ and those rules described on the knowledge level. Certainly, there are set of _action types_ that are common for all _user types_, and it might lead us to an idea of command implementation to share possibilities between _user types_ in a convenient way. 
+Referring to the diagram:
 
-_Action types_ situated by _place_ where they performed, and, for instance, _PoS_ might perform some steps implicitly to move an _order_ to desired _order state_. 
+_User_ and _User type_ describes possible users that might interact with the system. On meta-level, Subscriber and PoS admin (or even PoS) has no difference. From an operational perspective, they are performing some _actions_ upon _order_. _Action types_ depends on _User type_ and those rules described on the knowledge level. Certainly, there are set of _action types_ that are common for all _user types_, and it might lead us to an idea of command implementation to share possibilities between _user types_ in a convenient way.
 
-_Order_ formed from a _menu_ that provided by _ghost kitchen_. There might be many _ghost kitchens_ with a variety of _menus_ which in turn consist of _meals_ that might be common for many _menus_. For the ease of navigation, management, filtering, and other actions all _meals_ described by its _meal type_. Any _meal_ might be described by a set of _meal types_. 
+_Action types_ situated by _place_ where they performed, and, for instance, _PoS_ might perform some steps implicitly to move an _order_ to desired _order state_.
 
-Depends on _order type_ and _order state_, there is a _scheduling_ strategy that serves reservation and recurrent orders. 
+_Order_ formed from a _menu_ that provided by _ghost kitchen_. There might be many _ghost kitchens_ with a variety of _menus_ which in turn consist of _meals_ that might be common for many _menus_. For the ease of navigation, management, filtering, and other actions all _meals_ described by its _meal type_. Any _meal_ might be described by a set of _meal types_.
 
-_Promotions_ applied to _menu_ and pointed out to a specific _meal_ or _meal types_. It was made intentionally because if _promotions_ is connected with _meals_, then it hard to set promotions that depend on _ghost kitchen_ (a possible scenario - that promotions provided by a specific _ghost kitchen_, not a platform in general). _Promotion type_ might be based on _feedback type_ as survey, review, but do not constraint to _feedback_, as _promotion_ can be applied to all users. At the same time, a connection between _promotion type_ and _feedback type_ allows the owner to build user engagement programs. 
+Depends on _order type_ and _order state_, there is a _scheduling_ strategy that serves reservation and recurrent orders.
+
+_Promotions_ applied to _menu_ and pointed out to a specific _meal_ or _meal types_. It was made intentionally because if _promotions_ is connected with _meals_, then it is hard to set promotions that depend on _ghost kitchen_ (a possible scenario - that promotions provided by a specific _ghost kitchen_, not a platform in general). _Promotion type_ might be based on _feedback type_ as survey, review, but do not constraint to _feedback_, as _promotion_ can be applied to all users. At the same time, a connection between _promotion type_ and _feedback type_ allows the owner to build user engagement programs.
 
 Relation connection between _promotion type_ and _order type_ (and _order state_) offers a flexible mechanism of possible constraints for participation in promotion campaigns.  
 
-## Component composition and communication 
+## Component composition and communication
 
 ![Solution overview](../img/FF_system_approach.png)
 
@@ -84,22 +98,26 @@ Grouping functional areas to benefit from the ease of development and deployment
 
 The second important part is to provide points of extensions and ease of modifiability for the proposed solution. It means subparts can be extracted and extended without massive refactoring.
 
-### Composition 
+### Composition
 
-- Point of Sale and Front End apps might be a single or two different applications that reuse the same UI elements and logic as it has much in common, and operator of PoS version impersonate other users in the system and follows the same workflow. 
-- Feedback, Loyalty (Promotion/Discount), Menu catalog, Meal pickup - works with order composition and apply different "effects" on it, so for simplicity of development and deployment might be developed as modules of a monolith to speed up development. But communication between modules described in such a way that every module can be extracted as a service in short time. Menu Catalog highlighted to show the focal point of this composition. 
-- Ordering and Scheduling - serves proper handling of orders, and it makes sense to implement it as a separate subsystem from the very beginning. Ordering here is the focal point, as it is responsible for the lion share of operations and data consistency. 
-- Purchase subsystem is responsible for communication with payment providers or payment systems. It acts as a facade to the payments system and handles all nuances of payment system usage. 
-- Reporting - reporting engine and historical data for reports. Reports run on dedicated historical storage to avoid influence on operational data storage. Also, it allows for applying effective strategies for data archiving. 
-- Notifications - facade for notification systems that will be used. For instance, sending notifications by SMS, emails or in-app push notifications. 
-- Payment systems, Ghost Kitchen, Smart-Fridge Management - external systems with which the _ordering system_ communicates but have no control. 
+- Point of Sale and Front End apps might be a single or two different applications that reuse the same UI elements and logic as it has much in common, and the operator of PoS version impersonates other users in the system and follows the same workflow.
 
-### Communication and security 
+- Feedback, Loyalty (Promotion/Discount), Menu catalog, Meal pickup - works with order composition and apply different "effects" on it, so for simplicity of development and deployment might be developed as modules of a monolith to speed up development. But communication between modules is described in such a way that every module can be extracted as a service in a short time. Menu Catalog highlighted to show the focal point of this composition.
 
-- Secured communication channels between all subsystems and modules. 
-- Attribute-based access control introduced from the beginning for all modules. 
-- Integration with 3rd party identity providers is optional but might be handy in terms of user engagement to avoid creating another one account. But an option to create independent account should remain for users who concerned about using accounts from tech giants. 
+- Ordering and Scheduling - serves proper handling of orders, and it makes sense to implement it as a separate subsystem from the very beginning. Ordering here is the focal point, as it is responsible for the lion share of operations and data consistency.
 
+- Purchase subsystem is responsible for communication with payment providers or payment systems. It acts as a facade to the payments system and handles all nuances of payment system usage.
 
+- Reporting - reporting engine and historical data for reports. Reports run on dedicated historical storage to avoid influence on operational data storage. Also, it allows for applying effective strategies for data archiving.
 
+- Notifications - facade for notification systems that will be used. For instance, sending notifications by SMS, emails or in-app push notifications.
 
+- Payment systems, Ghost Kitchen, Smart-Fridge Management - external systems with which the _ordering system_ communicates but have no control.
+
+### Communication and security
+
+- Secured communication channels between all subsystems and modules.
+
+- Attribute-based access control introduced from the beginning for all modules.
+
+- Integration with 3rd party identity providers is optional but might be handy in terms of user engagement to avoid creating another one account. But an option to create an independent account should remain for users who are concerned about using accounts from tech giants.
