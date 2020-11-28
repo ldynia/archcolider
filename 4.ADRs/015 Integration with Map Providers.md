@@ -22,7 +22,7 @@ Application should be integrated with 3rd party geolocation providers to help th
 
 ## Decision
 
-Based on the business model and the volume of data now and in near future , as there will be more subscribed users, who knows the location precisely . we have decided to integrate with Here maps as it has good market reach and first 25K requests were free.
+Based on the business model and the volume of data now and in near future , as there will be more subscribed users, who knows the location precisely . We have decided to integrate with Here maps as it has good market reach and first 25K requests were free.
 
 ## Consequences
 
