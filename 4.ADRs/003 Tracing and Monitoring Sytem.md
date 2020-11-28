@@ -7,7 +7,7 @@ Date: 2020-10-29
 Proposed
 
 ## Context
-This is a fast growing system and time fashioned scaling is essential. Also, it allows buying cheaper instances for services without overall degradation.
+This is a fast growing system and justin-time scaling is essential. Also, it allows buying cheaper instances for services without overall degradation.
 Proper and trustworthy monitoring is the basis for making any decision about infrastructure changes (i.e. scaling and extracting services), proper monitoring should support business decisions and should act architecture fitness functions.
 We'd like to use a system that helps us get the full picture of correlated business events, connected services and amount of consumed resources.
 
@@ -20,7 +20,7 @@ DataDog platform allows to visualize metrics data on a dashboard, and provides a
 
 #### Graphana
 
-Grafana is an open source solution for running data analytics, pulling up metrics that make sense of the massive amount of data & to monitor your apps with the help of cool customizable dashboards. Grafana connects with every possible database such as Graphite, Prometheus, Influx DB, ElasticSearch, MySQL, PostgreSQL etc. Solution is free of charge.
+Grafana is an open source solution for running data analytics, pulling up metrics that make sense of the massive amount of data & to monitor your apps with the help of customizable dashboards. Grafana connects with every possible database such as Graphite, Prometheus, Influx DB, ElasticSearch, MySQL, PostgreSQL etc. Solution is free of charge.
 
 #### ELK Stack
 
