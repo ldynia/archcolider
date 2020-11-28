@@ -14,7 +14,6 @@ Based on provided principles, the system should be n-tier with a layered approac
 According to declared principles, we propose building systems based on event sourcing and domain-driven design for core components.
 
 - Event sourcing helps to trace and to reason about changes in domain models. It's necessary because many external users are involved, and the system should provide a detailed investigation of every possible complaint from users about decision making, payment process, and overall awareness.
-
 - Domain-Driven Design (DDD) helps to control the cognitive complexity of the subject area where necessary. Even if starting implementation requires more effort than a transaction script approach or table-based, it will save a lot of time in the future. DDD also supports declared principles of cognitive simplicity and modifiability of the designed system.  
 
 All subdomains should provide rich telemetry of usage to make an informative decision about extraction and next scaling if a component becomes a bottleneck for the solution.
