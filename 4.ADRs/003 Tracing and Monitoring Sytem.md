@@ -16,7 +16,7 @@ We'd like to use a system that helps us get the full picture of correlated busin
 #### DataDog
 
 DataDog is a monitoring service for cloud-scale applications that allows for monitoring of servers, databases, tools, and services, through a SaaS-based platform.
-DataDog platform allows to visualize metrics data on a dashboard, and provides alerting. Solution can be integrated with Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, Red Hat OpenShift etc… Cost of DataDog as a monitoring solution is **$15 USD per month**
+DataDog platform allows to visualize metrics data on a dashboard, and provides alerting. Solution can be integrated with Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, Red Hat OpenShift etc… Cost of DataDog as a monitoring solution is **$15 USD per host, per month**
 
 #### Graphana
 
