@@ -22,7 +22,7 @@ Key map:
 - -- Strongly negative
 
 | | Monolith | Microservices | Micro-kernel | Modularized Monolith |
-|----|----|----|-----|
+|----|----|----|-----|-----|
 | Ease of Deployment  | ++ | -  | -  | + |
 | Availability        | -  | ++ | +  | + |
 | Autonomy          | -- | ++ | ++ | + |
