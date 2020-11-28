@@ -23,7 +23,7 @@ Traffic forecast was calculated base on the most frequent requests to the applic
 
 This estimates base on the assumption that traffic is uniformly distributes. Moreover, we don't use compression for HTTP requests and messaging request as well for images. While implementing the solution we would use appropriate compression algorithm such GZIP which is very efficient for text compression and good for image compression, therefore we could significantly lower the costs.
 
-![database forecast](../docs/traffic_forecst.png)
+![database forecast](./docs/traffic_forecst.png)
 
 ## Infrastructure
 
