@@ -36,6 +36,3 @@ Even though ELK stack or Graphana are the cheapest option for FoodFarmacy to go 
 
 ## Consequences
 We will have to spend $15 USD and the price might increase in the future unlikely it will be a significant increase. Reducing burden on maintenance.
-
-
-
