@@ -6,7 +6,7 @@ This section shows a generic example of a user journeys. After reading this sect
 
 Bellow diagram illustrates a purchase order within the system. User journey starts at the moment of browsing a meal from the catalog and ends when a meal is picked up by the user. Dotted lines represent optional interactions in the system.
 
-![Subscriber Journey](https://github.com/ldynia/archcolider/blob/master/img/user%20journey/Subscriber.png)
+![Subscriber Journey](../img/user%20journey/Subscriber.png)
 
 ### Stakeholders
 * Subscriber - Interested in choosing a meal, picking it up and eventually rating it and writing a review.
@@ -21,7 +21,7 @@ Handling of cash payment. This should be discussed further.
 
 This journey illustrates a purchase of a meal by an occasional user - a user who is not registered in the system. The idea of occasional user is to convert him into a subscriber
 
-![Occasional User Journey](https://github.com/ldynia/archcolider/blob/master/img/user%20journey/Ocasional%20User.png)
+![Occasional User Journey](../img/user%20journey/Ocasional%20User.png)
 
 ### Stakeholders
 
@@ -36,7 +36,7 @@ Providing access code to the smart fridge for meal pick up.
 
 Bellow user story, show a use case where some unexpected error (perhaps mechanical) prevents the user from picking up the meal. Outcome of the events is creation of complaint by a user receiving new meal (or compensation) later on.
 
-![Subscriber Error Journey](https://github.com/ldynia/archcolider/blob/master/img/user%20journey/Error%20-%20Subscriber.png)
+![Subscriber Error Journey](../img/user%20journey/Error%20-%20Subscriber.png)
 
 
 ### Stakeholders
