@@ -21,27 +21,22 @@ Key map:
 - - Negative
 - -- Strongly negative
 
-| | Monolith | Microservices | Micro-kernel |
+| | Monolith | Microservices | Micro-kernel | Modularized Monolith |
 |----|----|----|-----|
-| Ease of Deployment  | ++ | -  | -  |
-| Availability        | -  | ++ | +  |
-| Autonomy          | -- | ++ | ++ |
-| Traceability        | ++ | -  | +  |
-| Performance         | ++ | +  | +  |
-| Modifiability        | O  | ++ | +  |
-| Maintainability      | -  | ++ | +  |
-| Integrity           | ++ | -- | O  |
-| Security            | -  | ++ | +  |
-| Scalability         | -- | ++ | -  |
+| Ease of Deployment  | ++ | -  | -  | + |
+| Availability        | -  | ++ | +  | + |
+| Autonomy          | -- | ++ | ++ | + |
+| Traceability        | ++ | -  | +  | + |
+| Performance         | ++ | +  | +  | + |
+| Modifiability        | O  | ++ | +  | + |
+| Maintainability      | -  | ++ | +  | + |
+| Integrity           | ++ | -- | O  | + |
+| Security            | -  | ++ | +  | + |
+| Scalability         | -- | ++ | -  | + |
  
 ## Decision
 
-Based on alternatives in the context of the business needs and a development team we think that micro-kernel approach is the best option for now. At the same time it opens the possibility to migrate to microservices when needed.
-
-Can be converted to highly modularized monolith with characteristics of micro-kernel approach
+Based on alternatives in the context of the business needs and a development team we think that modularize monolith is the best option for now. At the same time it opens the possibility to migrate to microservices when needed.
 
 ## Consequences
 
-The major parts of the system will require careful API management to make possible unified access to the kernel. At the same time it gives a solid base for the development and tracking what should be converted to microservices.
-
-Micro-kernels require more attention from developers, but still allow independent development of major parts and extend main functionality with 3rd party plug-ins.
