@@ -10,7 +10,7 @@ Proposed
 
 The _ordering system_ communicates with upstream and downstream systems in a cloud environment and we can't rely on an assumption that requests from the same subnetwork are safe.
 
-Also, the _ordering system_ implements as modularized monolith and those module will be eventually extracted to become a dedicated services. We have to secure such calls at an early stage to make it easier to migrate from module to service.
+Also, the _ordering system_ implements as a modularized monolith and those modules will be eventually extracted to become dedicated services. We have to secure such calls at an early stage to make it easier to migrate from module to service.
 
 ## Decision
 
