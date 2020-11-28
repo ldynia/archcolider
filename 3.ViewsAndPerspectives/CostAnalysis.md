@@ -56,12 +56,17 @@ This part only shows infrastructure elements that have costs attached.
 
 ### Summary
 
+* We estimate to make a 30K requests / records per month. 
+* All prices are in $ USD
+
 |Service| 1-year TCO at minimum | 1-year TCO at projected growth | 1-year TCO at rapid growth |
 | ----- | --------------------- | ------------------------------ | -------------------------- |
 | EC2   | | | |
 | AMAZON MQ | | | |
+| AMAZON S3 Buckets | $4.5 | $4.5 | $4.5 |
+| AMAZON Dynamo DB | $4 | $4 | $4 |
 | Application Load Balancer | | | |
-|DataDog| | | |
+| DataDog | 1080 | 1080 | 1080 |
 
 ## Scaling scenarios
 
