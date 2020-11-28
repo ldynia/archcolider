@@ -24,7 +24,7 @@ First two locations in Detroit forecast of growth to eight by 2021.
 
 #### Smart-fridges  
 
-[Smart-fridge](https://github.com/ldynia/archcolider/blob/master/docs/PRESENTATION%20-%20Design%20and%20Analysis%20of%20Software%20Architectures%20PDF%20Ver.pdf) is like a food/drink kiosks that you can mount everywhere; it’s connected to the company’s back-office. They have an independent system and API. 
+Smart-fridge is like a food/drink kiosks that you can mount everywhere; it’s connected to the company’s back-office. They have an independent system and API. 
 
 #### Ghost Kitchen ordering system 
 
