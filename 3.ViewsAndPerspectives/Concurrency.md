@@ -21,9 +21,9 @@ Updates to *central catalog* are based on users orders and should be as actual a
 
 **Central Menu Catalog update**
 
-*Ghost Kitchen* provides updates when meals were ready for pick up -we assume this will happe once or twice per day. We get this data and update *Central Menu Catalog* by nmber of released meals.
+*Ghost Kitchen* provides updates when meals are ready for pick up -we assume this will happe once/twice per day. We get this data and update *Central Menu Catalog* by nmber of released meals.
 
-User ordera are subtracted from the available amount of tracked meals on the backend.
+User orders are subtracted from the available amount of tracked meals on the backend.
 
 Additional concerns raised when we'll have several instances of menu catalog in the system, but we're going to address it by splitting menu catalog by geolocation. It will help keep catalog small and consistent within the area (city).
 
