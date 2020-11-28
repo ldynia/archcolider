@@ -2,7 +2,7 @@
 
 ## VPC design
 
-![VPC Design](/img/infra-vpc.png)
+![VPC Design](../../img/infra-vpc.png)
 
 ### Availability zone and Region
 An _Availability Zone_ (_AZ_) is one or more discrete data centers with redundant power, networking, and connectivity in an _AWS Region_. 
