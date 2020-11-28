@@ -11,7 +11,7 @@ The default setting recommendation for the auto-scaling groups is **Balance avai
 ## Metric based scaling
 At this point in the project, it is unknown what metric would best serve Farmacy Foods' best interests. At this point we would advise:
 - CPU utilization > 75%
-- Memory utilization > 90%
+- Memory utilization > 85%
 
 Metric reporting is crucial to guide your choice of scaling options.
 
