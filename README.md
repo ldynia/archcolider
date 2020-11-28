@@ -1,8 +1,8 @@
-# Welcome to Architectural Katas 2020 Fall
+# Architectural Katas 2020 Fall - Group ArchColider
 
-### Group
+### Members
 
-**ArchColider**:
+**ArchColider:**
 - Andrei
 - Han
 - Hemanth
