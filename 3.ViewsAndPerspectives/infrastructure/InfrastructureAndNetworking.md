@@ -1,5 +1,4 @@
 # Infrastructure and networking
-The goal of this document is to allow the reader to understand the design of the _VPC_. A VPC is akin to a network infrastructure setup that you could be familiar with from on-premise ecosystems.
 
 ## VPC design
 
