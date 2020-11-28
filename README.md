@@ -5,7 +5,7 @@
 - Andrei
 - Han
 - Hemanth
-- Lukasz (Moderator)
+- Lukasz
 
 ### Resources
 
