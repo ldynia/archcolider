@@ -16,9 +16,7 @@ Here under client application we understand mobile application and point of sale
 
 _Why is it important?_
 
-The application is the main communication channel and the process of catalog browsing and purchasing should be fast and reliable from the user's perspective. Access to past data related to a user should be smooth as well.
-
-Slow working application discourage users from using it and do any purchases as they fear that payment information might be lost, order double charged and so on.
+The application is the main communication channel and the process of catalog browsing and purchasing should be fast and reliable from the user's perspective. Access to historical data of the user should also be quick and efficient. Application with a slow response time discourages user to order meals, or pay for the meals as they may afraid that their financial information can be compromised.
 
 #### Stakeholders concerns
 
