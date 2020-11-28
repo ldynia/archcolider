@@ -12,8 +12,14 @@ External communication is either realized through a data stream that is picked u
 
 Private subnets are only allowed to communicate within the _VPC_ or, using the appropriate channels, with _AWS_ services such as _S3_.
 
+> All servers are **t3.medium** _EC2_ instances.
+
 ## Core server
+<<<<<<< HEAD:3.ViewsAndPerspectives/infrastructure/Infrastructure-services-and-virtual-hardware.md
+The software architecture is classed as a modular monolith. (See: [ADR 003: System approach](/4.ADRs/002%20System%20approach.md)) In Figure 1 we have used a single-core server as an example. Of course, this doesn't accurately represent the actual scaling of the systems but it serves to focus you to on the important bits for the purpose of this discussion.
+=======
 The software architecture is classed as a modular monolith. (See: [ADR 003: System approach](../../4.ADRs/002 System approach.md)) In Figure 1 we have used a single-core server as an example. Of course, this doesn't accurately represent the actual scaling of the systems but it serves to focus you to on the important bits for the purpose of this discussion.
+>>>>>>> master:3.ViewsAndPerspectives/infrastructure/Infrastructure services and (virtual) hardware.md
 
 > Servers in Figure 1 all represent templates of server instances.
 
@@ -21,7 +27,7 @@ The software architecture is classed as a modular monolith. (See: [ADR 003: Syst
 The ordering server hosts the ordering and scheduling modules contained in the order processing subsystem. 
 
 ## Event Store
-The event-store is not available from the outside of the _VPC_. The scaling is done separately from the public subnet's scaling group. 
+The event-store is not available from the outside of the _VPC_. The scaling is done separately from the public subnet's scaling group.
 
 ## Amazon MQ (_MQ_)
 As we have a modular monolith, we should treat the modules as if they were **not** part of a single monolith. Modules are allowed to "talk" to each other by using a message queue. We have decided on the use of _AMQ_ to provide us with such queue capabilities.
