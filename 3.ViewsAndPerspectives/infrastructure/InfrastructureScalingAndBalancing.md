@@ -27,16 +27,16 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 ### Application Load Balancer (_ALB_)
 
-The _Application Load Balancer_ provided by _AWS_ is responsible for distributing traffic among our internet-facing services and _EC2_ instances. For some services, we do this indirectly by using the _Auto Scaling Group_. The _ALB_ is a request level load balancer. ([Layer 7](https://en.wikipedia.org/wiki/Application_layer))
+The _Application Load Balancer_ provided by _AWS_ is responsible for distributing traffic among our internet-facing services and _EC2_ instances. For some services, we do this indirectly by using the _Auto Scaling Group_ (_AGS_). The _ALB_ is a request level load balancer. ([Layer 7](https://en.wikipedia.org/wiki/Application_layer))
 
 Using the ALB allows us to balance on the basis of an application interface. In our case this mostly means that we can have, REST API, resource bound load balancing. This includes application-specific resources but also resources on the authentication API provided by Cognito. (See: [Authentication](Authentication.md))
 
 > In Figure 2 we see two rules in the ruleset:
 > 1. Redirect HTTP to HTTPS.
-> 2. /X
+> 2. /Ordering
 >
 > The first rule is responsible for redirecting HTTP based traffic to HTTPS. In essence, this stops the use of HTTP.
-> The second rule is a placeholder to forward requests to /X to a certain endpoint (for instance an _Auto Scaling Group_ or and resource on the Cognito API.
+> The second rule is used to forward requests to /Ordering to a certain endpoint. We also apply this forwarding rule type when we, for instance, want to route in a balanced wat to an _Auto Scaling Group_ or a resource on the _Cognito_ API.
 
 Another advantage of the _ALB_ is the native ability to force HTTPS connections only. We do this by making use of a configurable rule in the rulesets of the load balancer.
 
@@ -49,8 +49,8 @@ A listener is a process that checks for connection requests, using the protocol 
 
 ### Ruleset
 Rulesets are attached to an _ALB_ and contain rules that can be used to perform specific _Actions_ on incoming requests. We use this to:
-- redirect a **non-authenticated** user to Cognito for authentication.
-- check a JWT against Cognito to verify the correct authentication of the user. (Redirecting the user when the JWT is not valid.)
+- redirect a **non-authenticated** user to _Cognito_ for authentication.
+- check a _JWT_ against _Cognito_ to verify the correct authentication of the user. (Redirecting the user when the _JWT_ is not valid.)
 - forward traffic to the scaling group based on the requested resource path.
 
 ### Target group
