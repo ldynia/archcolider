@@ -1,6 +1,6 @@
 # Feedback System separation
 
-Date: 2020-10-29 
+Date: 2020-10-29
 
 ## Status
 
@@ -8,26 +8,27 @@ Declined
 
 ## Context
 
-A user would like to read or write a review for a meal that he has ordered. Business would like to obtaing feedbacks on its service in order to imporove it.
+A user would like to read or write a review for a meal that he has ordered. Businesses would like to obtain feedback on its service in order to improve it.
 
-Two diffrent feedback methods:
-- surveys (ocasional questionaries about general aspects of the app/service)
+Two different feedback methods:
+- surveys (occasional questionnaires about general aspects of the app/service)
 - feedback (is an opinion about an order or app/service)
 
 ## Decision
 
 We'll create a simple in app feedback system that will allow users to provide feedback about orders and service.
-We'll incorporate survey into feedback in order to take adventages of 3rd parties services which specilize in feedback aquisitions such survey monkey, google surveys, etc..
+We'll incorporate surveys into feedback in order to take advantage of 3rd parties services which specialize in feedback acquisitions such survey monkey, google surveys, etc..
 
 
 ## Consequences
 
-**Positive:** Reviews will encurage users to compose own menus. Delegating surveys to 3rd parties services would allow food pharmacy to focus on improvment of core business. This decision will create lose coupling of the entities in the system.
+**Positive:** Reviews will encourage users to compose their own menus. Delegating surveys to 3rd parties services would allow food pharmacy to focus on improvement of core business. This decision will create loose coupling of the entities in the system.
 
-**Negative**: Because, content can be voulgar, admin would have to moderate reviews.
+**Negative**: Because, content can be vulgar, admin would have to moderate reviews.
 
-**Neutral:** System will have to store images, therfore increasing costs of businesss operations.
+**Neutral:** System will have to store images, therefore increasing costs of business operations.
 
-## Reason 
+## Reason
 
-Incorporating 3rd party system might cause security breaches of personal data. Combersome gathering, aggregating and store of results. Requires coordinated way of storing and processing result. Managing permissions to create, add, and stop surveys might be challenging. 
+Incorporating 3rd party systems might cause security breaches of personal data. Cumbersome gathering, aggregating and store of results. Requires coordinated way of storing and processing results. Managing permissions to create, add, and stop surveys might be challenging.
+
