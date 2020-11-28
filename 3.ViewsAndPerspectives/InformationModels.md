@@ -26,7 +26,7 @@ Slow working application discourage users from using it and do any purchases as 
 |---------|------|
 | Subscriber | Get information about upcoming order according to a schedule |
 | | Ability to modify (change\cancel) scheduled menu |
-| Known users | Browse catalog with no delay and see meals availability in fridges for selected area |
+| Known users | Browse catalog with no delay and check availability of meals in fridges for a selected area |
 | | Purchase and reserve meal |
 |  | Executing purchase with minimum clicks in interface |
 | Occasional users | Get information about nutrition facts for selected meal |
@@ -46,14 +46,14 @@ In the image above you can see the order of events/commands. It represents how a
 
 | Event\Command\Queries | Description | Frequency | Size (kb)  |
 |-------|-----|--------|---|
-| Catalog Updated | Event that notify client app that catalog have changes in meals offering. Note, that Smart fridges publish the same event. Even if it's not true from technical point of view, our ACL can transform data from fridges to this event to unify overall processing | Most probably once per day per user | 0,1 |
+| Catalog Updated | Notification event to client app that catalog have changes in meals offering. Note, that Smart fridges publish the same event. Even if it's not true from technical point of view, our ACL can transform data from fridges to this event to unify overall processing | Most probably once per day per user | 0,1 |
 | Meal Stock Updated | Contains information about a meal and remain amount in stock  | With every placed order. Batch update from Smart Fridges. Delivery might be optimized by the user's location. | 0,1-150 |
-| Meal Stock Reserved | Let know the Catalog that meal soon will be reserved. Helps manage amount of meals in stock  | With every placed order | 0,1 |
+| Meal Stock Reserved | Notify the Catalog that meal has been reserved from user. Helps manage amount of meals in stock  | With every placed order | 0,1 |
 | Get Catalog (query) | Reference to a specific catalog or all of available catalogs in the user's area | Every time when a user starts forming a new order. 1-2 times per day by schedule | 0,1/150-300 (without images) |
-| Confirm Order by User | Command that send user's intention to order a meal | Every time when user finish order composing and going to pay | 0,2 |
+| Confirm Order by User | Command that send user's intention to order a meal | Every time when user confirms order and about to pay| 0,2 |
 
 TRADE-OFFS:
-- _CatalogUpdated_ might have information about the update, such as a new meal description, ingredients and so on. It seems to be a nice approach as it "push" model and clients get all necessary information without a need to callback backend for additional information. On the other hand, not all clients might be reachable and process the data. Also there might be several catalogs and push updates to a client with the entire catalog might not be necessary, as client can have preference for a certain meal catalog. The most reasonable way might be just inform about the fact of update, catalog name/id, location.
+- _CatalogUpdated_ might have information about the update, such as a new meal description, ingredients and so on. It seems to be a nice approach as it is a "push" model and clients get all necessary information without a need to request backend for additional information. On the other hand, not all clients might be reachable and process the data. Also there might be several catalogs and push updates to a client with the entire catalog might not be necessary, as client can have preference for a certain meal catalog. The most reasonable way might be just inform about the fact of update, catalog name/id, location.
 
 **Meal purchase**
 
