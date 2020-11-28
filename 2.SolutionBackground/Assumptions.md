@@ -2,7 +2,7 @@
 
 ## Smart fridges
 
-1. We assume that there are methods that allow us to know about the current stock, dispatching, time of refillment, and so on. [ADR 014](../4.ADRs/014%20%3FStale%20data%20from%20fridges.md)
+1. We assume that there are methods that allow us to know about the current stock, dispatching, time of refillment, and so on. [ADR 012](../4.ADRs/012%20%3FStale%20data%20from%20fridges.md)
 2. Stock refillment happens one-two times per day at a roughly predictable time. It happens because of the physical ability to deliver meals based on demand, traffic situation, ghost kitchen payloads. [ADR 013](../4.ADRs/013%20%20Cache%20the%20meal%20catalogue.md)
 3. Smart fridge system provide location information for every single fridge. [ADR 015](../4.ADRs/015%20Integration%20with%20Map%20Providers.md)
 
