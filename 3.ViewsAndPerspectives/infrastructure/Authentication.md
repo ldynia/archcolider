@@ -29,7 +29,7 @@ Federation allows for other authentication providers to be hooked up to our syst
 
 ## Loadbalancer
 
-The design offered here uses the load balancer directly to provide authentication. The HTTPS Listener is used with a set of rules that provide actions for checking the identity of the user requesting the resource. Once this is done we use the load balancers' rule to forward the traffic to the appropriate scaling group. (Also see: [Infrastructure Scaling and Balancing](/InfrastructureScalingAndBalancing.md))
+The design offered here uses the load balancer directly to provide authentication. The HTTPS Listener is used with a set of rules that provide actions for checking the identity of the user requesting the resource. Once this is done we use the load balancers' rule to forward the traffic to the appropriate scaling group. (Also see: [Infrastructure Scaling and Balancing](InfrastructureScalingAndBalancing.md))
 
 ## Pricing
 
