@@ -1,10 +1,10 @@
 # User's scenarios (journeys)
 
-This section shows a generic example of a user journeys. After reading this section reader should know who are the stakeholder within the system, how the user interacts with the system and what are the results of an interaction.
+This section shows a generic example of a user journey. After reading this section the reader should know who are the stakeholder within the system, how the user interacts with the system and what are the results of an interaction.
 
 ## 1 Scenario: Purchase of a meal by a subscriber
 
-Bellow diagram illustrates a purchase order within the system. User journey starts at the moment of browsing a meal from the catalog and ends when a meal is picked up by the user. Dotted lines represent optional interactions in the system.
+The Below diagram illustrates a purchase order within the system. User journey starts at the moment of browsing a meal from the catalog and ends when a meal is picked up by the user. Dotted lines represent optional interactions in the system.
 
 ![Subscriber Journey](../img/user%20journey/Subscriber.png)
 
@@ -14,7 +14,7 @@ Bellow diagram illustrates a purchase order within the system. User journey star
 
 ### Risks
 Access code generation can be cumbersome to implement. We might introduce **PIN** instead.
-We need to put in place mechanisms that handles submissions of two valid coupons.
+We need to put in place mechanisms that handle submissions of two valid coupons.
 Handling of cash payment. This should be discussed further.
 
 ## 2 Scenario: Purchase of a meal by a subscriber
@@ -34,7 +34,7 @@ Providing access code to the smart fridge for meal pick up.
 
 ## 3 Scenario:
 
-Bellow user story, show a use case where some unexpected error (perhaps mechanical) prevents the user from picking up the meal. Outcome of the events is creation of complaint by a user receiving new meal (or compensation) later on.
+Bellow user story, show a use case where some unexpected error (perhaps mechanical) prevents the user from picking up the meal. Outcome of the events is creation of complaint by a user receiving a new meal (or compensation) later on.
 
 ![Subscriber Error Journey](../img/user%20journey/Error%20-%20Subscriber.png)
 
