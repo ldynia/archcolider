@@ -23,17 +23,17 @@ Key map:
 
 | | Monolith | Microservices | Micro-kernel | Modularized Monolith |
 |----|----|----|-----|-----|
-| Ease of Deployment  | ++ | -  | -  | + |
-| Availability        | -  | ++ | +  | + |
+| Ease of Deployment  | ++ | -  | -  | ++ |
+| Availability        | -  | ++ | +  | - |
 | Autonomy          | -- | ++ | ++ | + |
-| Traceability        | ++ | -  | +  | + |
-| Performance         | ++ | +  | +  | + |
+| Traceability        | ++ | -  | +  | O |
+| Performance         | ++ | +  | +  | ++ |
 | Modifiability        | O  | ++ | +  | + |
 | Maintainability      | -  | ++ | +  | + |
 | Integrity           | ++ | -- | O  | + |
-| Security            | -  | ++ | +  | + |
+| Security            | -  | ++ | +  | ++ |
 | Scalability         | -- | ++ | -  | + |
- 
+
 ## Decision
 
 Based on alternatives in the context of the business needs and a development team we think that modularize monolith is the best option for now. At the same time it opens the possibility to migrate to microservices when needed.
