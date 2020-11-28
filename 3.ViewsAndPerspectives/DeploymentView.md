@@ -14,7 +14,7 @@ Read the full document [here](infrastructure/InfrastructureAndNetworking.md).
 ### Scaling and balancing
 To be as performant and cost-effective as possible we have adopted a strategy where we don't scale up but scale-out. An example of scaling up would be upgrading a server to better (virtual) hardware so the workload can be handled. In a scale-out scenario, the heavy workload would be handled by multiple instances of the server.
 
-![Figure 1: Scaling strategies](/img/scaling-strategies.png)
+![Figure 1: Scaling strategies](../img/scaling-strategies.png)
 
 Figure 1: Scaling strategies
 
@@ -27,7 +27,7 @@ Authentication allows us to check the identity of a user or (external) system. W
 Read the full document [here](infrastructure/Authentication.md).
 
 ## Risks 
-1. OpenStreet Maps have a fair-use license. As such, there is always a risk that the service is either unavailable or somewhat outdated. (See: [ADR 015](/4.ADRs/015%20Integration%20with%20Map%20Providers.md)))
+1. OpenStreet Maps have a fair-use license. As such, there is always a risk that the service is either unavailable or somewhat outdated. (See: [ADR 015](../4.ADRs/015%20Integration%20with%20Map%20Providers.md)))
 
 *Risk reduction:* Aside from switching providers, there is also the possibility of caching the tilemaps and internalizing the location data.
 
@@ -58,7 +58,7 @@ OPEX: Operational expenses
 
 CIDR: Classless Inter-Domain Routing
 
-DataDog: See [DataDog](/4.ADRs/003%20Tracing%20and%20Monitoring%20Sytem.md)
+DataDog: See [DataDog](../4.ADRs/003%20Tracing%20and%20Monitoring%20Sytem.md)
 
 JSON: JavaScript Object Notation
 
