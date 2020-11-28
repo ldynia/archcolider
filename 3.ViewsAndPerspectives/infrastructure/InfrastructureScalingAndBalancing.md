@@ -1,7 +1,7 @@
 # Infrastructure scaling and load balancing
 
 ## Auto scaling
-![Auto-scaling](/img/infra-auto-scaling.png)
+![Auto-scaling](../../img/infra-auto-scaling.png)
 Figure 1: Auto-scaling
 
 Auto-scaling is applied to all _Elastic Cloud Compute_ (_EC2_) instances in the public subnets. This takes care of scaling for us based on certain load criteria.
@@ -17,7 +17,7 @@ Metric reporting is crucial to guide your choice of scaling options.
 
 ## Load Balancing
 
-![Balancing overview](/img/Balancing-Overview.png)
+![Balancing overview](../../img/Balancing-Overview.png)
 Figure 2: Load balancing
 
 > Figure 2 shows instance 1 to instance n. For the purpose of this document, we intend this to mean N instances of a particular resource in the _ASG_.
