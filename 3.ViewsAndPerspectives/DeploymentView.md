@@ -32,7 +32,7 @@ Read the full document [here](infrastructure/Authentication.md).
 *Risk reduction:* Aside from switching providers, there is also the possibility of caching the tilemaps and internalizing the location data.
 
 ## Cost analysis
-The cost analysis can be found [here](infrastructure/CostAnalysis.md)
+The cost analysis can be found [here](CostAnalysis.md)
 
 ## Glossary of abbreviations
 Here we will introduce some terms that are used in the infrastructure documentation.
@@ -56,7 +56,6 @@ SaaS: Software as a Service
 SMS: Short Message Service
 REST: Representational state transfer
 VPN: Virtual Private Network
-
 
 ## Checklist 
 
