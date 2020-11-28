@@ -14,7 +14,7 @@ We have elected to design the infrastructure using two availability zones that a
 For more information on Regions and Availability Zones, see https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
 
 ### Subnets
-Subnets are simply parts of a network. These subnets are assigned a range of Internet Protocol (IP) addresses using a notation know as Classless Inter-Domain Routing (CIDR) blocks. Any address within such an assigned CIDR block is said to be in the subnet the CIDR block belongs to.
+Subnets are simply parts of a network. These subnets are assigned a range of Internet Protocol (IP) addresses using a notation known as Classless Inter-Domain Routing (CIDR) blocks. Any address within such an assigned CIDR block is said to be in the subnet the CIDR block belongs to.
 
 > Note: Only IPv4 is considered for both the design and this document.
 
@@ -25,10 +25,10 @@ Public subnets are designed for externally available IP addresses. They tend to 
 Private subnets are designed for internal IP addresses. They are typically not reachable from the broader internet and are bound to strict egress rules. The IP addresses in the private subnet are accessible from VPN connected elements. You can restrict this in route tables for the private subnets.
 
 ### Route tables
-Route tables allow you to dictate the flow of network traffic much like you may be used to from a home router.
+Route tables allow you to dictate the flow of network traffic.
 
-Route tables should be read from Destination to Target. Meaning, when a element within a subnet tries to reach a target ip address it will go to the route table to see if/how it
-can get there. For example, if a route table states the Destination as 0.0.0.0/0 with Target igw-1 it means that in order to go to any ip address it should go through internet gateway-1. The astute reader can conclude that such a rule should not be at the top of the table as the table will be in order of priority. (Exceptions may apply in some scenarios)
+Route tables should be read from Destination to Target. Meaning, when an element within a subnet tries to reach a target IP address it will go to the route table to see if/how it
+can get there. For example, if a route table states the Destination as 0.0.0.0/0 with Target igw-1 it means that in order to go to any IP address it should go through internet gateway-1. The astute reader can conclude that such a rule should not be at the top of the table as the table will be in order of priority. (Exceptions may apply in some scenarios)
 
 > 0.0.0.0/0 in AWS means ANY ip4 address. 
 
@@ -44,13 +44,13 @@ can get there. For example, if a route table states the Destination as 0.0.0.0/0
 | ----        | ------        | ------              |
 | 10.0.0.0/16 | Local         | Allows for traffic between local elements |
 
-The lack of connection to the internet for the private subnets is intentional as no service running there should be accessable through the internet directly.
+The lack of connection to the internet for the private subnets is intentional as no service running there should be accessible through the internet directly.
 
 #### Internet Gateway
-The Internet Gateway (in the diagram named **igw-1**) is used to allow your route table to point to it for internet routable traffic. It also performs network address translation (NAT) for instances that have public IP address assigned.
+The Internet Gateway (in the diagram named **igw-1**) is used to allow your route table to point to it for internet routable traffic. It also performs network address translation (NAT) for instances that have a public IP address assigned.
 
 ### Amazon Virtual Private Network
-Any on-premise system that's already in use can be connected to systems within the VPC using a secure virtual private network (VPN) connection. Please note, there is no need to go through the VPN for public actions such as requesting a publicly available REST endpoint on an API. Prefer such public end-point when they are available.
+Any on-premise system that's already in use can be connected to systems within the VPC using a secure virtual private network (VPN) connection. Please note, there is no need to go through the VPN for public actions such as requesting a publicly available REST endpoint on an API. Prefer such a public end-point when they are available.
 
 The VPN will connect to a VPC requiring the route table to be set in such a way that communication between the on-premise network and the VPC is possible.
 
@@ -63,7 +63,7 @@ The VPN will connect to a VPC requiring the route table to be set in such a way 
 > This example shows only the entry needed to connect to the Virtual Private Gateway. Other entries are not shown.
 
 ## Evolutionary perspective
-In this paragraph we try to show how a select number of scenarios would be handled if they occur in the future. This document only discusses network related items. For more on scaling see: [Infrastructure scaling and balancing](InfrastructureScalingAndBalancing.md)
+In this paragraph, we try to show how a select number of scenarios would be handled if they occur in the future. This document only discusses network related items. For more on scaling see: [Infrastructure scaling and balancing](InfrastructureScalingAndBalancing.md)
 
 ### Increase up-time
 **The trade-off:** Increasing theoretical up-time will require an increase in budget.
@@ -81,6 +81,6 @@ A CDN can be introduced if there is a need for quicker delivery of static conten
 
 ### Removing new service areas
 **The trade-off:** Costs decrease due to infrastructure removal which in turn may affect operations speed negatively.
-Terminating a serive area that has no other areas that could benefit from having _edge locations_ or _regions_ close to them should lead you to consider terminating them.
+Terminating a service area that has no other areas that could benefit from having _edge locations_ or _regions_ close to them should lead you to consider terminating them.
 
 > **Important:** At first glance it may seem very natural to add a new _region_ or _edge location_ when adding a new service area. However, consider that you should only take this course of action when operations slow down in such a way that it has a major negative impact on the customer or other stakeholder. The customer or other stakeholders should represent the monetary value of the cost of the extra infrastructure and other OPEX.
