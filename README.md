@@ -2,7 +2,6 @@
 
 ### Members
 
-**ArchColider:**
 - Andrei
 - Han
 - Hemanth
