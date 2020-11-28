@@ -38,23 +38,38 @@ The cost analysis can be found [here](CostAnalysis.md)
 Here we will introduce some terms that are used in the infrastructure documentation.
 
 AMQ: Amazon MQ (Manages message queue service)
+
 ASG: Auto-scaling group
+
 AWS: Amazon Web Service
+
 EC2: Elastic Compute Cloud
+
 S3: Simple Storage Service
+
 VPC: Virtual Private Cloud
+
 VPG: Virtual Private Gateway
+
 
 CAPEX: Capital expenses
 OPEX: Operational expenses
 
+
 CIDR: Classless Inter-Domain Routing
+
 DataDog: See [DataDog](/4.ADRs/003%20Tracing%20and%20Monitoring%20Sytem.md)
+
 JSON: JavaScript Object Notation
+
 JWT: JSON Web Token
+
 SaaS: Software as a Service
+
 SMS: Short Message Service
+
 REST: Representational state transfer
+
 VPN: Virtual Private Network
 
 ## Checklist 
