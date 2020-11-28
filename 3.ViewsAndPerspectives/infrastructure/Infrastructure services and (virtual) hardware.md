@@ -1,6 +1,6 @@
 # Infrastructure Services and (virtual) hardware
 
-![Figure 1: Services overview](/img/services.png)
+![Figure 1: Services overview](../../img/services.png)
 Figure 1: Services overview
 
 > **Note: ** The second subnet is a copy of subnet 1 when instanced from the Infrastructure as Code specification. Scaling can create more copies on-demand.
@@ -13,7 +13,7 @@ External communication is either realized through a data stream that is picked u
 Private subnets are only allowed to communicate within the _VPC_ or, using the appropriate channels, with _AWS_ services such as _S3_.
 
 ## Core server
-The software architecture is classed as a modular monolith. (See: [ADR 003: System approach](/4.ADRs/002 System approach.md)) In Figure 1 we have used a single-core server as an example. Of course, this doesn't accurately represent the actual scaling of the systems but it serves to focus you to on the important bits for the purpose of this discussion.
+The software architecture is classed as a modular monolith. (See: [ADR 003: System approach](../../4.ADRs/002 System approach.md)) In Figure 1 we have used a single-core server as an example. Of course, this doesn't accurately represent the actual scaling of the systems but it serves to focus you to on the important bits for the purpose of this discussion.
 
 > Servers in Figure 1 all represent templates of server instances.
 
