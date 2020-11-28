@@ -36,7 +36,7 @@ The application is the main communication channel and the process of catalog bro
 
 **Meal stock updates**
 
-The main accent here is how data on client's devices will be updated and information about available meals can be kept up to date. Based on the diagram and the business model updates might be sent to users based on their location. Location might update every time when the user opens the application.
+The main accent here is how the data about available meals will be updated in real-time on clients devices. Based on the diagram and the business model updates might be sent to users based on their location. Location might update every time when the user opens the application.
 
 ![](../img/IM_meal_stock_update.PNG)
 
@@ -57,11 +57,11 @@ TRADE-OFFS:
 
 ![](../img/IM_meal_purchase.PNG)
 
-Diagram shows a sunny day scenario in a simplified way to represent how order information flows through the system and how user got response about purchase. Coupon checks is omitted, as it's bonus feature =) This case tightly coupled with a previous one about stock change propagation.
+Diagram shows a sunny day scenario in a simplified way to represent how order information flows through the system and how user got response about purchase. Coupon checks is omitted, as it's bonus feature .This case tightly coupled with a previous one about stock change propagation.
 
 | Event\Command\Queries | Description | Frequency | Size (kb)  |
 |-------|-----|--------|---|
-| Start Order | Self-descriptive :) Just prepare a place holder for a new order. Nothing bother backend. | We don't care as it local command | N/A |
+| Start Order | Self-descriptive :) Just prepare a place holder for a new order. Nothing bothers the backend. | We don't care as it local command | N/A |
 | Apply Coupon | User apply code and we don't care yet what the code is | We don't care as it local command | N/A |
 | Confirm Order by User | User confirms that order if formed and it's sign for a local app, that the order should be sent to the backend for processing | Every time when the user finishes order composing and going to pay. 1-3 time per day per user (except subscribers) | 0,2 |
 | Purchase Order | Order system checks that the order can be technically delivered (i.e. there are sufficient amount of meals in a fridge) and the payment system should confirm actual purchase |  1-3 time per day per user (except subscribers) | 0,2 |
