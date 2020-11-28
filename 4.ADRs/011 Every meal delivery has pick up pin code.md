@@ -13,19 +13,19 @@ But the fridge has a pin pad keyboard and still has quite sophisticated software
 
 Update 2020-11-24:
 
-We expect that every meal has its own unique id provided by the kitchen, because some meals might be customized from the general catalog. Let's say lactose free lasagna should be addressed to a specific user.
+We expect that every meal has its own unique id provided by the kitchen because some meals might be customized from the general catalog. Let's say lactose-free lasagna should be addressed to a specific user.
 
-Then, at the purchase or production process we can update the user's device with the meal unique id and generate access code based on meal ID.
+Then, at the purchase or production process, we can update the user's device with the meal's unique id and generate an access code based on meal ID.
 
 ## Decision
 
-Dispatched from Ghost Kitchen meals, will have a special 6-8 digit code.
+Meals dispatched from a Ghost Kitchen, will have a special 6-8 digit code.
 
 ## Consequences
 
 Now the user can grab the meal even if the smart-fridge is disconnected from the network at the moment of picking up the meal.
 
-Pin codes for meals should be formed upfront and delivered early to devices (smart-fridge and user-device). Possibly, there might be a mechanism to update those codes with a prepared meal delivery. The pin code should be quite long to lower the chance of brute-force attempt.   
+Pin codes for meals should be formed upfront and delivered early to devices (smart-fridge and user-device). Possibly, there might be a mechanism to update those codes with prepared meal delivery. The pin code should be quite long to lower the chance of a brute-force attack.   
 
 **Bonus feature:** it's easier to delegate meal grabbing to other people.
 
