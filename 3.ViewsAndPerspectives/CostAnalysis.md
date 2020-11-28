@@ -1,7 +1,7 @@
 # Cost analysis considerations
 
 
-[Document](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/Data%26PayloadsEstimates.xlsx)
+[Document](https://github.com/ldynia/archcolider/blob/master/3.ViewsAndPerspectives/docs/Data&PayloadsEstimates.xlsx?raw=true)
 
 ## Introduction
 While selecting infrastructure and third party systems, we were governed preliminary by costs of the solution and limited budget of the client. In rare cases we decided to pick more expensive solutions the reason for that was convenience of chosen service to exceed its monetary value.
