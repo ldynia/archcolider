@@ -12,7 +12,7 @@ The goal of this document is to allow the reader to understand the design of the
 Read the full document [here](infrastructure/InfrastructureAndNetworking.md).
 
 ### Scaling and balancing
-To be as performant and cost effective as possible we have adopted a strategy where we don't scale up but scale out. An example of scaling up would be upgrading a server to better (virtual) hardware so the workload can be handled. In a scale out scenario the heavy workload would be handled by multiple instances of the server.
+To be as performant and cost-effective as possible we have adopted a strategy where we don't scale up but scale-out. An example of scaling up would be upgrading a server to better (virtual) hardware so the workload can be handled. In a scale-out scenario, the heavy workload would be handled by multiple instances of the server.
 
 ![Figure 1: Scaling strategies](/img/scaling-strategies.png)
 
@@ -21,10 +21,15 @@ Figure 1: Scaling strategies
 ### (Virtual) hardware and services
 A full overview of all the (virtual) hardware and services used can be found [here](infrastructure/Infrastructure-services-and-virtual-hardware.md). 
 
-## Risks 
-1. OpenStreet Maps have a fair-use like license. As such, there is always a risk that the service is either unavailable or somewhat outdated. (See: [ADR 015](/4.ADRs/015%20Integration%20with%20Map%20Providers.md)))
+### Authentication
+Authentication allows us to check the identity of a user or (external) system. We also use authentication to allow us to store some personal information of a user securely.
 
-*Risk reduction:* Aside from switching provider, there is also the possibility of caching the tile maps and internalizing the location data.
+Read the full document [here](infrastructure/Authentication.md).
+
+## Risks 
+1. OpenStreet Maps have a fair-use license. As such, there is always a risk that the service is either unavailable or somewhat outdated. (See: [ADR 015](/4.ADRs/015%20Integration%20with%20Map%20Providers.md)))
+
+*Risk reduction:* Aside from switching providers, there is also the possibility of caching the tilemaps and internalizing the location data.
 
 ## Cost analysis
 The cost analysis can be found [here](infrastructure/CostAnalysis.md)
@@ -47,7 +52,7 @@ CIDR: Classless Inter-Domain Routing
 DataDog: See [DataDog](/4.ADRs/003%20Tracing%20and%20Monitoring%20Sytem.md)
 JSON: JavaScript Object Notation
 JWT: JSON Web Token
-SaaS: Software as a Sercice
+SaaS: Software as a Service
 SMS: Short Message Service
 REST: Representational state transfer
 VPN: Virtual Private Network
