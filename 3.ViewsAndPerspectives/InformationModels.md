@@ -45,8 +45,8 @@ In the image above you can see the order of events/commands. It represents how a
 | Event\Command\Queries | Description | Frequency | Size (kb)  |
 |-------|-----|--------|---|
 | Catalog Updated | Notification event to client app that catalog have changes in meals offering. Note, that Smart fridges publish the same event. Even if it's not true from technical point of view, our ACL can transform data from fridges to this event to unify overall processing | Most probably once per day per user | 0,1 |
-| Meal Stock Updated | Contains information about a meal and remain amount in stock  | With every placed order. Batch update from Smart Fridges. Delivery might be optimized by the user's location. | 0,1-150 |
-| Meal Stock Reserved | Notify the Catalog that meal has been reserved from user. Helps manage amount of meals in stock  | With every placed order | 0,1 |
+| Meal Stock Updated | Contains information about a meal and inventory of meals  | With every placed order. Batch update from Smart Fridges. Delivery might be optimized by the user's location. | 0,1-150 |
+| Meal Stock Reserved | Notify the Catalog that meal has been reserved from user. Helps manage the meal inventory  | With every placed order | 0,1 |
 | Get Catalog (query) | Reference to a specific catalog or all of available catalogs in the user's area | Every time when a user starts forming a new order. 1-2 times per day by schedule | 0,1/150-300 (without images) |
 | Confirm Order by User | Command that send user's intention to order a meal | Every time when user confirms order and about to pay| 0,2 |
 
@@ -218,7 +218,7 @@ Ghost kitchen (3rd party as well) could gain information about actually sold and
 
 ![](../img/IM_meal_purchase.PNG)
 
-The diagram represented a sunny day scenario in a simplified way to represent how order information flows through the system and how user got response about purchase. Coupon checks is omitted, as it's bonus feature =) This case tightly coupled with a previous one about stock change propagation.
+The diagram represented a sunny day scenario in a simplified way to represent how order information flows through the system and how user got response about purchase. Coupon checks is omitted, as it's bonus featur.This case tightly coupled with a previous one about stock change propagation.
 
 | Event\Command\Queries | Description | Frequency | Size (kb)  |
 |-------|-----|--------|---|
