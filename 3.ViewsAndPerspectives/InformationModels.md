@@ -6,7 +6,7 @@ The following cases represent the most important parts for an early stage of app
 
 ## General considerations
 
-One of the biggest advantages for the whole data management process is geo separation. Almost everything might be sharder based on geo-locations of users and fridges. Every big enough geo district (city district, city, suburban area) will have it's own shard of data that doesn't require any replication anywhere. Ghost kitchens in Detroit won't offer meals in New-York City. Users travel all the time, but their past orders do not. In each new area there would be a unique set of preferences according to the presented ghost kitchens. Only a fairly small amount of data needs to be accessed in any location, like payment information. This basic idea and assumption simplify the overall data model in terms of access, replication, modifying and so on.   
+One of the biggest advantages for the whole data management process is geo separation. Almost everything might be shared based on geo-locations of users and fridges. Every big enough geo district (city district, city, suburban area) will have its own shared data that doesn't require any replication anywhere. Ghost kitchens in Detroit won't offer meals in New-York City. Users travel all the time, but their past orders do not. In each new area there would be a unique set of preferences according to the presented ghost kitchens. Only fairly small amount of data needs to be accessed in any location, like payment information. This basic idea and assumption simplify the overall data model in terms of access, replication, modifying and so on.   
 
 ## Cases
 
@@ -114,7 +114,7 @@ We assume that following entities will be presented and stored on user's device.
 
 _Why is it important?_
 
-Order processing (single purchases or scheduler orders) is a money maker part of the system. We'd like to review related parts and identify main moving parts, quaranties, sensitive points and other possible concerns.
+Order processing (single purchases or scheduler orders) is a money maker part of the system. We'd like to review related parts and identify main moving parts, quarantine, sensitive points and other possible concerns.
 
 A clear model of how it works helps to ease the implementation process and address risks (business and technical) earlier during system design.  
 
