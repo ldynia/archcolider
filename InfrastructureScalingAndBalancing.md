@@ -1,7 +1,7 @@
 # Infrastructure scaling and load balancing
 
 ## Auto scaling
-![Auto scaling](/img/infra-auto-scaling.png)
+![Auto scaling](./img/infra-auto-scaling.png)
 Figure 1: Auto scaling
 
 Auto scaling is applied to all _Elastic Cloud Compute_ (_EC2_) instances in the public subnets. This takes care of scaling for us based on certain load criteria.
@@ -17,7 +17,7 @@ Metric reporting is crucial to guide your choice of scaling options.
 
 ## Load Balancing
 
-![Balancing overview](/img/Balancing-Overview.png)
+![Balancing overview](./img/Balancing-Overview.png)
 Figure 2: Load balancing
 
 > Figure 2 shows instance 1 to instance n. For the purpose of this document we intend this to mean N instances of a particular resource in the _ASG_.
@@ -29,7 +29,7 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 The _Application Load Balancer_ provided by _AWS_ is responsible for distributing traffic among our internet facing services and _EC2_ instances. For some services we do this indirectly by using the _Auto Scaling Group_. The _ALB_ is a request level load balancer. ([Layer 7](https://en.wikipedia.org/wiki/Application_layer))
 
-Using the ALB allows us to balance on the basis of an application interface. In our case this mostly means that we can have, REST API, resource bound load balancing. This is includes application specific resources but also resources on the authentication api provided by Cognito. (See: [Authentication](/Authentication.md))
+Using the ALB allows us to balance on the basis of an application interface. In our case this mostly means that we can have, REST API, resource bound load balancing. This is includes application specific resources but also resources on the authentication api provided by Cognito. (See: [Authentication](./Authentication.md))
 
 > In Figure 2 we see two rules in the ruleset:
 > 1. Redirect http to https.
