@@ -22,14 +22,14 @@ The application is the main communication channel and the process of catalog bro
 
 | Stakeholder | Concerns |
 |---------|------|
-| Subscriber | Get information about upcoming order according to a schedule |
+| Subscriber | Get information about upcoming order according to the schedule |
 | | Ability to modify (change\cancel) scheduled menu |
 | Known users | Browse catalog with no delay and check availability of meals in fridges for a selected area |
 | | Purchase and reserve meal |
 |  | Executing purchase with minimum clicks in interface |
-| Occasional users | Get information about nutrition facts for selected meal |
+| Occasional users | Get information about nutritional facts for selected meal |
 | | Buy selected meal without significant delay waiting data about meal availability\reservation |
-| Pos Admins | Executing purchase with minimum clicks in interface |
+| Pos Admins | Executing purchase with minimum clicks to the interface |
 | Developers | Data models simplicity |
 
 #### Diagrams
