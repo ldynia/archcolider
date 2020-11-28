@@ -10,7 +10,7 @@ Proposed
 
 The _ordering system_ communicates with upstream and downstream systems in a cloud environment and we can't rely on an assumption that requests from the same subnetwork are safe.
 
-Also, the _ordering system_ implements as a modularized monolith and those modules will be eventually extracted to become dedicated services. We have to secure such calls at an early stage to make it easier to migrate from module to service.
+The _ordering system_ is implemented as a modularized monolith and those modules will eventually be extracted to become dedicated services. We have to secure such calls at an early stage to make it easier to migrate from module to service.
 
 ## Decision
 
@@ -18,11 +18,11 @@ Internal calls from modules should contain security info with auth and claims in
 
 ## Consequences
 
-Applying such an approach will add complexity to communication within one domain between modules and not obvious for many developers. In turn it allows for proper separation of communication between modules and readiness for extracting modules as services.
+Applying such an approach will add complexity to communication between modules within the same domain. This may not be obvious to many developers. In turn, it allows for proper separation of communication between modules and readiness for extracting modules as services.
 
-Suggested approach will require involving identity service and increase complexity of internal logic within still monolithic services, but simplify further scaling with dedicated services.
+The suggested approach will require involving identity service and increase the complexity of internal logic within monolithic services, but simplify further scaling with dedicated services.
 
-Some optimization within monolithic modules will be required while modules incorporated.
+Some optimization within monolithic modules will be required when modules are incorporated.
 
 ## Reference
 
