@@ -10,7 +10,7 @@ The name ArchColider was inspired by CERN’s Large Hydron Collider -the geekies
 - [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 - [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
 - [miro](https://miro.com/app/board/o9J_kh8andQ=/) - our diagrams
-- [docs](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit)
+
 
 # Solution Structure
 
