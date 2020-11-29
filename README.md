@@ -1,12 +1,5 @@
 # Architectural Katas 2020 Fall - Group ArchColider
 
-### Members
-
-- Andrei
-- Han
-- Hemanth
-- Lukasz
-
 ### Resources
 
 - [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
