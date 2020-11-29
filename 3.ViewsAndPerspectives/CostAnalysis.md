@@ -136,43 +136,43 @@ Data Transfer cost (monthly): 3.80 USD
 
 ### S3 
 #### MIN 
-Tiered price for: 54 GB
-54 GB x 0.0230000000 USD = 1.24 USD
-Total tier cost = 1.2420 USD (S3 Standard storage cost)
-50 PUT requests for S3 Storage x 0.000005 USD per request = 0.0003 USD (S3 Standard PUT requests cost)
-50 GET requests in a month x 0.0000004 USD per request = 0.00 USD (S3 Standard GET requests cost)
-10,000 GB x 0.0007 USD = 7.00 USD (S3 select returned cost)
-100,000 GB x 0.002 USD = 200.00 USD (S3 select scanned cost)
-1.242 USD + 0.0003 USD + 7.00 USD + 200.00 USD = 208.24 USD (Total S3 Standard Storage, data requests, S3 select cost)
-S3 Standard cost (monthly): 208.24 USD
+Tiered price for: 500 GB
+500 GB x 0.0230000000 USD = 11.50 USD
+Total tier cost = 11.5000 USD (S3 Standard storage cost)
+1,000 PUT requests for S3 Storage x 0.000005 USD per request = 0.005 USD (S3 Standard PUT requests cost)
+500 GET requests in a month x 0.0000004 USD per request = 0.0002 USD (S3 Standard GET requests cost)
+500 GB x 0.0007 USD = 0.35 USD (S3 select returned cost)
+5,000 GB x 0.002 USD = 10.00 USD (S3 select scanned cost)
+11.50 USD + 0.0002 USD + 0.005 USD + 0.35 USD + 10.00 USD = 21.86 USD (Total S3 Standard Storage, data requests, S3 select cost)
+S3 Standard cost (monthly): 21.86 USD
 
-**_Total: 208.24 USD_**
+**_Total: 21.86 USD_**
 
 #### Scenario PROJECTED
-Tiered price for: 108 GB
-108 GB x 0.0230000000 USD = 2.48 USD
-Total tier cost = 2.4840 USD (S3 Standard storage cost)
-50 PUT requests for S3 Storage x 0.000005 USD per request = 0.0003 USD (S3 Standard PUT requests cost)
-50 GET requests in a month x 0.0000004 USD per request = 0.00 USD (S3 Standard GET requests cost)
-10,000 GB x 0.0007 USD = 7.00 USD (S3 select returned cost)
-100,000 GB x 0.002 USD = 200.00 USD (S3 select scanned cost)
-2.484 USD + 0.0003 USD + 7.00 USD + 200.00 USD = 209.48 USD (Total S3 Standard Storage, data requests, S3 select cost)
-S3 Standard cost (monthly): 209.48 USD
+Tiered price for: 1000 GB
+1000 GB x 0.0230000000 USD = 23.00 USD
+Total tier cost = 23.0000 USD (S3 Standard storage cost)
+2,000 PUT requests for S3 Storage x 0.000005 USD per request = 0.01 USD (S3 Standard PUT requests cost)
+1,000 GET requests in a month x 0.0000004 USD per request = 0.0004 USD (S3 Standard GET requests cost)
+1,000 GB x 0.0007 USD = 0.70 USD (S3 select returned cost)
+10,000 GB x 0.002 USD = 20.00 USD (S3 select scanned cost)
+23 USD + 0.0004 USD + 0.01 USD + 0.70 USD + 20.00 USD = 43.71 USD (Total S3 Standard Storage, data requests, S3 select cost)
+S3 Standard cost (monthly): 43.71 USD
 
-**_Total: 209.48 USD_**
+**_Total: 43.71 USD_**
 
 #### Scenario RAPID
-Tiered price for: 540 GB
-540 GB x 0.0230000000 USD = 12.42 USD
-Total tier cost = 12.4200 USD (S3 Standard storage cost)
-50 PUT requests for S3 Storage x 0.000005 USD per request = 0.0003 USD (S3 Standard PUT requests cost)
-50 GET requests in a month x 0.0000004 USD per request = 0.00 USD (S3 Standard GET requests cost)
+Tiered price for: 10000 GB
+10000 GB x 0.0230000000 USD = 230.00 USD
+Total tier cost = 230.0000 USD (S3 Standard storage cost)
+20,000 PUT requests for S3 Storage x 0.000005 USD per request = 0.10 USD (S3 Standard PUT requests cost)
+10,000 GET requests in a month x 0.0000004 USD per request = 0.004 USD (S3 Standard GET requests cost)
 10,000 GB x 0.0007 USD = 7.00 USD (S3 select returned cost)
 100,000 GB x 0.002 USD = 200.00 USD (S3 select scanned cost)
-12.42 USD + 0.0003 USD + 7.00 USD + 200.00 USD = 219.42 USD (Total S3 Standard Storage, data requests, S3 select cost)
-S3 Standard cost (monthly): 219.42 USD
+230 USD + 0.004 USD + 0.10 USD + 7.00 USD + 200.00 USD = 437.10 USD (Total S3 Standard Storage, data requests, S3 select cost)
+S3 Standard cost (monthly): 437.10 USD
 
-**_Total: 218.42 USD_**
+**_Total: 437.10 USD USD_**
 
 ### DynamoDB
 The scenarios do not impact the cost of DynamoDB as growth after 12 months will be the main driver of costs for this service.
@@ -267,6 +267,13 @@ Total monthly cost:
 
 **_Total: 30.51 USD_**
 
+## Other data
+Outbound:
+Internet: Tiered pricing for 1000 GB:
+1 GB x 0 USD per GB = 0.00 USD
+999 GB x 0.09 USD per GB = 89.91 USD
+Data Transfer cost (monthly): 89.91 USD
+
 ## Summary of costs per year
 
 |Service                    | 1-year TCO at minimum    | 1-year TCO at projected growth     | 1-year TCO at rapid growth     |
@@ -274,7 +281,7 @@ Total monthly cost:
 | EC2                       |    3,114.96 USD          |    3,114.96 USD                    |    6,230.04 USD                |
 | VPN                       |        9.13 USD          |        9.13 USD                    |        9,13 USD                |
 | AMAZON MQ                 |      508.32 USD          |      546.72 USD                    |    1,203.36 USD                |
-| AMAZON S3 Buckets         |    2,498.88 USD          |    2,513.76 USD                    |    2,621.04 USD                |
+| AMAZON S3 Buckets         |      262.32 USD          |      524.52 USD                    |    5,245.20 USD                |
 | AMAZON Dynamo DB          |    3,072.00 USD          |    3,072.00 USD                    |    3,072.00 USD                |  
 | Application Load Balancer |    TBD                   |    TBD                             |    TBD                         |
 | Kafka Managed Streams     |      138.72 USD          |      138.72 USD                    |      138.72 USD                |
@@ -283,7 +290,7 @@ Total monthly cost:
 | SNS                       |      366.12 USD          |      366.12 USD                    |      366.12 USD                |
 | Data Transfer out         |    TBD                   |    TBD                             |  TBD                           | 
 | -----                     | ---------------------    | ------------------------------     | --------------------------     |
-| **TOTAL**                 | **14,484.13 USD**        |  **14,537.41 USD**                 | **19,856.41 USD**
+| **TOTAL**                 | **12,247.57 USD**        |  **12548.17 USD**                  | **22480.57 USD**
 
 ## Summary of cost distribution
 
