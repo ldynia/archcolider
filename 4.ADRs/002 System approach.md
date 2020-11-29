@@ -40,3 +40,9 @@ Based on alternatives in the context of the business needs and a development tea
 
 ## Consequences
 
+The main benefits comes in development and deployment area. The team could save a lot or resources setting up dev/test/qa/prod environments. The cost of development and cognitive complexity on low level because working on the same code base requires less synchronization meetings. 
+
+Extensibility and modifablitity with proposed approach should be on high level with properly designed facades between modules. 
+
+Extra care and discipline should be applied for intermodule communication, or it will be just a monolith with tendency towards "the big ball of mud". Every module should keep subdomain concepts clean and sometimes copy-pasting a part of code is the best approach to avoid hidden dependencies.   
+ 
