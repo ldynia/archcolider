@@ -3,7 +3,7 @@
 ## Users
 
 - **Occasional user** - user without an account. Pays in cash at Point of Sales.
-- **Known user** - user with an account, linked card, but without a subscription for a meal plans.
+- **Known user** - user with an account, linked card, but without a subscription for a meal plan.
 - **Subscriber** - user with an account, who subscribed for regular delivery of food.
 - **PoS admin** - worker at Point of Sale (PoS) who creates transactions for _Ocassional users_.
 
