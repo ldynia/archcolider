@@ -57,12 +57,6 @@ Add:
 - [ ] Failure and retry policies, identify recoverable and unrecoverable situations. How to handle them
 - [ ] Donation concerns: senior citizens, low-income folks
 
-Presentation plan: 
-- requirements, what is odd there 
-- scope and restrictions 
-- conceptual mapping and applicability 
-- quality attributes unique for different parts of the system, no common set 
-
 Links: 
 - Smart Fridge: https://bytetechnology.co/ https://thespoon.tech/byte-foods-opens-up-its-smart-vending-platform-with-byte-technology/
 - Kiosk Point of Sale Software: https://pos.toasttab.com/
