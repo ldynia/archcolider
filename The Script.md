@@ -5,9 +5,7 @@ Good morning, Good afternoon and Good evening EVERYONE! ArchColider is a group o
 # Bussines Goal
 Farmacy Food is a startup that aims to create tasty meals around peoples’ dietary needs. Farmacy food wishes to provide meals that are radically affordable and accessible. In order to do that Framacy Food has to collaborate with several stakeholders, including ghost kitchens (kitchen who cook the meals), point of sales (kiosk that holds smart fridges) and have a means to deliver meals to the smart fridge. It’s obvious that a startup needs software that will enable them grow. Like any startup it forecasts its user base, and has limited budget. The role of architect is to provide a solution that will respect business constraints and provide a solution that will allow Farmacy Food to achieve its goals.
 
-# Architecture Solution
-
-# Further work and recomendations
+# Presentation
 
 # V2 
 
