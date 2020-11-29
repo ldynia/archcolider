@@ -61,3 +61,49 @@ Cost analysis might raise questions about the need for services. Still, ADRs sho
 Having a list of technical risks is good. Even better, have a list of business related risks. Because a variety of solutions is broad, and only the owner can decide how to handle risk. 
 
 The same with sensitive points. Review bombing is unanticipated but possible. 
+
+# v3
+We are ArchColider and this is our architectural proposal for Farmacy Food.
+
+Farmacy Food is in a need of an ordering system that will connect its users with ghost kitchens. Based on startup requirements, we identified business drivers that guided us through designing architecture.
+
+Furthermore, we have the following global assumptions about the IT landscape. We assume that smart fridges and ghost kitchen systems already have API, and can communicate with them. Additionally, we assume the ghost kitchen operates during regular working hours, not 24h per 7. Finally, the development team is small but experienced.
+
+Requirements and assumptions lead us to constraint and scope, and more importantly, what is out of scope. No extensions or modification of smart fridges or ghost kitchen systems.
+
+Significant Architectural Drivers (SAD) usually make a budget and architects SAD :(, because it shows the amount of necessary work. Requirements traceability is key!
+
+We remember about stakeholders, developers, food suppliers and what they care about!
+
+Moving to the solution. The domain area is sophisticated, and we decided to use a domain-driven approach to handle complexity. Not all parts of the system are equally important, so we need to know what we build or buy.
+
+Conceptual Map helps validate business scenarios and connections between entities. Rules connected to knowledge level proves that the system keeps its logical integrity. Also, it helps to think about future possible business cases that do not exist now. An example of a case for promotion campaigned based on meal type.
+
+From the technical perspective, we offer a modularized monolith - a set of them. The center of functional gravity are Meal Catalog and Ordering modules.
+
+To start thinking about the next architectural patterns, we need to identify quality attributes. Simplicity and Modifiability are dominating qualities across the system.  Remember constraints?
+
+However, every subsystem has its own quality attributes. It helps to pick patterns based on the specific needs of a subsystem.
+
+To address modifiability and extensibility, we’ll use commands and events for communication between logical parts in monolith. Doing so, we’ll ensure that extraction of modules won’t be so painful as commands and events should flow as before.
+
+If everything is done right – then extraction should be easy with communication and security checks in place.
+
+All decisions about extracting or scaling services are based on facts. Metrics trend analysis should be used as fitness functions.
+
+Conceptual map and quality attribute mapping help a lot in deciding information flow.
+
+Potentially risky situation with concurrent updates of available meals, but the catalog should keep data consistency.
+We propose to use the actor pattern because we have natural actors in life - fridges. A user always buys from a specific fridge, and a meal can’t magically jump from one fridge to another.
+
+To avoid concurrency issues on the system level, we propose to use log-based streaming software. Someone said Kafka?
+
+Infrastructure view allows us to understand the cost of the solution. First we suggest to scale up - it’ll be cheaper and faster as the system's load is small at the beginning. Then we can use metrics to make decisions.
+
+Solution supports Farmacy Food accounts and the ability to use 3rd party providers.
+
+Cost analysis might raise questions about the need for services. Still, ADRs should have answers or open discussions with owners about possible solutions.
+
+Having a list of technical risks is good. Even better, is to have a list of business related risks. Because a variety of solutions is broad, and only the owner can decide how to handle risk.
+
+The same with sensitive points. Review bombing is unanticipated but possible.
