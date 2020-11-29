@@ -285,5 +285,8 @@ Total monthly cost:
 | -----                     | ---------------------    | ------------------------------     | --------------------------     |
 | **TOTAL**                 | **14,484.13 USD**        |  **14,537.41 USD**                 | **19,856.41 USD**
 
+## Summary of cost distribution
 
+### 1-year TCO at minimum (MIN)
+![TCO-1y-min](../img/1y-min-tco.png)
 
