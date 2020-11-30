@@ -35,7 +35,7 @@ Federation allows for other authentication providers to be hooked up to our syst
 > Support non-federated authentication too. Some people may either trust *your* site less than the federated authentication provider's (ie. Google). This may make them skeptical. To further support the availability of your own authentication provider, you should consider that users may want to use different passwords for different online services from a security perspective. 
 
 ### Loadbalancer
-The design offered here uses the load balancer directly to provide authentication. The HTTPS Listener is used with a set of rules that provide actions for checking the identity of the user requesting the resource. Once this is done we use the load balancers' rule to forward the traffic to the appropriate scaling group. [Infrastructure Scaling and Balancing](./InfrastructureScalingAndBalancing.md))
+The design offered here uses the load balancer directly to provide authentication. The HTTPS Listener is used with a set of rules that provide actions for checking the identity of the user requesting the resource. Once this is done we use the load balancers' rule to forward the traffic to the appropriate scaling group. [Infrastructure Scaling and Balancing](./infrastructure/InfrastructureScalingAndBalancing.md))
 
 ### Pricing
 
