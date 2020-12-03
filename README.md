@@ -4,6 +4,13 @@ Good morning, Good afternoon and Good evening EVERYONE! ArchColider is a group o
 
 The name ArchColider was inspired by CERN’s Large Hydron Collider -the geekiest thing that we know. We feared that colliding our thoughts and experiences will give birth to a new architecture that would assemble Service Oriented MonstroLith (hahaha). Can you imagine our faces when we got the news that we were going to the semi-finals :) We are thrilled to present our solution and share it with you.
 
+### Members 
+- Andrei Gordienkov https://www.linkedin.com/in/violettape/ 
+- Han Vermolen https://www.linkedin.com/in/hanvermolen/ 
+- Hemanth Pradeep Varanasi https://www.linkedin.com/in/hemanthpradeep/
+- Lukasz Dynowski https://www.linkedin.com/in/lukasz-dynowski-4aa50236/
+
+
 ### Resources
 
 - [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
