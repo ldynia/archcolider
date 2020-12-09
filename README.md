@@ -8,7 +8,7 @@ The name ArchColider was inspired by CERN’s Large Hydron Collider -the geekies
 - Andrei Gordienkov https://www.linkedin.com/in/violettape/ 
 - Han Vermolen https://www.linkedin.com/in/hanvermolen/ 
 - Hemanth Pradeep Varanasi https://www.linkedin.com/in/hemanthpradeep/
-- Lukasz Dynowski https://www.linkedin.com/in/lukasz-dynowski-4aa50236/
+- Lukasz Dynowski https://www.linkedin.com/in/ldynia/
 
 
 ### Resources
