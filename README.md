@@ -13,7 +13,7 @@ The name ArchColider was inspired by CERN’s Large Hydron Collider -the geekies
 
 ### Resources
 
-- [Farmacy Family - Architectural Katas 2021 Autumn](https://github.com/ldynia/archcolider-hal)
+- [Architectural Katas 2021 Autumn - Farmacy Family](https://github.com/ldynia/archcolider-hal)
 - [Architectural Katas](https://learning.oreilly.com/live-training/courses/architectural-katas/0636920458463/)
 - [software-architecture-fundamentals](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991?autoplay=false)
 - [fundamentals-of-software](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
